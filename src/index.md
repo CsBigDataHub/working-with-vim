@@ -1,6 +1,5 @@
 ---
 title: Working with Vim
-date: 2019-03-01
 ---
 
 # Working with Vim
@@ -13,55 +12,13 @@ The program `vimtutor` is a great way to learn the basics of vim. It is an inter
 
 In the videos, the big yellow text in the bottom right are the key presses I do. They are overlayed using <a href="https://gitlab.com/wavexx/screenkey">screenkey</a> and not part of vim. I recorded videos so you can start/stop at will and see what is happening.
 
+## Lessons
 
-## Working Mode
+I recommend as you go through the lessons here, open vim in another window and follow along. You need try things out with your hands typing them as you go. It is like learning a language, repetition and practice helps.
 
-First up, I don't really like telling people what to do, no vim shaming here. I use arrow keys. Use arrows keys. They are great keys with labels and everything. I do have one recommendation, <strong>make NORMAL mode your default mode</strong>. I mash the Esc key about hundred times a minute. Every time I finish a sentence. Escape. There is a reason it is called NORMAL mode, it is the mode where you can do everything fancy.
-
-INSERT mode is just typing text, any editor can do that.
-
-Be NORMAL.
+Also, there is a lot to learn here. Don't try to cram it all in. Pick up an item here and there and slowly work them in to your methodology.
 
 
-### Visual Mode
-
-<span class="sidenote">When I use a capital letter, you use a capital letter. Capital. Capital.</span>
-
-You can highlight multiple lines using `V`.  Press `V` in NORMAL mode, and the whole line will be highlighted and you will be in VISUAL mode, as you move up or down it will highlight other lines.
-
-The `shift-v`, aka capital V, is VISUAL LINE mode, selecting whole lines at once.
-
-<span class="sidenote">I capitalize the modes because vim does, I'm not shouting them.</span>
-
-If you type `ctrl-v` it is VISUAL BLOCK mode, it selects by characters. Press `ctrl-v` and move around to select things, try left or right movements to see by character. You can also use `ctrl-v` to do fancy multi-cursor things, see video example below.
-
-Psst, don't tell the purists, but if you `set mouse=a` you can use your mouse to highlight things too.
-
-VISUAL mode is pretty powerful, I use it frequently since it provides feedback seeing what is selected, and then unselected after the action.
-
-
-<!-- wp:video {"autoplay":false,"id":1452,"loop":false,"muted":false,"src":"https://mkaz.blog/wp-content/uploads/2019/03/visual-mode-exs.mp4"} -->
-<figure class="wp-block-video"><video controls src="https://mkaz.blog/wp-content/uploads/2019/03/visual-mode-exs.mp4"></video><figcaption>Visual Mode example</figcaption></figure>
-<!-- /wp:video -->
-
-<!-- wp:proximo/tips -->
-<p class="wp-block-proximo-tips"><i class="proximo-tips-icon">💡</i><span>After performing an action in VISUAL MODE the selection is no longer highlighted. Use `gv` to automatically reselect the area previously highlighted.</span>
-<!-- /wp:proximo/tips -->
-
-
-## Quickies
-
-A couple of quick tips I use all the time, you might already know these, consider it a warm up. One way to go through this tutorial is open vim in another window and follow along trying things out as you go. It is like learning a language, repetition and practice helps.
-
-First up, the most common actions are `y` for yank (copy), `d` for delete, and `p` for put (paste).
-
-### Copy / Delete Lines
-
-Deleting a full line is so common, the `dd` shortcut exists.
-
-If you delete a line and want to paste it elsewhere, use `p` to paste.
-
-Likewise, you can copy a line using `yy` shortcut.
 
 ### Merge lines
 
@@ -70,12 +27,6 @@ Use `J` to merge lines together. If you press `J` with nothing highlighted, it w
 ### Wrap Lines at Length
 
 Use `gq` to wrap lines to a specified length defined by `textwidth`. If the `textwidth` option is not set the default is 79. I use this daily in commit messages to fit within 80 characters. To use, just highlight the lines you want and then type `gq`
-
-### Delete to End of Line
-
-Did you know `D` deletes from your cursor to end of line? It does. Try it. It's wonderful. I use this all the time.
-
-You have to type `d^` to do the opposite and delete to the front of the line, I almost never do this, probably why there is a shortcut for the previous delete and not this one.
 
 ### Repeat That
 
@@ -87,35 +38,6 @@ If you start with a number and then command it executes the command that many ti
 <figure class="wp-block-video"><video controls src="https://mkaz.blog/wp-content/uploads/2019/03/vim-quickies.mp4"></video><figcaption>Quickies example</figcaption></figure>
 <!-- /wp:video -->
 
-
-### Undo / Redo
-
-Use `u` for undo, and `ctrl-r` for redo.
-
-## Help Yourself
-
-Vim has extensive documentation on every command and feature. Type `:help [command]` to see help for any command. For example, `:help gg` will explain what the `gg` command does.
-
-Help opens in a new window split horizontally, see Windows section below for working with windows. The two items I do most is `ctrl-w o` so it is the only window (not split), and `ctrl-w c` to close. Help is just a read-only buffer, so you can navigate, highlight, copy, paste, the same as any other buffer.
-
-
-## The Tao of Vim
-
-The underlying principle of Vim is the action-motion pair, the language equivalent is a sentence with a verb-noun pair. You perform an action on a subject, for example delete a line.
-
-You can create action-motion pairs basically in two ways.
-
-First, in non-Visual mode, ie. NORMAL mode, you specify the action first and then motion. Like the delete to beginning of the line example above. You type `d` for delete action and then `^` as the motion for beginning of the line.
-
-If I just type `^` with no action, the cursor moves to the beginning of the line. Move is the default action.
-
-The second way of defining a pair is VISUAL mode, except you do the opposite. You specify the noun (motion) part first by highlighting, and then perform the action on what is highlighted.
-
-For example, type `gg` to move to the top of the file. `shift-v` to enter VISUAL LINE Mode and then `G` will move to end of file selecting all the lines. With the subject highlighted, you can use `d`or `y` to delete or copy.
-
-I do this all the time to copy from one buffer to another. There might be a shortcut, but then I would need to remember it as a shortcut. Knowing how to highlight and move is less to remember, since it is the base of knowledge.
-
-Note: You can perform this same action without using VISUAL mode by using `ggyG` but I tend to highlight. By selecting, I can see what is happening, what part highlighted and then get feedback when the action is performed.
 
 ### Basic Motions
 

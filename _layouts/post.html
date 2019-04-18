@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-	<title> {{ .Title }} | Working with Go </title>
+	<title> {{ .Title }} | Working with Vim </title>
 	<link rel="stylesheet" media="screen" href="static/style.css" >
 	<link rel="stylesheet" media="screen" href="static/prism.css" >
 
@@ -12,14 +12,14 @@
 <body>
 
 <header>
-	<h3> Working with Go </h3>
-	<p> Code examples for Golang </p>
+	<h3> Working with Vim </h3>
+	<p>  </p>
 </header>
 
 <main>
 	<aside>
 		{{ range .Recent.Reverse }}
-			<a href="/working-with-go{{ .Url }}">{{ .Title }}</a><br/>
+			<a href="{{ .Url | trim }}">{{ .Title }}</a><br/>
 		{{ end }}
 	</aside>
 
@@ -31,19 +31,19 @@
 			<nav>
 				<span class="prev">
 					{{ if .PrevUrl }}
-						<a href="/working-with-go{{ .PrevUrl }}"> &#171; {{ .PrevTitle }} </a>
+						<a href="{{ .PrevUrl | trim }}"> &#171; {{ .PrevTitle }} </a>
 					{{ end }}
 				</span>
 				<span class="next">
 					{{ if .NextUrl }}
-						<a href="/working-with-go{{ .NextUrl }}"> {{ .NextTitle }} &#187; </a>
+						<a href="{{ .NextUrl | trim }}"> {{ .NextTitle }} &#187; </a>
 					{{ end }}
 				</span>
 			</nav>
 
 			{{ if .SourceFile }}
 			<div style="margin-top: 5rem">
-				Contribute: <a href="https://github.com/mkaz/working-with-go/blob/master/{{.SourceFile}}">source</a>
+				Contribute: <a href="https://github.com/mkaz/working-with-vim/blob/master/{{.SourceFile}}">source</a>
 			</div>
 			{{ end }}
 			</nav>

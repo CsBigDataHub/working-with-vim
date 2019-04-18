@@ -25,20 +25,14 @@ You can highlight multiple lines using `V`.  Press `V` in NORMAL mode, and the w
 
 The `shift-v`, aka capital V, is VISUAL LINE mode, selecting whole lines at once.
 
-
 If you type `ctrl-v` it is VISUAL BLOCK mode, it selects by characters. Press `ctrl-v` and move around to select things, try left or right movements to see by character. You can also use `ctrl-v` to do fancy multi-cursor things, see video example below.
 
 Psst, don't tell the purists, but if you `set mouse=a` you can use your mouse to highlight things too.
 
 VISUAL mode is pretty powerful, I use it frequently since it provides feedback seeing what is selected, and then unselected after the action.
 
+<figure><video controls src="https://mkaz.blog/wp-content/uploads/2019/03/visual-mode-exs.mp4"></video><figcaption>Visual Mode example</figcaption>
+</figure>
 
-<!-- wp:video {"autoplay":false,"id":1452,"loop":false,"muted":false,"src":"https://mkaz.blog/wp-content/uploads/2019/03/visual-mode-exs.mp4"} -->
-<figure class="wp-block-video"><video controls src="https://mkaz.blog/wp-content/uploads/2019/03/visual-mode-exs.mp4"></video><figcaption>Visual Mode example</figcaption></figure>
-<!-- /wp:video -->
-
-<!-- wp:proximo/tips -->
-<p class="wp-block-proximo-tips"><i class="proximo-tips-icon">💡</i><span>After performing an action in VISUAL MODE the selection is no longer highlighted. Use `gv` to automatically reselect the area previously highlighted.</span>
-<!-- /wp:proximo/tips -->
-
+<span class="tip">💡</span>After performing an action in VISUAL MODE the selection is no longer highlighted. Use `gv` to automatically reselect the area previously highlighted.
 
