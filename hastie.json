@@ -1,0 +1,6 @@
+{
+    "SourceDir"  : "src",
+    "LayoutDir"  : "_layouts",
+    "PublishDir" : "docs"
+}
+
