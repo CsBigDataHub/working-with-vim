@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: normal;
   font-weight: 700;
   margin: 2.0rem 0 0 0;
-  color: #19CBFB;
+  color:  #278438;
 }
 
 h1 { font-size: 2.0rem; margin-top: 0 }
@@ -322,6 +322,23 @@ textarea {
 }
 
 
+dl {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+dt {
+    flex-basis: 20%;
+    padding: 0.5rem 1.0rem;
+}
+
+dd {
+    flex-basis: 70%;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0.5rem 1.0rem;
+}
+
 header {
 	width: 100%;
 	padding-bottom: 1.0rem;
@@ -358,6 +375,7 @@ aside {
 	padding-right: 1.0rem;
 	border-right: 1px solid #CCC;
 	margin-right: 1.0rem;
+    line-height: 1.5rem;
 }
 
 article {

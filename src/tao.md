@@ -5,13 +5,17 @@ date: 2019-03-02
 
 # The Tao of Vim
 
-The underlying principle of Vim is the action-motion pair, the language equivalent is a sentence with a verb-noun pair. You perform an action on a subject, for example delete a line.
+The underlying principle of Vim is the action-motion pair. You perform an action on a subject, that is defined by the motion. For example, delete a line.
 
 You can create action-motion pairs basically in two ways.
+
+## NORMAL Mode
 
 First, in NORMAL mode, you specify the action first and then the motion. Like the delete to beginning of the line example above. You type `d` for delete action and then `^` as the motion for beginning of the line.
 
 If I just type `^` with no action, the cursor moves to the beginning of the line. Move is the default action.
+
+## VISUAL Mode
 
 The second way of defining a pair is VISUAL mode, except you do the opposite. You specify the noun (motion) part first by highlighting, and then perform the action on what is highlighted.
 

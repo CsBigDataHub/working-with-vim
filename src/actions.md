@@ -1,9 +1,9 @@
 ---
-title: Basics
-date: 2019-03-03
+title: Basic Actions
+date: 2019-03-05
 ---
 
-# Basics
+# Basic Actions
 
 Here are a few editor basics, things you do in every editor.
 
