@@ -10,12 +10,10 @@ Vim can operate on text based on its objects and structure. The inner object `i`
 
 For example, to copy the arguments in a function use `yi(`
 
-If you want delete a block of code in a `{ ... }`with your cursor inside the block, type `di{`
+If you want delete a block of code in a `{ ... }` with your cursor inside the block, type `di{`
 
 This also works for text in quotes, if you typed `yi"` it will copy the word without the quotes. If you want copy to include the quotes use `a` instead of `i`, this works for all the examples above.
 
-<!-- wp:video {"autoplay":false,"id":1333,"loop":false,"muted":false,"src":"https://mkaz.blog/wp-content/uploads/2019/03/vim-selection.mp4"} -->
 <figure class="wp-block-video"><video controls src="https://mkaz.blog/wp-content/uploads/2019/03/vim-selection.mp4"></video><figcaption>Selection example</figcaption></figure>
-<!-- /wp:video -->
 
 <strong>Extra</strong>: The inner selection motions work with words `w`, sentences `s`, and paragraphs `p`. So if the cursor is in the middle of a word, sentence, or paragraph you can use `i` paired with the motion and it will select the full object. This is so you don't need to first navigate to the start of a word to select the whole word.
