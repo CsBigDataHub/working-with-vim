@@ -7,27 +7,51 @@ date: 2019-03-17
 
 You probably already know about `.vimrc` or `.config/nvim/init.vim` if you use neovim. It is where you can put your configuration and shortcuts.  I'm going to include several examples from my config to give you an idea of what you can do.
 
-First, the `<Leader>` is a special key is intended for user definition, so any setting of it will not conflict with default vim commands. By default the leader key is `\` but it is common to map it to `,` which you do using:
+You can check out my <a href="https://github.com/mkaz/dotfiles/blob/master/extras/nvim/init.vim">.vimrc in my dotfiles</a> repo. I actually use neovim, so it is init.vim. I don't really recommend just copying and pasting the whole thing, it ends up being personal preferences anyways.
 
-```
+## Leader
+
+First, the `<Leader>` is a special key intended to be used for user definitions. So any setting of it will not conflict with other default vim commands. By default the leader key is `\` but it is common to map it to `,` which I do. Set leader character using:
+
+```vim
 let mapleader=","
 ```
 
+## Mapping
+
 You can map a set of keys to any action, to create a mapping you need to define what mode you want the mapping to work. Use `map` for normal and visual modes, `nmap` for just normal mode, and `vmap` for just visual mode.
 
-See `:help map-commands` for additional commands for less common modes.
+<span class="sidenote">See `:help map-commands` for additional commands for less common modes.</span>
 
-A mapping entry specifies `[map-mode] [user-cmd] [vim-cmd]` where `user-cmd` is what you type, and `vim-cmd` is what vim executes. The vim cmd simply translates to the keystrokes you would have typed to get the desired result.
+A mapping entry consists of `[map-mode] {lhs} {rhs}` which simply stands for left and right hand sides.
 
-## Configuration
+The mapping translates what you typed on the left-hand side to the mapped keys on the right-hand side. The right-hand side is just a set of keys you might of typed.
 
-Since everyone asks, I use <a href="https://sourcefoundry.org/hack/">Hack font</a>, <a href="https://github.com/mhartington/oceanic-next">Oceanic Next</a> colorscheme, and <a href="https://github.com/vim-airline/vim-airline">Airline</a> for the fancy status bar.
+It is a good best practice to use `noremap` which means to not allow recursive remaping of the `{rhs}` of to avoid potential issues with other definitions or plugins.
 
-You can check out my <a href="https://github.com/mkaz/dotfiles/blob/master/extras/nvim/init.vim">.vimrc in my dotfiles</a> repo. I actually use neovim, so it is init.vim. I don't really recommend just copying and pasting the whole thing, it ends up being personal preferences anyways.
+Here is an example mapping to add a semi-colon to the end of the current line.
+
+```vim
+noremap <Leader>; g_a;<Esc>
+```
+
+The command `g_` moves to the last non-whitespace character on the line. The `a` puts you in insert mode after the cursor. `;` adds the semi-colon. `<Esc>` returns to NORMAL mode.
+
+So the mapping simply duplicates what you would type in the editor. Now it is simplified so I can do all that just by typing `,;`
+
+
+## Plugin Management
 
 I do recommend using <a href="https://github.com/junegunn/vim-plug">vim-plug</a> to manage plugins, it makes it easy to install, upgrade, and remove.
 
-My one great tip from my configuration, which credit to whoever I picked it up from years ago, this saves me so many times.
+## Colorschemes
+
+Since everyone asks, I use <a href="https://sourcefoundry.org/hack/">Hack font</a>, <a href="https://github.com/mhartington/oceanic-next">Oceanic Next</a> colorscheme, and <a href="https://github.com/vim-airline/vim-airline">Airline</a> for the fancy status bar.
+
+
+## Make me a Sandwich
+
+My one great tip from my configuration, which I give credit to whoever I picked it up from years ago, this saves me so many times.
 
 
 ```vim
