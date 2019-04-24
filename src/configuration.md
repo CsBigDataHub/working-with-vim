@@ -9,6 +9,16 @@ You probably already know about `.vimrc` or `.config/nvim/init.vim` if you use n
 
 You can check out my <a href="https://github.com/mkaz/dotfiles/blob/master/extras/nvim/init.vim">.vimrc in my dotfiles</a> repo. I actually use neovim, so it is init.vim. I don't really recommend just copying and pasting the whole thing, it ends up being personal preferences anyways.
 
+#### Edit Config File
+
+A shortcut to open my config file using `:Edrc` command. User defined commands must start with a capital letter to distinguish from built-in commands.
+
+```
+" edit config file
+command Edrc edit ~/.config/nvim/init.vim
+```
+
+
 ## Leader
 
 First, the `<Leader>` is a special key intended to be used for user definitions. So any setting of it will not conflict with other default vim commands. By default the leader key is `\` but it is common to map it to `,` which I do. Set leader character using:
@@ -39,6 +49,18 @@ The command `g_` moves to the last non-whitespace character on the line. The `a`
 
 So the mapping simply duplicates what you would type in the editor. Now it is simplified so I can do all that just by typing `,;`
 
+### Instant Quotes
+
+An example using mapping to wrap a word in single or double quotes.
+
+```
+" Surround with Quote
+map <Leader>' ysiw'
+map <Leader>" ysiw"
+```
+
+--- TODO: animated gif wrapping word ---
+
 
 ## Plugin Management
 
@@ -61,4 +83,15 @@ ca w!! w !sudo tee >/dev/null "%"
 
 When you open a file and don't have write permissions, you can call `:w!!` and it will auto sudo the file for you. Saves me practically every time I edit a system file.
 
+
+## Auto Command
+
+`Autocmd` is a powerful tool to configure vim to automatically run on a specific event. See `:help autocmd-events` for a listing of available events.
+
+Here is a common usage, setting a parameter based on the type of file. In this case, I want PHP files to use tabs and not spaces, because that is the WordPress standard.
+
+```
+" PHP File Types (WordPress, use tabs)
+autocmd FileType php set noexpandtab
+```
 
