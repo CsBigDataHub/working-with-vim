@@ -45,9 +45,7 @@ noremap j gj
 noremap k gk
 ```
 
-TODO: animated gif navigating line ---
-
-See [Configuration section](configuration.html) for more on working with your vim config.
+See [Configuration section](/working-with-vim/configuration/) for more on working with your vim config.
 
 ## Bubble Up Lines
 

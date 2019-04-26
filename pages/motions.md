@@ -7,6 +7,8 @@ order: 4
 
 # Basic Motions
 
+Here are a few of the most common motions, there are many more and plugins can define there own but it is good to start learning the basics and expand.
+
 `w`
 : Forward to next word
 
@@ -37,8 +39,6 @@ If you put an action first, it will perform that action on the motion. For examp
 
 If you start with `v` it will highlight based on the motion in VISUAL mode, so `ve` will highlight to the end of the word.
 
-If you `p` paste with something highlighted, it will replace the highlighted section.
+<span class="tip">💡</span> If you `p` paste with something highlighted, it will replace the highlighted section. This is extremely helpful, since deleting an item can change what is in your register you are trying to paste. See [Registers](/working-with-vim/registers/) for more.
 
-<!-- wp:video {"autoplay":false,"id":1386,"loop":false,"muted":false,"src":"https://mkaz.blog/wp-content/uploads/2019/03/copy-vis-paste.mp4"} -->
 <figure class="wp-block-video"><video controls src="https://mkaz.blog/wp-content/uploads/2019/03/copy-vis-paste.mp4"></video></figure>
-<!-- /wp:video -->

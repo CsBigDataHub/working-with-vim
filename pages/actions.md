@@ -7,7 +7,7 @@ order: 5
 
 # Basic Actions
 
-Here are a few editor basics, things you do in every editor.
+Here are a some basic actions, combine with [motions](/working-with-vim/basic-motions/) to define and perform action:
 
 `y`
 : Yank (copy)
@@ -21,7 +21,7 @@ Here are a few editor basics, things you do in every editor.
 
 ## Undo / Redo
 
-Use `u` for undo, and `ctrl-r` for redo.
+Use `u` for undo, and `ctrl-r` for redo. No motion required, just press the keys.
 
 
 ## Uppercase & Lowercase
@@ -31,8 +31,7 @@ Use `gu{motion}` for lowercase, use `gU{motion}` for uppercase, or use `g~{motio
 
 ## Indent
 
-<span class="sidenote">See `:help shift-left-right`</span>
-The brackets `<` and `>` will shift the line one `shiftwidth` length to the left, or right. These can also be paired with VISUAL mode, ranges, and motions.
+<span class="sidenote">See `:help shift-left-right`</span> The brackets `<` and `>` will shift the line one `shiftwidth` length to the left, or right. These can also be paired with VISUAL mode, ranges, and motions.
 
 For example, use `shift-v` to select a line, use arrows or other motions to expand the range, and then type `<` or `>` to shift the lines.
 

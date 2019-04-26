@@ -29,6 +29,6 @@ This is obviously an extra step to select the text, but VISUAL mode shows you wh
 
 I find the feedback useful, particularly when copying.
 
-For example, copying a whole buffer using VISUAL mode: Type `gg` to move to the top of the file. `shift-v` to enter VISUAL LINE Mode and then `G` will move to end of file selecting all the lines. With the subject highlighted, use `y` to copy.
+For example, copying a whole buffer using VISUAL mode: Type `gg` to move to the top of the file, `shift-v` to enter VISUAL LINE Mode, and then `G` will move to end of file selecting all the lines. With the subject highlighted, use `y` to copy.
 
 
