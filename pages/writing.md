@@ -1,6 +1,8 @@
 ---
 title: Writing
-date: 2019-03-26
+parent: 1430
+template: page-tut.php
+order: 19
 ---
 
 ## Working with Whitespace

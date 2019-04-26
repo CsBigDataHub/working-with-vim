@@ -1,6 +1,8 @@
 ---
 title: The Tao of Vim
-date: 2019-03-02
+parent: 1430
+template: page-tut.php
+order: 2
 ---
 
 # The Tao of Vim

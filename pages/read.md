@@ -1,6 +1,8 @@
 ---
 title: Read
-date: 2019-03-11
+parent: 1430
+template: page-tut.php
+order: 11
 ---
 
 # Read

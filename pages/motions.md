@@ -1,6 +1,8 @@
 ---
 title: Basic Motions
-date: 2019-03-04
+parent: 1430
+template: page-tut.php
+order: 4
 ---
 
 # Basic Motions

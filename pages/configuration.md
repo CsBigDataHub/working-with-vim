@@ -1,6 +1,8 @@
 ---
 title: Configuration
-date: 2019-03-17
+parent: 1430
+template: page-tut.php
+order: 16
 ---
 
 # Vimrc

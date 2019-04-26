@@ -1,6 +1,8 @@
 ---
 title: Buffers
-date: 2019-03-13
+parent: 1430
+template: page-tut.php
+order: 13
 ---
 
 # Buffers

@@ -1,6 +1,8 @@
 ---
 title: Lines
-date: 2019-03-06
+parent: 1430
+template: page-tut.php
+order: 6
 ---
 
 # Working with Lines

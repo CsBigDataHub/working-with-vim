@@ -1,6 +1,8 @@
 ---
 title: Substitute
-date: 2019-03-09
+parent: 1430
+template: page-tut.php
+order: 10
 ---
 
 # Substitute

@@ -1,6 +1,8 @@
 ---
 title: Modes
-date: 2019-03-02
+parent: 1430
+template: page-tut.php
+order: 1
 ---
 
 # Modes

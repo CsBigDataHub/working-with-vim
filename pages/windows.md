@@ -1,6 +1,8 @@
 ---
 title: Windows
-date: 2019-03-14
+parent: 1430
+template: page-tut.php
+order: 14
 ---
 
 # Windows

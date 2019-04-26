@@ -1,6 +1,8 @@
 ---
 title: Recording
-date: 2019-03-16
+parent: 1430
+template: page-tut.php
+order: 15
 ---
 
 # Recording and Playback

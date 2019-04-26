@@ -1,6 +1,8 @@
 ---
 title: Basic Actions
-date: 2019-03-05
+parent: 1430
+template: page-tut.php
+order: 5
 ---
 
 # Basic Actions

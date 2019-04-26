@@ -1,6 +1,8 @@
 ---
 title: Nav Marks
-date: 2019-03-08
+parent: 1430
+template: page-tut.php
+order: 9
 ---
 
 # Navigation Marks

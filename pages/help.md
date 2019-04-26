@@ -1,6 +1,8 @@
 ---
 title: Help Yourself
-date: 2019-03-03
+parent: 1430
+template: page-tut.php
+order: 3
 ---
 
 # Help Yourself

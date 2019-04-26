@@ -1,6 +1,8 @@
 ---
 title: Terminal
-date: 2019-03-24
+parent: 1430
+template: page-tut.php
+order: 20
 ---
 
 ## Terminal Built-in

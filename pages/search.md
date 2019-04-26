@@ -1,6 +1,8 @@
 ---
 title: Search
-date: 2019-03-10
+parent: 1430
+template: page-tut.php
+order: 8
 ---
 
 # Search

@@ -1,6 +1,8 @@
 ---
 title: Completions
-date: 2019-03-18
+parent: 1430
+template: page-tut.php
+order: 17
 ---
 
 ## Completions

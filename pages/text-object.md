@@ -1,6 +1,8 @@
 ---
 title: Text Objects
-date: 2019-03-07
+parent: 1430
+template: page-tut.php
+order: 7
 ---
 
 # Text Object Selection
