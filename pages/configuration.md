@@ -7,18 +7,13 @@ order: 16
 
 # Vimrc
 
-You probably already know about `.vimrc` or `.config/nvim/init.vim` if you use neovim. It is where you can put your configuration and shortcuts.  I'm going to include several examples from my config to give you an idea of what you can do.
+You probably already know about `.vimrc` or if you use neovim `.config/nvim/init.vim`. It is where you can put your configuration and shortcuts.  I'm going to include several examples from my config to give you an idea of what you can do.
 
-You can check out my <a href="https://github.com/mkaz/dotfiles/blob/master/extras/nvim/init.vim">.vimrc in my dotfiles</a> repo. I actually use neovim, so it is init.vim. I don't really recommend just copying and pasting the whole thing, it ends up being personal preferences anyways.
+<span class="sidenote">Use vim, vim is great!</span> You can check out my [init.vim in my dotfiles](https://github.com/mkaz/dotfiles/blob/master/extras/nvim/init.vim). I actually use neovim, which is why it is init.vim. I do not have that strong of preference for Neovim, its config is a little simpler, but I don't notice any real difference while using either.
 
-#### Edit Config File
+I don't recommend just copying and pasting mine or anyone's vim config. Most config is just one person's preferences, especially for shortcuts. The important part is to be able to read and understand what shortcuts and features they are implementing, and see if that can improve your workflow.
 
-A shortcut to open my config file using `:Edrc` command. User defined commands must start with a capital letter to distinguish from built-in commands.
-
-```
-" edit config file
-command Edrc edit ~/.config/nvim/init.vim
-```
+Your muscle memory may want settings or mappings to use a different set of keys; learning how it works allows you to shape vim to fit you.
 
 
 ## Leader
@@ -29,9 +24,20 @@ First, the `<Leader>` is a special key intended to be used for user definitions.
 let mapleader=","
 ```
 
+## Create Your Own Commands
+
+Here is a shortcut I use to open my config file using `:Edrc` command. User defined commands must start with a capital letter to distinguish from built-in commands.
+
+```vim
+" edit config file
+command Edrc edit $MYVIMRC
+```
+
 ## Mapping
 
-You can map a set of keys to any action, to create a mapping you need to define what mode you want the mapping to work. Use `map` for normal and visual modes, `nmap` for just normal mode, and `vmap` for just visual mode.
+You can map a set of key commands to another set. This allows you to create a simpler shortcut for a more complex set of keys. Mapping is modal, you need to tell vim what MODE you want the mapping to work.
+
+Use `map` for normal and visual modes, `nmap` for mapping to work in just NORMAL mode, and use `vmap` for mapping to work in just VISUAL mode.
 
 <span class="sidenote">See `:help map-commands` for additional commands for less common modes.</span>
 
@@ -39,7 +45,7 @@ A mapping entry consists of `[map-mode] {lhs} {rhs}` which simply stands for lef
 
 The mapping translates what you typed on the left-hand side to the mapped keys on the right-hand side. The right-hand side is just a set of keys you might of typed.
 
-It is a good best practice to use `noremap` which means to not allow recursive remaping of the `{rhs}` of to avoid potential issues with other definitions or plugins.
+It is a good best practice to use `noremap` instead of just `map` which means to not allow recursive remaping of the `{rhs}` of to avoid potential issues with other definitions or plugins.
 
 Here is an example mapping to add a semi-colon to the end of the current line.
 
@@ -49,11 +55,11 @@ noremap <Leader>; g_a;<Esc>
 
 The command `g_` moves to the last non-whitespace character on the line. The `a` puts you in insert mode after the cursor. `;` adds the semi-colon. `<Esc>` returns to NORMAL mode.
 
-So the mapping simply duplicates what you would type in the editor. Now it is simplified so I can do all that just by typing `,;`
+The mapping duplicates what you would type in the editor. With the mapping set in my .vimrc, to add a semi-colon on end of line I simply type `,;` in normal mode.
 
 ### Instant Quotes
 
-An example using mapping to wrap a word in single or double quotes.
+An example mapping to wrap a word in single or double quotes.
 
 ```
 " Surround with Quote
@@ -61,17 +67,14 @@ map <Leader>' ysiw'
 map <Leader>" ysiw"
 ```
 
---- TODO: animated gif wrapping word ---
+### Toggle Whitespace
 
+An example mapping to toggle visible whitespace.
 
-## Plugin Management
-
-I do recommend using <a href="https://github.com/junegunn/vim-plug">vim-plug</a> to manage plugins, it makes it easy to install, upgrade, and remove.
-
-## Colorschemes
-
-Since everyone asks, I use <a href="https://sourcefoundry.org/hack/">Hack font</a>, <a href="https://github.com/mhartington/oceanic-next">Oceanic Next</a> colorscheme, and <a href="https://github.com/vim-airline/vim-airline">Airline</a> for the fancy status bar.
-
+```vim
+" toggle show whitespace
+noremap <F3> :set list!<CR>
+```
 
 ## Make me a Sandwich
 
@@ -83,7 +86,7 @@ My one great tip from my configuration, which I give credit to whoever I picked 
 ca w!! w !sudo tee >/dev/null "%"
 ```
 
-When you open a file and don't have write permissions, you can call `:w!!` and it will auto sudo the file for you. Saves me practically every time I edit a system file.
+When you open a file and don't have write permissions, you can call `:w!!` and it will auto sudo the file for you. Saves me practically every time I edit a system file. [Sandwich reference](https://xkcd.com/149/)
 
 
 ## Auto Command
@@ -97,3 +100,21 @@ Here is a common usage, setting a parameter based on the type of file. In this c
 autocmd FileType php set noexpandtab
 ```
 
+If your vim config is sourced after loading, the autocmds will repeat and can double up the actions. It is recommended you use `augroup` to group together your set of autocmds in a block. By running `autocmd!` in that block it removes previous set commands.
+
+Here is a simplified example from my config
+
+
+```vim
+augroup configgroup
+
+    autocmd! " delete existing autocmds in group
+
+    " golang
+    autocmd BufRead,BufNewFile *.go set filetype=go
+    autocmd FileType go nmap <Leader>r <Plug>(go-run)
+    autocmd FileType go nmap <Leader>b :terminal go build<CR>
+    autocmd FileType go nmap <Leader>t :terminal go test<CR>
+
+augroup END
+```

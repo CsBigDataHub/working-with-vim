@@ -2,7 +2,7 @@
 title: Vim Wiki
 parent: 1430
 template: page-tut.php
-order: 21
+order: 22
 ---
 
 ## Vim Wiki

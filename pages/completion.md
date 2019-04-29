@@ -2,12 +2,12 @@
 title: Completions
 parent: 1430
 template: page-tut.php
-order: 17
+order: 19
 ---
 
-## Completions
+# Completions
 
-### Built-in Completion
+## Built-in Completion
 
 Vim has a powerful set of auto completion tools already built-in.
 
@@ -17,7 +17,7 @@ ctrl-x ctrl-p with context
 ctrl-x ctrl-l full line with context
 
 
-### Snippets
+## Snippets
 
 I use the [Ultisnips plugin](https://github.com/SirVer/ultisnips) to provide all my snippet needs. Snippets have replaced templates for me. Previously I setup a template file to load if a new empty file, for example a new HTML file would load a stubbed out html-head-body set of tags.
 
