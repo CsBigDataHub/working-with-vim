@@ -1,6 +1,6 @@
 ---
 title: Writing
-parent: 1430
+parent: 1497
 template: page-tut.php
 order: 21
 ---

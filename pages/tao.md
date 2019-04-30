@@ -1,6 +1,6 @@
 ---
 title: The Tao of Vim
-parent: 1430
+parent: 1497
 template: page-tut.php
 order: 2
 ---

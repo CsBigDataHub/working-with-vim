@@ -1,7 +1,7 @@
 ---
 title: Plugins
 template: page-tut.php
-parent: 1430
+parent: 1497
 order: 17
 ---
 

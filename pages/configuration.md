@@ -1,6 +1,6 @@
 ---
 title: Configuration
-parent: 1430
+parent: 1497
 template: page-tut.php
 order: 16
 ---
@@ -61,7 +61,7 @@ The mapping duplicates what you would type in the editor. With the mapping set i
 
 An example mapping to wrap a word in single or double quotes.
 
-```
+```vim
 " Surround with Quote
 map <Leader>' ysiw'
 map <Leader>" ysiw"
@@ -95,7 +95,7 @@ When you open a file and don't have write permissions, you can call `:w!!` and i
 
 Here is a common usage, setting a parameter based on the type of file. In this case, I want PHP files to use tabs and not spaces, because that is the WordPress standard.
 
-```
+```vim
 " PHP File Types (WordPress, use tabs)
 autocmd FileType php set noexpandtab
 ```

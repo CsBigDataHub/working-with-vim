@@ -1,6 +1,6 @@
 ---
 title: Search
-parent: 1430
+parent: 1497
 template: page-tut.php
 order: 8
 ---
@@ -31,7 +31,7 @@ I don't use the delete or copy features with regex, but do use frequently to nav
 
 Search results remain highlighted after a search, the following maps `<Leader><Space>` to unhighlight.
 
-```
+```vim
 " Unhighlight Search using ,SPC
 nmap <silent> <Leader><Space> :nohlsearch<CR>
 ```
