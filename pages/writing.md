@@ -5,35 +5,74 @@ template: page-tut.php
 order: 21
 ---
 
-## Working with Whitespace
+## Vim for Writing
 
-:set list
+Vim is my primary tool for writing, it is great not just for programming, but also for writing documentation, blog posts, or whatever you need. See Vim Wiki.
 
+## Spellcheck
+
+<span class="sidenote">See `:help spell`</span> Vim has a built-in spellcheck, by default it is off. You can turn it on using `:setlocal spell`. To turn it off again, use `:set nospell`
+
+I map `F5` to toggle spellcheck using the following in my config:
+
+```vim
+" Toggle Spellcheck
+:noremap <F5> :setlocal spell! spelllang=en_us<CR>
 ```
-" hidden characters
-set listchars=tab:▸\ ,eol:¬
-```
 
-## Writing in Vim
+With spellcheck on, the misspelled words are highlighted.
 
-https://www.youtube.com/watch?v=aHm36-na4-4
+Use `]s` to navigate to the next misspelled word.
 
-listtrans.vim
+Use `z=` to open a list of suggested text to replace misspelled word.
 
-Create own dictionary
-:mkspell
+Use `zg` to add the word to your spellfile, telling vim it is correctly spelled.
 
-### # of Words
 
-spellcheck
+## Grammar Checking
 
-:set spell
-insert mode - ctrl-p
+I use the [wordy plugin](https://github.com/reedes/vim-wordy) for grammar checking. Wordy is a collection of special dictionaries that are used to provide a wide range of rules to check against. For example, business-jargon, weasel words, or passive-voice to name a few.
 
-### How to type digraphs
+You run the plugin to check your text using `:Wordy [rule]` typing tab will show the full list of available rules.
 
-:digraphs
+For example, `:Wordy passive-voice` will check the text for use of the passive voice and highlight similar to spellcheck. Use `]s` to navigate to the highlighted text.
 
-Andrés
+Use `:NoWordy` to turn off, or since Wordy uses the same spellcheck mechanism, I simply use my `F5` mapping to turn off.
 
-## Wordy Plugin
+See the [Wordy Github repository](https://github.com/reedes/vim-wordy) for full documentation.
+
+
+## Word Counts
+
+Type `g ctrl-g` to get a list of document information including character and wordcount.
+
+I use the [Airline plugin](https://github.com/vim-airline/vim-airline) for a fancy status line which by default displays word count for known text formats such as markdown.
+
+
+## How to type digraphs
+
+<span class="sidenote">See `:help digraph`</span> A digraph is a character that cannot by entered by an ordinary keyboard. For example with standard US keyboards digraphs are the numerous accent characters not part of the English language.
+
+To type a digraph, in INSERT mode, type `ctrl-k {char} {char}`
+
+The first character is the letter, the second the additional mark. For example, to add an tilde over an n, I would type `ctrl-k n ~` which gives me the spanish `ñ` character.
+
+Here are a set of the most common examples, see `:help digraphs-default` for a more complete list.
+
+`!` or <code>`</code>
+: Grave accent `à è ì ò ù`
+
+`'`
+: Acute accent `á é í ó ú`
+
+`>`
+: Circumflex `â ĉ ê ĝ ô û`
+
+`?` or `~`
+: Tilde `ã ñ`
+
+`:`
+: Diaeresis `ä ë ö ü`
+
+You can see the full table of all digraphs using `:digraphs`
+

@@ -7,9 +7,9 @@ order: 16
 
 # Vimrc
 
-You probably already know about `.vimrc` or if you use neovim `.config/nvim/init.vim`. It is where you can put your configuration and shortcuts.  I'm going to include several examples from my config to give you an idea of what you can do.
+You probably already know about `.vimrc` or if you use Neovim `.config/nvim/init.vim`. It is where you can put your configuration and shortcuts.  I'm going to include several examples from my config to give you an idea of what you can do.
 
-<span class="sidenote">Use vim, vim is great!</span> You can check out my [init.vim in my dotfiles](https://github.com/mkaz/dotfiles/blob/master/extras/nvim/init.vim). I actually use neovim, which is why it is init.vim. I do not have that strong of preference for Neovim, its config is a little simpler, but I don't notice any real difference while using either.
+<span class="sidenote">Use vim, vim is great!</span> You can check out my [.vimrc in my dotfiles](https://github.com/mkaz/dotfiles/blob/master/rcfiles/.vimrc). I've used Neovim in the past and it is a great project encouraging development in Vim. I didn't really notice any real difference between using either.
 
 I don't recommend just copying and pasting mine or anyone's vim config. Most config is just one person's preferences, especially for shortcuts. The important part is to be able to read and understand what shortcuts and features they are implementing, and see if that can improve your workflow.
 
