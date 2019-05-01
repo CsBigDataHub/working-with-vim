@@ -15,7 +15,7 @@ However, setting it up automatically got annoying when doing temporary things. P
 
 See the [plugins section](/working-with-vim/plugins/) for full explaination. I add the following to my .vimrc:
 
-```
+```vim
 Plug 'sirver/ultisnips'
 ```
 
@@ -23,7 +23,7 @@ Plug 'sirver/ultisnips'
 
 My configuration setting the directory and python version:
 
-```
+```vim
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
 let g:UltiSnipsUsePythonVersion = 3
 ```
@@ -34,7 +34,7 @@ Create a file in the snippet directory based on your filetype, for example `html
 
 Define an individual snippet. The following defines the `lorem` snippet. The text between the start and end is what will be inserted.
 
-```
+```vim
 snippet lorem
 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 sed do eiusmod tempor incididunt ut labore et dolore
