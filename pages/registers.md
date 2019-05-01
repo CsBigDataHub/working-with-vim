@@ -23,6 +23,8 @@ You copy items directly to named registers [a-z] by prepending your yank command
 
 If you use a capital letter, [A-Z], the same corresponding named register is used, but the content is appended to the register, not replaced.
 
+<span class="tip">📄</span> Registers are stored in `~/.viminfo` and loaded each time vim starts. So registers will persist between sessions.
+
 ## System Clipboard
 
 The `+` register is a special register for the system clipboard. You can copy from vim to your system, and paste from your system to vim.
@@ -30,4 +32,5 @@ The `+` register is a special register for the system clipboard. You can copy fr
 Use `"+yy` to copy current line to the system clipboard, and `"+p` to paste from clipboard to vim buffer.
 
 See `:help registers` for additional information about other special registers.
+
 
