@@ -35,7 +35,7 @@ Psst, don't tell the purists, but if you `set mouse=a` you can use your mouse to
 
 VISUAL mode is pretty powerful, I use it frequently since it provides feedback seeing what is selected, and then unselected after the action.
 
-<figure><video controls src="https://mkaz.blog/wp-content/uploads/2019/03/visual-mode-exs.mp4"></video><figcaption>Visual Mode example</figcaption>
+<figure><video controls src="https://mkaz.blog/wp-content/uploads/2019/05/vim-visual-mode.mp4"></video><figcaption>VISUAL Mode example</figcaption>
 </figure>
 
 <span class="tip">💡</span>After performing an action in VISUAL MODE the selection is no longer highlighted. Use `gv` to automatically reselect the area previously highlighted.
