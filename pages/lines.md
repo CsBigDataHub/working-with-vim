@@ -14,15 +14,35 @@ The line is a common enough object when editing that Vim has numerous built-in f
 
 Two shortcuts exist for copying and deleting the current line.
 
-Use `dd` to delete, and `yy` to copy the line.
+Use `dd` to delete, and `yy` to copy the current line.
 
-You could do the same using the `_` motion, so `dd` is equivalent to `d_`, however they are common enough actions that the shortcuts make it easier.
+This is the same as using the `_` motion, so `dd` is equivalent to `d_`, however they are common enough actions that the shortcuts make it easier.
 
 You can paste a deleted or yanked line elsewhere, use `p` to paste.
 
-### Delete to End of Line
 
-Another usefule shortcut is `D` deletes from your cursor to end of line. I use this all the time.
+## Misc Line Commands
+
+Here are a few other useful commands for working with lines.
+
+`D`
+: Delete from cursor to end of line
+
+`I`
+: Enter INSERT mode at start of line
+
+`A`
+: Enter INSERT mode at end of line
+
+`:N`
+: Go to line number N
+
+`gg`
+: Go to first line
+
+`G`
+: Go to last line
+
 
 ## Merge lines
 

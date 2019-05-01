@@ -7,7 +7,7 @@ order: 2
 
 # The Tao of Vim
 
-The underlying principle of Vim is the action-motion pair. You perform an action on a subject, that is defined by a motion. For example, delete a line.
+The underlying principle of Vim is the action-motion pair. You perform an action on a subject, that is defined by a motion. For example, delete a line. Delete is the action, line is the subject.
 
 You can create action-motion pairs basically in two ways.
 
@@ -15,13 +15,13 @@ You can create action-motion pairs basically in two ways.
 
 First, in NORMAL mode, you specify the action first and then the motion. For example, delete to beginning of the line. You type `d` for delete action and then `^` as the motion to the beginning of the line.
 
-If you type `^` with no action, the cursor moves to the beginning of the line. Move is the default action, so if a motion is specified with no action the cursor will move.
+If you type `^` with no action, the cursor moves to the beginning of the line. Move is the default action, so if a motion is specified with no action the cursor will move and no action performed.
 
 ## VISUAL Mode
 
 The second way of defining a pair is in VISUAL mode, you do the opposite. You specify the motion part first by selecting, and then perform the action on what is highlighted.
 
-For example, type `ctrl-v` to enter VISUAL mode, then type `^` as the motion to the beginning of the line, then type `d` to delete.
+Using same example, delete to beginning of line. Type `ctrl-v` to enter VISUAL mode, then type `^` as the motion to the beginning of the line, then type `d` to delete.
 
 This is obviously an extra step to select the text, but VISUAL mode shows you what is highlighted and being acted upon. Additionally, there is feedback when the action is complete since the selection will no longer be highlighted.
 

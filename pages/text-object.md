@@ -19,7 +19,7 @@ An example might help illustrate. To select text inside an html tag you can use 
 <figcaption> Using tag selection </figcaption>
 </figure>
 
-
+## Selection Commands
 
 `(`
 : Parentheses
@@ -29,6 +29,9 @@ An example might help illustrate. To select text inside an html tag you can use 
 
 `'`  `"`  <code>`</code>
 : Quotes and Ticks
+
+`t`
+: Tag block
 
 `w`
 : Words
@@ -48,5 +51,5 @@ For text in quotes, type `yi"` to copy the word without the quotes. If you want 
 
 <figure class="wp-block-video"><video controls src="https://mkaz.blog/wp-content/uploads/2019/03/vim-selection.mp4"></video><figcaption>Selection example</figcaption></figure>
 
-<span class="tip">💡</span> Using the inner selection motion with the cursor in the middle of a word, sentence, or paragraph to select the full object, without having to first navigate to the start.
+<span class="tip">💡</span> Use the inner selection motion with the cursor in the middle of a word, sentence, or paragraph to select the full object, without having to first navigate to the start.
 
