@@ -18,27 +18,44 @@ Here are a few of the most common motions, there are many more and plugins can d
 `e`
 : Forward to end of word
 
-`gg`
-: Top of file
-
-`G`
-: Bottom of file
-
 `fx`
-: Forward to 'x'
+: Forward to 'x' (cursor on char)
 
 `Fx`
-: Backward to 'x'
+: Backward to 'x' (cursor on char)
+
+`tx`
+: Forward to 'x' (cursor before char)
+
+`Tx`
+: Backward to 'x' (cursor before char)
+
+`;`
+: Repeat previous motion works with `f F t T`
 
 `_`
 : Current line (underscore)
 
-Practice the basic motions by just pressing the motion character, while in NORMAL mode, the cursor will move. So pressing `w` moves the cursor forward to the next word.
+Practice the basic motions by just pressing the motion character(s), while in NORMAL mode the cursor will move. So pressing `w` moves the cursor forward to the next word. You can precede any motion with a number, for example `5w` will move forward to the fifth next word.
 
-If you put an action first, it will perform that action on the motion. For example `dw` it will delete to the next word, including the space.
+When you put an action first, it will perform that action on the motion. For example `dw` will delete to the next word, this includes the space, not just the word.
 
-If you start with `v` it will highlight based on the motion in VISUAL mode, so `ve` will highlight to the end of the word.
+<span class="tip">💡</span> There are minor differences between `w` and `e`; as well as between `f` and `t`. The differences are around where the cursor ends up, this can make a big difference depending on the action. For example, `dfx` will delete forward up to and including the `x` character, whereas `dtx` will delete up to but not including the `x`.
 
-<span class="tip">💡</span> If you `p` paste with something highlighted, it will replace the highlighted section. This is extremely helpful, since deleting an item can change what is in your register you are trying to paste. See [Registers](/working-with-vim/registers/) for more.
+You can visualize the motions by starting with `v` and then the motion, it will highlight the selected area. See the difference between `ve` highlighting to the end of the word, to `vw` highlighting to the next word.
 
-<figure class="wp-block-video"><video controls src="https://mkaz.blog/wp-content/uploads/2019/03/copy-vis-paste.mp4"></video></figure>
+## Window Motions
+
+Here are a set of less commonly used window motions. They can be quite useful to quickly jump to different sections of the visible window. See help on each for exact definition and options.
+
+`H`
+: High, jump to top of window
+
+`M`
+: Middle, jump to middle of window
+
+`L`
+: Low, jump to bottom of window
+
+`zz`
+: Window is centered on line, cursor does not jump
