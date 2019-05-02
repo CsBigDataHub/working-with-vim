@@ -12,10 +12,8 @@ order: 7
 An example might help illustrate. To select text inside an html tag you can use the tag text object `t`. With your cursor between the tags, use `v` to enter visual mode, `i` for inner, `t` for tag. So `vit` will select interior content between two tags. Use `vat` to select content with tags.
 
 
-<figure class="wp-block-video" style="width:100%">
-<video controls>
-    <source src="https://mkaz.blog/wp-content/uploads/2019/04/tag-text-object.mp4" type="video/mp4"></source>
-</video>
+<figure class="wp-block-video">
+<video controls src="https://mkaz.blog/wp-content/uploads/2019/05/vim-tag-select.mp4"></video>
 <figcaption> Using tag selection </figcaption>
 </figure>
 
