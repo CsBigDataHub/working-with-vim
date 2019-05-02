@@ -19,7 +19,7 @@ Here are a some basic actions, combine with [motions](/working-with-vim/basic-mo
 : Put (paste)
 
 `c`
-: Change delete and enters INSERT mode
+: Change, deletes and enters INSERT mode
 
 <span class="tip">💡</span> Use `p` paste with something highlighted to replace the highlighted section. This is extremely helpful, since deleting an item can change what is in your register you are trying to paste. See [Registers](/working-with-vim/registers/) for more.
 
