@@ -63,9 +63,11 @@ A mapping entry consists of `[map-mode] {lhs} {rhs}` which simply stands for lef
 
 The mapping translates what you typed on the left-hand side to the mapped keys on the right-hand side. The right-hand side is just a set of keys you might of typed.
 
-It is a good best practice to use the `noremap` version to not allow recursive remapping of the `{rhs}`. This avoids potential issues with other definitions or plugins.
+It is a good best practice to use the `noremap` version to not allow recursive remapping of the `{rhs}` unless you need it. This avoids potential issues with other definitions or plugins. You need recursion if the `{rhs}` is also a mapping, see quote example below.
 
 It is also recommended to use `xmap` instead of `vmap` for VISUAL mode, unless there is a specifc reason to need the mapping also in select mode.
+
+### Example Mapping
 
 Here is an example mapping for NORMAL mode to add a semi-colon to the end of the current line.
 
@@ -73,11 +75,15 @@ Here is an example mapping for NORMAL mode to add a semi-colon to the end of the
 nnoremap <Leader>; g_a;<Esc>
 ```
 
-The `nnoremap` specifies the mapping for NORMAL mode, non-recursive. The next part is the command to type `<Leader>;` which for my leader defintion is `,;` The next part is the command you would type to achieve the results.
+The first part is the map mode `nnoremap`. This specifies it is a mapping for NORMAL mode, non-recursion.
+
+The `{lhs}` is the next part, the command to type. `<Leader>;` for my leader defintion is `,;`
+
+The final part is the command the mapping will execute, this is exactly what you would type to achieve the results.
 
 In this case `g_` moves to the last non-whitespace character on the line. The `a` enters INSERT mode after the cursor, and `;` adds the semi-colon. Finally, I add `<Esc>` to return to NORMAL mode.
 
-A mapping just duplicates what you would type in the editor. With that mapping line set in my `.vimrc`, all I need to do to add a semi-colon on end of line is type `,;` in NORMAL mode.
+A mapping just duplicates what you would type in the editor. With that mapping line set in my `.vimrc`, all I need to do is type `,;` to add a semi-colon on end of line in NORMAL mode.
 
 ### Instant Quotes
 
