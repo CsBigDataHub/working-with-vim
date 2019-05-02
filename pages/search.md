@@ -36,7 +36,7 @@ Search results remain highlighted after a search, the following maps `<Leader><S
 nmap <silent> <Leader><Space> :nohlsearch<CR>
 ```
 
-You can also try out the [vim-slash plugin](https://github.com/junegunn/vim-slash) which clears highlighting when cursor is moved.
+Try out the [vim-slash plugin](https://github.com/junegunn/vim-slash) to clear highlighting automatically when the cursor is moved. This works pretty nicely, though additional changes the `*` search.
 
 I setup the shortcut above to clear, but since installing vim-slash plugin, I use it less frequently, the plugin ends up clearing it most of the time, so the plugin may be all you need.
 
