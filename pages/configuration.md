@@ -65,7 +65,7 @@ The mapping translates what you typed on the left-hand side to the mapped keys o
 
 It is a good best practice to use the `noremap` version to not allow recursive remapping of the `{rhs}` unless you need it. This avoids potential issues with other definitions or plugins. You need recursion if the `{rhs}` is also a mapping, see quote example below.
 
-It is also recommended to use `xmap` instead of `vmap` for VISUAL mode, unless there is a specifc reason to need the mapping also in select mode.
+I recommend using `xmap` instead of `vmap` for VISUAL mode, unless there is a specific reason to need the mapping also in select mode. This can also avoid potential conflicts.
 
 ### Example Mapping
 
@@ -77,7 +77,7 @@ nnoremap <Leader>; g_a;<Esc>
 
 The first part is the map mode `nnoremap`. This specifies it is a mapping for NORMAL mode, non-recursion.
 
-The `{lhs}` is the next part, the command to type. `<Leader>;` for my leader defintion is `,;`
+The `{lhs}` is the next part, the command to type. `<Leader>;` for my leader definition is `,;`
 
 The final part is the command the mapping will execute, this is exactly what you would type to achieve the results.
 
@@ -128,7 +128,7 @@ Here is a common usage, setting a parameter based on the type of file. In this c
 autocmd FileType php set noexpandtab
 ```
 
-If your vim config is sourced after loading, the autocmds will repeat and can double up the actions. It is recommended you use `augroup` to group together your set of autocmds in a block. By running `autocmd!` in that block it removes previous set commands.
+If your vim config is sourced after loading, the autocmds will repeat and can double up the actions. I recommend using `augroup` to group together your set of autocmds in a block. You can then run `autocmd!` in that block to remove previously set commands.
 
 Here is a simplified example from my config
 
