@@ -18,6 +18,10 @@ Here are a some basic actions, combine with [motions](/working-with-vim/basic-mo
 `p`
 : Put (paste)
 
+`c`
+: Change delete and enters INSERT mode
+
+<span class="tip">💡</span> Use `p` paste with something highlighted to replace the highlighted section. This is extremely helpful, since deleting an item can change what is in your register you are trying to paste. See [Registers](/working-with-vim/registers/) for more.
 
 ## Undo / Redo
 
@@ -49,7 +53,5 @@ Press `.` to repeat the last command.
 
 If you start with a number and then command it executes the command that many times. For example, if you want to delete three lines, `3dd`
 
-<figure class="wp-block-video">
-<video controls src="https://mkaz.blog/wp-content/uploads/2019/03/vim-quickies.mp4"></video><figcaption>Quickies example</figcaption></figure>
 
-
+<figure class="wp-block-video"><video controls src="https://mkaz.blog/wp-content/uploads/2019/03/copy-vis-paste.mp4"></video><figcaption>Copy-Paste Example</figcaption></figure>
