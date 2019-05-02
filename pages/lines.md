@@ -20,10 +20,21 @@ This is the same as using the `_` motion, so `dd` is equivalent to `d_`, however
 
 You can paste a deleted or yanked line elsewhere, use `p` to paste.
 
-
 ## Misc Line Commands
 
 Here are a few other useful commands for working with lines.
+
+`0`
+: Go to first column
+
+`^`
+: Go to first printable character
+
+`$`
+: Go to end of line
+
+`g_`
+: Go to last printable character
 
 `D`
 : Delete from cursor to end of line
@@ -34,14 +45,14 @@ Here are a few other useful commands for working with lines.
 `A`
 : Enter INSERT mode at end of line
 
-`:N`
-: Go to line number N
+`:32` or `32G`
+: Go to line number 32
 
 `gg`
-: Go to first line
+: Go to first line in buffer
 
 `G`
-: Go to last line
+: Go to last line in buffer
 
 
 ## Merge lines
@@ -80,3 +91,4 @@ nmap <C-Down> :m  .+1<CR>
 vnoremap <silent> <C-Up>  @='"zxk"zP`[V`]'<CR>
 vnoremap <silent> <C-Down>  @='"zx"zp`[V`]'<CR>
 ```
+
