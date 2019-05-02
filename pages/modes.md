@@ -42,9 +42,9 @@ VISUAL mode is pretty powerful, I use it frequently since it provides feedback s
 
 ## Command-line Mode
 
-One other mode to mention is Command-line mode. You enter this mode by typing `:` while in NORMAL or VISUAL mode. This places your cursor at the bottom of the screen, on the single command-line, ready for you to type the command.
+Another mode to mention is Command-line mode. You enter by typing `:` while in NORMAL or VISUAL mode. This places your cursor at the bottom command-line, ready for you to type a command.
 
-The majority of ways to exit command-line mode is issuing a command, however you can exit without typing a command by typing `Esc Esc`
+Typically you exit command-line mode by issuing a command, however you can exit without a command by typing `Esc Esc`
 
-Command-line also maintains a history of previous commands, after typing `:` use the up arrow key, similar to bash, to see previous commands.
+A history of previous commands is kept, use the up arrow key after typing `:` to see previous commands, similar to bash. This is stored in .viminfo so persists between sessions.
 
