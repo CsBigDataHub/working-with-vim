@@ -37,39 +37,61 @@ command Edrc edit $MYVIMRC
 
 You can map a set of key commands to another set. This allows you to create a simpler shortcut for a more complex set of keys. Mapping is modal, you need to tell vim what MODE you want the mapping to work.
 
-Use `map` for normal and visual modes, `nmap` for mapping to work in just NORMAL mode, and use `vmap` for mapping to work in just VISUAL mode.
+`nmap` or `nnoremap`
+: just normal mode
 
-<span class="sidenote">See `:help map-commands` for additional commands for less common modes.</span>
+`imap` or `inoremap`
+: insert mode
+
+`vmap` or `vnoremap`
+: visual and select mode
+
+`xmap` or `xnoremap`
+: just visual mode
+
+`cmap` or `cnoremap`
+: command-line mode
+
+`tmap` or `tnoremap`
+: terminal mode
+
+`map` or `noremap`
+: normal, visual, and select modes
+
 
 A mapping entry consists of `[map-mode] {lhs} {rhs}` which simply stands for left and right hand sides.
 
 The mapping translates what you typed on the left-hand side to the mapped keys on the right-hand side. The right-hand side is just a set of keys you might of typed.
 
-It is a good best practice to use `noremap` instead of just `map` which means to not allow recursive remaping of the `{rhs}` of to avoid potential issues with other definitions or plugins.
+It is a good best practice to use the `noremap` version to not allow recursive remapping of the `{rhs}`. This avoids potential issues with other definitions or plugins.
 
-Here is an example mapping to add a semi-colon to the end of the current line.
+It is also recommended to use `xmap` instead of `vmap` for VISUAL mode, unless there is a specifc reason to need the mapping also in select mode.
+
+Here is an example mapping for NORMAL mode to add a semi-colon to the end of the current line.
 
 ```vim
-noremap <Leader>; g_a;<Esc>
+nnoremap <Leader>; g_a;<Esc>
 ```
 
-The command `g_` moves to the last non-whitespace character on the line. The `a` puts you in insert mode after the cursor. `;` adds the semi-colon. `<Esc>` returns to NORMAL mode.
+The `nnoremap` specifies the mapping for NORMAL mode, non-recursive. The next part is the command to type `<Leader>;` which for my leader defintion is `,;` The next part is the command you would type to achieve the results.
 
-The mapping duplicates what you would type in the editor. With the mapping set in my .vimrc, to add a semi-colon on end of line I simply type `,;` in normal mode.
+In this case `g_` moves to the last non-whitespace character on the line. The `a` enters INSERT mode after the cursor, and `;` adds the semi-colon. Finally, I add `<Esc>` to return to NORMAL mode.
+
+A mapping just duplicates what you would type in the editor. With that mapping line set in my `.vimrc`, all I need to do to add a semi-colon on end of line is type `,;` in NORMAL mode.
 
 ### Instant Quotes
 
-An example mapping to wrap a word in single or double quotes.
+An example mapping to wrap a word in single or double quotes. This uses the [vim-surround plugin](https://github.com/tpope/vim-surround) an example that needs to be recursive.
 
 ```vim
 " Surround with Quote
-map <Leader>' ysiw'
-map <Leader>" ysiw"
+nmap <Leader>' ysiw'
+nmap <Leader>" ysiw"
 ```
 
 ### Toggle Whitespace
 
-An example mapping to toggle visible whitespace.
+An example mapping to toggle visible whitespace, the `!` is used as a toggle.
 
 ```vim
 " toggle show whitespace
