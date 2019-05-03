@@ -41,7 +41,7 @@ An example might help illustrate. To select text inside an html tag you can use 
 : Paragraphs
 
 
-Combine the text objects with actions. For example, to copy the arguments in a function use `yi(`
+Combine the text objects with operators. For example, to copy the arguments in a function use `yi(`
 
 If you want delete a block of code in a `{ ... }` with your cursor inside the block, type `di{`
 

@@ -15,7 +15,7 @@ The numbered registers `0-9` keep a stack of recently copied or deleted text.
 
 To paste an item from a register you use `"{reg}p`. For example, to paste an item from register `0`, you use: `"0p`
 
-<span class="tip">💡</span> Use `"0p` for paste copied content that accidentally got replaced because of a delete action after your copy. Deleting text automatically goes into `""` register, replacing any copied text you had there. The original copied text is stil there in register `0` so use `"0p` to paste.
+<span class="tip">💡</span> Use `"0p` for paste copied content that accidentally got replaced because of a delete after a copy. Deleted text automatically goes to `""` register. This replaces any copied text there. The original copied text is register `0` so use `"0p` to paste.
 
 ## Named Registers
 

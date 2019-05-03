@@ -21,15 +21,21 @@ Be NORMAL.
 
 ## VISUAL Mode
 
-You can highlight multiple lines using `V`.  Press `V` in NORMAL mode, and the whole line will be highlighted and you will be in VISUAL mode, as you move up or down it will highlight other lines.
+`v`
+: Enter VISUAL mode (character)
 
-<span class="sidenote">When I use a capital letter, you use a capital letter. Capital. Capital.</span>
+`V`
+: Enter VISUAL LINE mode (line)
 
-The `shift-v`, aka capital V, is VISUAL LINE mode, selecting whole lines at once.
+`ctrl-v v`
+: Enter VISUAL BLOCK mode (column)
 
-If you type `ctrl-v` it is VISUAL BLOCK mode, it selects by characters.
 
-Press `ctrl-v` and move around to select things, try left or right movements to see by character. You can also use `ctrl-v` to do fancy multi-cursor things, see video example below.
+Press `v` in NORMAL mode to enter VISUAL mode. In VISUAL mode any cursor movement, or defined motion will select text as it moves. You can operate on just this highlighted area.
+
+Press `V` in NORMAL mode, and the whole line is selected, this is VISUAL LINE mode. Any movement up or down will select by line.
+
+Press `ctrl-v` for VISUAL BLOCK mode. Moving will select by a block region, not the entire line. This allows for operating on columns of text, see video example below.
 
 Psst, don't tell the purists, but if you `set mouse=a` you can use your mouse to highlight things too.
 
@@ -38,7 +44,7 @@ VISUAL mode is pretty powerful, I use it frequently since it provides feedback s
 <figure><video controls src="https://mkaz.blog/wp-content/uploads/2019/05/vim-visual-mode.mp4"></video><figcaption>VISUAL Mode example</figcaption>
 </figure>
 
-<span class="tip">💡</span>After performing an action in VISUAL MODE the selection is no longer highlighted. Use `gv` to automatically reselect the area previously highlighted.
+<span class="tip">💡</span>After performing an operation in VISUAL MODE the selection is no longer highlighted. Use `gv` to automatically reselect the area previously highlighted.
 
 ## Command-line Mode
 

@@ -7,7 +7,7 @@ order: 6
 
 # Working with Lines
 
-The line is a common enough object when editing that Vim has numerous built-in functions and features to operate specifically on lines.
+The line is a common object to work with when editing that Vim has numerous built-in functions and features to operate specifically on lines.
 
 
 ## Copy / Delete Lines

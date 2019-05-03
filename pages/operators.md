@@ -1,13 +1,13 @@
 ---
-title: Basic Actions
+title: Operators
 parent: 1497
 template: page-tut.php
 order: 5
 ---
 
-# Basic Actions
+# Operators
 
-Here are a some basic actions, combine with [motions](/working-with-vim/basic-motions/) to define and perform action:
+Here are a some basic operators, combine these with [motions](/working-with-vim/basic-motions/) to edit text:
 
 `y`
 : Yank (copy)
@@ -23,9 +23,11 @@ Here are a some basic actions, combine with [motions](/working-with-vim/basic-mo
 
 <span class="tip">💡</span> Use `p` paste with something highlighted to replace the highlighted section. This is extremely helpful, since deleting an item can change what is in your register you are trying to paste. See [Registers](/working-with-vim/registers/) for more.
 
+<figure class="wp-block-video"><video controls src="https://mkaz.blog/wp-content/uploads/2019/03/copy-vis-paste.mp4"></video><figcaption>Copy-Paste Example</figcaption></figure>
+
 ## Undo / Redo
 
-Use `u` for undo, and `ctrl-r` for redo. No motion required, just press the keys.
+Use `u` for undo, and `ctrl-r` for redo. No motion required, just press the keys in NORMAL or VISUAL mode.
 
 
 ## Uppercase & Lowercase
@@ -42,9 +44,9 @@ For example, use `shift-v` to select a line, use arrows or other motions to expa
 Use `<<` and `>>` to shift using a count. For example `5>>` will shift 5 lines once to the right. If you want to shift more use `.` to repeat the command.
 
 
-## Formatting
+### Auto Indent
 
-The `=` command will automatically format text based on internal formatting rules for the language, or as defined by a plugin. The typical way I use is highlight the section I want using VISUAL mode and then pressing `=` to format.
+<span class="sidenote">See `:help =` </span> The `=` command will automatically indent text based on internal formatting, or as defined by a plugin for the language. The typical way I use is to highlight the section I want to automatically indent using VISUAL mode, and then press `=` to format.
 
 
 ## Repeat That
@@ -53,5 +55,15 @@ Press `.` to repeat the last command.
 
 If you start with a number and then command it executes the command that many times. For example, if you want to delete three lines, `3dd`
 
+## Single Character Operators
 
-<figure class="wp-block-video"><video controls src="https://mkaz.blog/wp-content/uploads/2019/03/copy-vis-paste.mp4"></video><figcaption>Copy-Paste Example</figcaption></figure>
+`rX`
+: Replace character under cursor with `X`
+
+`x`
+: Delete character under cursor
+
+`~`
+: Toggle case for character under cursor
+
+
