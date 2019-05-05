@@ -20,9 +20,9 @@ This is the same as using the `_` motion, so `dd` is equivalent to `d_`, however
 
 You can paste a deleted or yanked line elsewhere, use `p` to paste.
 
-## Misc Line Commands
+Another useful shortcut is `D`, deletes from cursor to end of line, equivalent to `d$`
 
-Here are a few other useful commands for working with lines.
+## Line Motions
 
 `0`
 : Go to first column
@@ -36,15 +36,6 @@ Here are a few other useful commands for working with lines.
 `g_`
 : Go to last printable character
 
-`D`
-: Delete from cursor to end of line
-
-`I`
-: Enter INSERT mode at start of line
-
-`A`
-: Enter INSERT mode at end of line
-
 `:32` or `32G`
 : Go to line number 32
 
@@ -54,6 +45,20 @@ Here are a few other useful commands for working with lines.
 `G`
 : Go to last line in buffer
 
+
+## Line INSERT mode
+
+`I`
+: Enter INSERT mode at start of line
+
+`A`
+: Enter INSERT mode at end of line
+
+`o`
+: Add new line below, enter INSERT mode
+
+`O`
+: Add new line above, enter INSERT mode
 
 ## Merge lines
 
