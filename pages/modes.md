@@ -7,14 +7,13 @@ order: 1
 
 # Modes
 
-Vim is a modal editor, this simply means it has different modes of operations. The main modes are NORMAL, INSERT, and VISUAL mode.
-<span class="sidenote">I capitalize the modes because vim does, I'm not shouting them.</span>
+Vim is a modal editor, this simply means it has different modes of operations. The main modes are NORMAL, INSERT, and VISUAL mode. <span class="sidenote">I capitalize the modes because vim does, I'm not shouting them.</span> Commands are based on what mode you are in, the majority are used while in NORMAL mode.
 
 ## NORMAL Mode
 
 First up, I don't really like telling people what to do, no vim shaming here. I use arrow keys. Use arrows keys. They are great keys with labels and everything. I do have one recommendation, <strong>make NORMAL mode your default mode</strong>. I mash the Esc key often to constantly return to NORMAL mode. Every time I finish an edit I hit Esc.
 
-There is a reason it is called NORMAL mode, it is the mode where you can do all the extra vim stuff. INSERT mode is just typing text, any editor can do that.
+There is a reason it is called NORMAL mode, it is the mode where you can do all the extra vimmy stuff. INSERT mode is just typing text, any editor can do that.
 
 Be NORMAL.
 
@@ -52,5 +51,5 @@ Another mode to mention is Command-line mode. You enter by typing `:` while in N
 
 Typically you exit command-line mode by issuing a command, however you can exit without a command by typing `Esc Esc`
 
-A history of previous commands is kept, use the up arrow key after typing `:` to see previous commands, similar to bash. This is stored in .viminfo so persists between sessions.
+A history of previous commands is kept, use the up arrow key after typing `:` to see previous commands, similar to bash. This is stored in `.viminfo` so persists between sessions.
 
