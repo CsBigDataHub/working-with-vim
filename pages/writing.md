@@ -74,5 +74,17 @@ Here are a set of the most common examples, see `:help digraphs-default` for a m
 `:`
 : Diaeresis `ä ë ö ü`
 
-You can see the full table of all digraphs using `:digraphs`
+## Extended ASCII
 
+Digraphs are also used beyond accents, they include extended ASCII characters. Here are a few fun ones.
+
+`0u` and `0U`
+: ☺ and ☻
+
+`*1` and `*2`
+: ☆ and ★
+
+`OK` and `XX`
+: ✓ and ✗
+
+See the full table of all digraphs using `:digraphs`
