@@ -7,13 +7,12 @@ order: 8
 
 # Search
 
-A few different ways to search within a single buffer.
-
 
 ## Quick Search
 
-<span class="sidenote">See `:help *`</span>
-Use `*` and `#` to navigate to the word under the cursor, `*` forward and `#` backwards. I'll use this to check the spelling of variables, by using `*` on a variable it highlights all the words spelled the same. A nice quick way to check for misspellings.
+<span class="sidenote">See `:help *`</span> Use `*` and `#` to navigate to the word under the cursor, `*` forward and `#` backwards. This searches within the current uffer.
+
+I'll use this to check the spelling of variables, by using `*` on a variable it highlights all the words spelled the same. A nice quick way to check for misspellings.
 
 <figure class="wp-block-video"><video controls src="https://mkaz.blog/wp-content/uploads/2019/03/vim-star-nav.mp4"></video><figcaption>Quick Search Examples</figcaption></figure>
 
@@ -40,3 +39,40 @@ Try out the [vim-slash plugin](https://github.com/junegunn/vim-slash) to clear h
 
 I setup the shortcut above to clear, but since installing vim-slash plugin, I use it less frequently, the plugin ends up clearing it most of the time, so the plugin may be all you need.
 
+## Multiple Files
+
+<span class="sidenote">See `:help vimgrep`</span> Use `:vimgrep /pattern/ {file}` to search across multiple files.
+
+For example: `:vimgrep /TODO/ *.go` would search all files with go extension for the text TODO.
+
+Use `:cn` to jump to next match.
+
+Use `:cp` to jump to previous match.
+
+Use `:copen` to open list of matches in quickfix window
+
+You can use `**/*.go` or `**/*` to recursively search through directories.
+
+### Ripgrep and FZF
+
+The `:vimgrep` works ok, but a bit verbose and not as smart for searching code, I prefer to use [ripgrep](https://github.com/BurntSushi/ripgrep) for search and [fzf](https://github.com/junegunn/fzf) for fuzzy matching. Ripgrep by default ignores items in .gitignore, binary, and other bits, and easy to configure how you want.
+
+See my [Unix is my IDE](https://mkaz.blog/code/unix-is-my-ide/) for the full setup. Installing and using both are a bit easier now that binaries are included in recent package repostiories.
+
+I use these two plugins for `fzf`. The first provides basic support, and the second provides some useful and common mappings using the basic support.
+
+```vim
+Plug 'junegunn/fzf',  { 'dir': '~/.fzf' }
+Plug 'junegunn/fzf.vim'               " fuzzy search
+```
+
+I then configure a custom `:Find` command to use fzf and ripgrep to perform a search.
+
+```vim
+" use ripgrep for finding text
+noremap <Leader>f :Find<space>
+command! -bang -nargs=* Find call fzf#vim#grep(
+    \ 'rg --column --line-number --no-heading
+    \ --fixed-strings --ignore-case --hidden --follow
+    \ --color "always" '.shellescape(<q-args>), 1, <bang>0)
+```
