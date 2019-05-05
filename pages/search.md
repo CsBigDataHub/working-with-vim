@@ -10,7 +10,7 @@ order: 8
 
 ## Quick Search
 
-<span class="sidenote">See `:help *`</span> Use `*` and `#` to navigate to the word under the cursor, `*` forward and `#` backwards. This searches within the current uffer.
+<span class="sidenote">See `:help *`</span> Use `*` and `#` to navigate to the word under the cursor, `*` forward and `#` backwards. This searches within the current buffer.
 
 I'll use this to check the spelling of variables, by using `*` on a variable it highlights all the words spelled the same. A nice quick way to check for misspellings.
 
