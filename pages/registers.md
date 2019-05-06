@@ -9,7 +9,7 @@ order: 12
 
 Vim stores the list of yanked or deleted text in a set of registers. To see what is stored across all registers use the `:reg` command.
 
-The `""` register has no name, it is most similar to the clipboard. Whatever is copied or deleted is placed in the `""` register automatically.
+The `""` register has no name, it is similar to the clipboard. Whatever is copied or deleted is placed in the `""` register automatically.
 
 The numbered registers `0-9` keep a stack of recently copied or deleted text.
 
@@ -31,6 +31,7 @@ The `+` register is a special register for the system clipboard. You can copy fr
 
 Use `"+yy` to copy current line to the system clipboard, and `"+p` to paste from clipboard to vim buffer.
 
-See `:help registers` for additional information about other special registers.
+For system clipboard, Vim requires the clipboard support to be compiled in. Check for clipboard support using `:echo has('clipboard')` if the result is `0` than your version does not have it compiled. For Linux, try install `vim-gtk` or similar package. Neovim has clipboard support by default, but requires `xclip` or `xsel` to be installed.
 
+See `:help registers` for additional information about other special registers.
 

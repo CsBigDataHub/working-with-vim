@@ -51,5 +51,5 @@ nnoremap Q :bd!<CR>           " close buffer
 nnoremap ; :Buffers<CR>       " browse buffers
 ```
 
-The `:Buffers` command is slightly different and comes from the [fzf.vim plugin](https://github.com/junegunn/fzf.vim). See my article [Unix is my IDE](https://mkaz.blog/code/unix-is-my-ide/) for an explanation on how I setup vim using fzf and ripgrep for advanced searching, which includes this quick way to switch buffers using fzf.
+The `:Buffers` command above is slightly different and comes from the [fzf.vim plugin](https://github.com/junegunn/fzf.vim). See my article [Unix is my IDE](https://mkaz.blog/code/unix-is-my-ide/) for an explanation on how I setup vim using fzf and ripgrep for advanced searching, which includes this quick way to switch buffers using fzf.
 

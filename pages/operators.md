@@ -44,9 +44,9 @@ For example, use `shift-v` to select a line, use arrows or other motions to expa
 Use `<<` and `>>` to shift using a count. For example `5>>` will shift 5 lines once to the right. If you want to shift more use `.` to repeat the command.
 
 
-### Auto Indent
+### Formatting
 
-<span class="sidenote">See `:help =` </span> The `=` command will automatically indent text based on internal formatting, or as defined by a plugin for the language. The typical way I use is to highlight the section I want to automatically indent using VISUAL mode, and then press `=` to format.
+<span class="sidenote">See `:help =` </span> The `=` command will indent text based on internal formatting rules, or as defined by a plugin for the language. The typical way I use is to highlight the section I want to format using VISUAL mode, and then press `=` to format.
 
 
 ## Repeat That

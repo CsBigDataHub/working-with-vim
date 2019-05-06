@@ -18,7 +18,7 @@ Your muscle memory may want settings or mappings to use a different set of keys;
 
 ## Leader
 
-First, the `<Leader>` is a special key intended to be used for user definitions. So any setting of it will not conflict with other default vim commands. By default the leader key is `\` but it is common to map it to `,` which I do. Set leader character using:
+First, the `<Leader>` is a special variable intended to be used for user definitions. Using a leader to prefix a command will help avoid conflicts with other default vim commands, though this depends on what you set your leader variable to. By default the leader key is `\` but it is common to map it to `,` which I do. You set the `<Leader>` variable using:
 
 ```vim
 let mapleader=","

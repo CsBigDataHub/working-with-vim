@@ -13,9 +13,13 @@ Type `:help [command]` to see help for any command. For example, `:help gg` will
 
 Help opens in a new window split horizontally, see [Windows section](/working-with-vim/windows/) for working with windows.
 
-You can close the window split using `ctrl-w c` or `:bd`
+You can close the window split using `ctrl-w c` or `:close`
 
-To make help the only window, use `ctrl-w o` this removes the split but does not close help. You then can close the help buffer using `:bd`.
+To make help the only window, use `ctrl-w o` this removes the split but does not close help or your original buffer. If you close the help buffer using `:bd`, vim will switch back to your original buffer.
 
-Help is a read-only buffer. You can navigate, highlight, copy, paste, and do the same as any other buffer, except edit. See [Buffers section](/working-with-vim/buffers/) for more on working with buffers.
+Help is simply a read-only buffer. You can navigate, highlight, copy, paste, search, and do any vim things as any other buffer, except edit. See [Buffers section](/working-with-vim/buffers/) for more on working with buffers.
+
+## Navigate Help Tags
+
+The help pages include tags to other help sections, depending on your colorscheme it might be blue. With your cursor on an item type `ctrl-]` to jump to that definition. This actually works for any words in help.
 

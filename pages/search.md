@@ -16,7 +16,7 @@ I'll use this to check the spelling of variables, by using `*` on a variable it 
 
 <figure class="wp-block-video"><video controls src="https://mkaz.blog/wp-content/uploads/2019/03/vim-star-nav.mp4"></video><figcaption>Quick Search Examples</figcaption></figure>
 
-## Regex Motions
+## Search Motions
 
 Use `/term` to move forward to next "term", and use `?term` to move backwards to previous "term".
 
@@ -66,13 +66,6 @@ Plug 'junegunn/fzf',  { 'dir': '~/.fzf' }
 Plug 'junegunn/fzf.vim'               " fuzzy search
 ```
 
-I then configure a custom `:Find` command to use fzf and ripgrep to perform a search.
+I then configure a custom shortcut `<Leader>f` to use the fzf provided `:Rg` command to perform a search. Results are opened in a quickfix window and can be narrowed by typing additional in the window. Use arrow keys to navigate to result, enter to open. You can use `<tab>` to select multiple items.
 
-```vim
-" use ripgrep for finding text
-noremap <Leader>f :Find<space>
-command! -bang -nargs=* Find call fzf#vim#grep(
-    \ 'rg --column --line-number --no-heading
-    \ --fixed-strings --ignore-case --hidden --follow
-    \ --color "always" '.shellescape(<q-args>), 1, <bang>0)
-```
+See `:help fzf-vim-commands` for more.
