@@ -2,7 +2,7 @@
 title: The Tao of Vim
 parent: 1497
 template: page-tut.php
-order: 2
+order: 3
 ---
 
 # The Tao of Vim
