@@ -21,7 +21,7 @@ If you type `^` with no operator, the cursor moves to the beginning of the line.
 
 The second way of defining a pair is in VISUAL mode, you do the opposite. You specify the motion part first by selecting, and then specify the operator for what is highlighted.
 
-Using same example, delete to beginning of line. Type `ctrl-v` to enter VISUAL mode, then type `^` as the motion to the beginning of the line, then type `d` to delete.
+Using same example, delete to beginning of line. Type `v` to enter VISUAL mode, then type `^` as the motion to the beginning of the line, then type `d` to delete.
 
 This is obviously an extra step to select the text, but VISUAL mode shows you what is highlighted and being acted upon. Additionally, there is feedback when the operator is complete since the selection will no longer be highlighted.
 
@@ -31,4 +31,5 @@ I find the feedback useful, particularly when copying.
 
 For example, copying a whole buffer using VISUAL mode: Type `gg` to move to the top of the file, `shift-v` to enter VISUAL LINE Mode, and then `G` will move to end of file selecting all the lines. With the subject highlighted, use `y` to copy.
 
+<figure><asciinema-player src="/a/casts/vim/tao.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>VISUAL mode feedback comparison</figcaption></figure>
 
