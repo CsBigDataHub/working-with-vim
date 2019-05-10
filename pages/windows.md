@@ -36,7 +36,7 @@ As mentioned above windows are viewports into buffers. So a window is a differen
 `ctrl-w c`
 : Close window, leave buffer
 
-`ctrl-w o`
+`ctrl-w o` or `:only`
 : Only one window, closes down to just one
 
 To navigate between open windows use `ctrl-w [hjkl]` or `ctrl-w [arrows]` mapping to the same directions used to navigate.
