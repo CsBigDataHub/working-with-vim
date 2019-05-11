@@ -69,7 +69,7 @@ The `noremap` command prevents recurisve remapping which can lead to errors if t
 
 If your `{rhs}` relies on a mapping defined elsewhere, for example a plugin, you will need to use the `map` version without the `noremap`, see the quote example below.
 
-I recommend using `xmap` instead of `vmap` for VISUAL mode, unless there is a specific reason to need the mapping also in select mode. This can also avoid potential conflicts.
+It is also a good idea to use `xmap` instead of `vmap` for VISUAL mode. The `xmap` applies only to VISUAL mode, where as `vmap` also includes SELECT mode. It is best to limit the scope of a mapping to avoid potential conflicts.
 
 ### Example Mapping
 
