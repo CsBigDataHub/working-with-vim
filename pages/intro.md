@@ -13,7 +13,7 @@ First, a **buffer** is a file loaded into memory for editing. The stored file is
 
 A **window** is a viewport onto a buffer. There is always one window and one buffer, typically they are 1:1, one buffer open in one window.
 
-As you'll see you can have multiple buffers and/or multiple windows open at the same time. See the [Buffers](/working-with-vim/buffers/) and [Windows](/working-with-vim/windows/) sections for more on each.
+You can have multiple buffers and/or multiple windows open at the same time. See the [Buffers](/working-with-vim/buffers/) and [Windows](/working-with-vim/windows/) sections for more on each.
 
 ## Exiting Vim
 
@@ -43,7 +43,7 @@ There are a meme of jokes about exiting Vim, the truth is once you grok using vi
 `:qa!`
 : Quit all files, without save
 
-As you can see, there are numerous ways to exit. I find using either `ZZ` or `:x` the preferred way because it will not change the file's modified time if no changes were made.
+Yes, there are numerous ways to exit. I find using either `ZZ` or `:x` my preferred way because it will not change the file's modified time if no changes were made.
 
-Vim tries to save you from yourself, if there are multiple files open with changes, it will not exit. You must explictly use one of the `!` commands or save the changes first.
+Vim will try to protect you from yourself, if there are multiple files open with changes, it will not exit. You must explictly use one of the `!` commands or save the changes first.
 
