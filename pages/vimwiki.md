@@ -19,7 +19,7 @@ Install the plugin using `vim-plug`
 Plug 'vimwiki/vimwiki'
 ```
 
-I configure VimWiki to a specific directory which I sync across devices. I set the syntax to markdown and some formatting that I prefer for the wiki.
+I configure VimWiki to a specific directory which I sync across devices. VimWiki stores everything in plain text files. I use the markdown syntax, the default markup is similar but just different enough that I need to configure it to markdown.
 
 ```vim
 " Vim Wiki
@@ -29,19 +29,19 @@ au FileType vimwiki setlocal shiftwidth=6 tabstop=6 noexpandtab
 
 ## Usage
 
-The basic usage is typing `<Leader>ww` opens your index file, one will be created for you if it does not already exist.
+The basic usage is typing `<Leader>ww` to open your index file, one will be created if it does not already exist.
 
-This can be an instant scratch pad to take whatever notes that you want. You can create additional links to new wiki files by insert `[[LinkText]]` or by placing your cursor over a word in NORMAL mode and pressing enter.
+This can be an instant scratch pad to take whatever notes that you want. You can create additional files by insert a links and navigating to it. 
 
-Once a link is created, navigate to the new page by placing your cursor over the word and pressing enter. This will open (create if needed) the linked page.
+Insert a link by surrounding text with double-brackes, for example `[[LinkText]]`.  Once a link is created, navigate to the new page by placing your cursor over the word and pressing enter. This will open, creating the file if needed, the linked page.
 
-You can create pages for any list, tasks, info, notes, or whatever you want.
+Create pages for any list, tasks, info, notes, or for whatever you want.
 
 ## Todo Lists
 
 VimWiki has a few built-in types and features. One of which is a todo list features. You can create a list of items that can be checked off using the syntax:
 
-```
+```md
 - [ ] Write Vim Lessons
 - [ ] Edit Vim Lessons
 - [ ] Publish
@@ -51,12 +51,21 @@ You can add a checkbox using `ctrl-<Space>`, use `gl<Space>` to remove checkbox.
 
 To toggle an item complete use `ctrl-<Space>` with your cursor on the line you want to toggle. Todo lists also work for nested items, simply indent the item. Vim folding works with nested lists. Toggling will also mark all sub-items.
 
-For an item that might be partially complete, use `gln` to toggle forward completion levels, and use `glp` to toggle backwards completion levels. Levels progress through '.oOX' but can be set using `g:vimwiki_listsyms` for example
+For an item that might be partially complete, use `gln` to toggle forward completion levels, and use `glp` to toggle backwards completion levels. Levels progress through '.oOX' sequence which you consider equating to:
 
+```md
+[ ] -- 0% complete
+[.] -- 1-33% complete
+[o] -- 34-66% complete
+[O] -- 67-99% complete
+[X] -- 100% complete
 ```
+
+If you do not like the sequence you can set your own using `g:vimwiki_listsyms` for example
+
+```vim
 let g:vimwiki_listsyms = '✗○◐●✓'
 ```
-
 
 See `:help vimwiki-todo`
 
@@ -79,14 +88,29 @@ See `:help vimwiki-table`
 
 ## Diary
 
-VimWiki supports diary entries, typing `<Leader>w<Leader>w` creates a new entry based on today's date. This makes it easy to create a new entry to jot down notes to.
+VimWiki diary makes it easy to create a daily entry. Type `<Leader>w<Leader>w` to create a new entry based on today's date. A `diary` subdirectory is created containing the wiki files. 
 
-Calendar plugin
+The [Calendar plugin](https://github.com/mattn/calendar-vim) works with the diary feature, allowing you to browse and create entries using a calendar interface.
 
-Create Diary index
+Create a diary index page by navigating to the page using `:VimwikiDiaryIndex` and then automatically create entries list using `:VimwikiDiaryGenerateLinks` 
+
+I find both commands a little tedious, so I create a `:Diary` command which will navigate to the index page, and an autocommand to generate links each time the diary index is open.
+
+```vim
+command! Diary VimwikiDiaryIndex
+augroup vimwikigroup
+    autocmd!
+    " automatically update links on read diary
+    autocmd BufRead,BufNewFile diary.wiki VimwikiDiaryGenerateLinks
+augroup end
+```
+
+<figure><asciinema-player src="/a/casts/vim/vimwiki-diary" font-size="large" cols="65" rows="20"></asciinema-player><figcaption>VimWiki Diary</figcaption></figure>
+
 
 ## Search
 
 Use `:VWS /term/` to search.
+
 Use `:lopen` to see all results
 
