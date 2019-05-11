@@ -30,8 +30,10 @@ Here is a shortcut I use to open my config file using `:Edrc` command. User defi
 
 ```vim
 " edit config file
-command Edrc edit $MYVIMRC
+command! Edrc edit $MYVIMRC
 ```
+
+Use `!` when creating a command to overwrite previous command. This solves the issue if you re-source your config, otherwise Vim will display an error showing the command already exists.
 
 ## Mapping
 
@@ -63,7 +65,9 @@ A mapping entry consists of `[map-mode] {lhs} {rhs}` which simply stands for lef
 
 The mapping translates what you typed on the left-hand side to the mapped keys on the right-hand side. The right-hand side is just a set of keys you might of typed.
 
-It is a good best practice to use the `noremap` version to not allow recursive remapping of the `{rhs}` unless you need it. This avoids potential issues with other definitions or plugins. You need recursion if the `{rhs}` is also a mapping, see quote example below.
+The `noremap` command prevents recurisve remapping which can lead to errors if the `{rhs}` includes part of the `{lhs}`. It is a good best practice to use the `noremap` versions by default, to prevent errors.
+
+If your `{rhs}` relies on a mapping defined elsewhere, for example a plugin, you will need to use the `map` version without the `noremap`, see the quote example below.
 
 I recommend using `xmap` instead of `vmap` for VISUAL mode, unless there is a specific reason to need the mapping also in select mode. This can also avoid potential conflicts.
 

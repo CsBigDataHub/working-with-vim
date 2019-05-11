@@ -7,13 +7,19 @@ order: 3
 
 # The Tao of Vim
 
-The underlying principle of Vim is the operator-motion pair. You perform an operation on a subject, that is defined by a motion. For example, delete a line. Delete is the operator, line is the subject.
+The underlying principle of Vim is the operator-motion pair. These are the verbs and nouns that define the action on a subject, similar to English. In Vim, you specify the operator (verb) and the motion (noun) it acts upon.
 
-You can create operation-motion pairs basically in two ways.
+For example, if you want to delete a line. Delete is action, and a line is the subject. For Vim, `d` is the delete operator, and `_` is the line motion.
+
+So typing `d_` will delete a line.
+
+This is the essence of Vim. Instead of trying to memorize hundreds of commands, you learn the verbs and nouns that make up the language, and then combine together.
+
+The grammar of Vim defines how to create the operation-motion pairs; there are basically two ways dependent on the mode.
 
 ## NORMAL Mode
 
-First, in NORMAL mode, you specify the operator first and then the motion. For example, delete to beginning of the line. You type `d` for delete operator and then `^` as the motion to the beginning of the line.
+In NORMAL mode, you specify the operator first and then the motion. For example, delete to beginning of the line. You type `d` for delete operator and then `^` as the motion to the beginning of the line.
 
 If you type `^` with no operator, the cursor moves to the beginning of the line. Move is the default, so if a motion is specified with no operator the cursor will move and no action performed.
 

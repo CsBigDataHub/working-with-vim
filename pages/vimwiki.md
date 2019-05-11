@@ -9,7 +9,7 @@ order: 22
 
 [VimWiki](https://github.com/vimwiki/vimwiki) is a powerful plugin that enables Vim to be your own personal wiki. It is a great tool to keep track of notes, lists, or just about anything.
 
-<span class="tip"> 😎</span>It is hard to describe the usefulness of VimWiki, since it just sounds like writing text in a text editor. However, the convenience to always have a scratch area to write and collect stuff I've found to be extremely valuable.
+<span class="tip">😎</span>It is hard to describe the usefulness of VimWiki, since it just sounds like writing text in a text editor. However, the convenience to always have a scratch area to write and collect stuff I've found to be extremely valuable.
 
 ## Install and Configuration
 
@@ -51,7 +51,12 @@ You can add a checkbox using `ctrl-<Space>`, use `gl<Space>` to remove checkbox.
 
 To toggle an item complete use `ctrl-<Space>` with your cursor on the line you want to toggle. Todo lists also work for nested items, simply indent the item. Vim folding works with nested lists. Toggling will also mark all sub-items.
 
-Maybe an item is not all the way complete, use `gln` to toggle forward completion levels, and use `glp` to toggle backwards completion levels.
+For an item that might be partially complete, use `gln` to toggle forward completion levels, and use `glp` to toggle backwards completion levels. Levels progress through '.oOX' but can be set using `g:vimwiki_listsyms` for example
+
+```
+let g:vimwiki_listsyms = '✗○◐●✓'
+```
+
 
 See `:help vimwiki-todo`
 
@@ -76,4 +81,12 @@ See `:help vimwiki-table`
 
 VimWiki supports diary entries, typing `<Leader>w<Leader>w` creates a new entry based on today's date. This makes it easy to create a new entry to jot down notes to.
 
+Calendar plugin
+
+Create Diary index
+
+## Search
+
+Use `:VWS /term/` to search.
+Use `:lopen` to see all results
 
