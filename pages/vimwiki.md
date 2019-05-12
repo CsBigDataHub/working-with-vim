@@ -90,7 +90,7 @@ See `:help vimwiki-table`
 
 VimWiki diary makes it easy to create a daily entry. Type `<Leader>w<Leader>w` to create a new entry based on today's date. A `diary` subdirectory is created containing the wiki files. 
 
-The [Calendar plugin](https://github.com/mattn/calendar-vim) works with the diary feature, allowing you to browse and create entries using a calendar interface.
+This [Calendar plugin](https://github.com/mattn/calendar-vim) works with the diary feature, allowing you to browse and create entries using a calendar interface.
 
 Create a diary index page by navigating to the page using `:VimwikiDiaryIndex` and then automatically create entries list using `:VimwikiDiaryGenerateLinks` 
 

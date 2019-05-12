@@ -7,7 +7,7 @@ order: 2
 
 # Help Yourself
 
-Vim has extensive documentation on every command and feature. This is the first place to turn if you ever have a question.
+The first place to turn when you need help is Vim itself. It has extensive documentation on every command and feature.
 
 Type `:help [command]` to see help for any command.
 
