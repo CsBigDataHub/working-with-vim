@@ -7,13 +7,13 @@ order: 0
 
 # Introduction
 
-It helps to understand a few terms and structure of Vim, as they will be used throughout.
+First, let's define a few terms around the structure of Vim. By understanding the words Vim uses, helps you understand the shortcuts and commands related. 
 
-First, a **buffer** is a file loaded into memory for editing. The stored file is not changed, this requires you to save (or write) the file. You may also have an empty buffer unrela
+A **buffer** is a file loaded into memory for editing. In other editors or programs you'd call it a file, or open file, but in Vim parlance it is called a buffer. The actual file on the file system is not changed until you to save (or write) the file. 
 
-A **window** is a viewport onto a buffer. There is always one window and one buffer, typically they are 1:1, one buffer open in one window.
+A **window** is a viewport onto a buffer. There is always at least one window and one buffer in Vim, typically they are 1:1, one buffer open in one window. When you start Vim without specifying a file, it is an empty buffer.
 
-You can have multiple buffers and/or multiple windows open at the same time. See the [Buffers](/working-with-vim/buffers/) and [Windows](/working-with-vim/windows/) sections for more on each.
+You can also have multiple buffers and/or multiple windows open at the same time. These are covered in the [Buffers](/working-with-vim/buffers/) and [Windows](/working-with-vim/windows/) sections for more on each.
 
 ## Exiting Vim
 

@@ -7,7 +7,7 @@ order: 4
 
 # Motions
 
-Here are a few of the most common motions, there are many more and plugins can define there own but it is good to start learning the basics and expand.
+Here are a few of the most common motions, there are many more and plugins can define their own but this is a good start to learn the basics and expand.
 
 `w`
 : Forward to next word
@@ -40,13 +40,13 @@ Practice the basic motions by just pressing the motion character(s), while in NO
 
 When you put an operator first, it will perform that action on the motion. For example `dw` will delete to the next word, this includes the space, not just the word.
 
-<span class="tip">💡</span> There are minor differences between `w` and `e`; as well as between `f` and `t`. The differences are around where the cursor ends up, this can make a big difference depending on the operator. For example, `dfx` will delete forward up to and including the `x` character, whereas `dtx` will delete up to but not including the `x`.
+<span class="tip">💡</span> There are minor differences between `w` and `e`; as well as between `f` and `t`. The differences are where the cursor ends up. This can be important depending on the operator. For example, `dfx` will delete forward up to and including the `x` character, whereas `dtx` will delete up to but not including the `x`.
 
 You can visualize the motions by starting with `v` and then the motion, it will highlight the selected area. See the difference between `ve` highlighting to the end of the word, to `vw` highlighting to the next word.
 
 ## Window Motions
 
-Here are a set of less commonly used window motions. They can be quite useful to quickly jump to different sections of the visible window. See help on each for exact definition and options.
+Here are a set window motions, primarily used for navigating.  It can be quite useful to quickly jump to different sections of the visible window.
 
 `H`
 : High, jump to top of window

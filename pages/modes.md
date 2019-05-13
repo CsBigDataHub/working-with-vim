@@ -7,11 +7,13 @@ order: 1
 
 # Modes
 
-Vim is a modal editor, this simply means it has different modes of operations. The main modes are NORMAL, INSERT, and VISUAL mode. <span class="sidenote">I capitalize the modes because vim does, I'm not shouting them.</span> Commands are based on what mode you are in, the majority are used while in NORMAL mode.
+Vim has different modes of operations. The main modes are NORMAL, INSERT, and VISUAL mode. <span class="sidenote">I capitalize the modes because vim does, I'm not shouting them.</span> The commands you use are based on what mode you are in. Vim's INSERT mode is like other editors, what you type will be inserted into the document.
 
 ## NORMAL Mode
 
-First up, I don't really like telling people what to do, no vim shaming here. I use arrow keys. Use arrows keys. They are great keys with labels and everything. I do have one recommendation, <strong>make NORMAL mode your default mode</strong>. I mash the Esc key often to constantly return to NORMAL mode. Every time I finish an edit I hit Esc.
+To realize the strength of Vim, you need to <strong>make NORMAL mode your default mode</strong>. I don't like telling people what to do, no vim shaming here, but the majority of power and commands are used in NORMAL mode.
+
+You use `Esc` to return to NORMAL mode after inserting text, so I will  mash the Esc key often. Every time I finish an edit, or make a change, I'm constantly returning to NORMAL mode.
 
 There is a reason it is called NORMAL mode, it is the mode where you can do all the extra vimmy stuff. INSERT mode is just typing text, any editor can do that.
 
@@ -19,6 +21,8 @@ Be NORMAL.
 
 
 ## VISUAL Mode
+
+VISUAL mode is when you select text and you can visually see it highlighted. This is a bit pedantic to label a mode when text is selected, but Vim commands are slightly differently when text is selected.
 
 `v`
 : Enter VISUAL mode (character)
@@ -51,4 +55,8 @@ Another mode to mention is Command-line mode. You enter by typing `:` while in N
 Typically you exit command-line mode by issuing a command, however you can exit without a command by typing `Esc Esc`
 
 A history of previous commands is kept, use the up arrow key after typing `:` to see previous commands, similar to bash. This is stored in `.viminfo` so persists between sessions.
+
+## Additional Modes
+
+There are seven basic modes in total for Vim, for completeness the other three modes are SELECT, EX, and TERMINAL. See `:help vim-modes` for full definition.
 

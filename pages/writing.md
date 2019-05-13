@@ -37,7 +37,7 @@ You run the plugin to check your text using `:Wordy [rule]` typing tab will show
 
 For example, `:Wordy passive-voice` will check the text for use of the passive voice and highlight similar to spellcheck. Use `]s` to navigate to the highlighted text.
 
-Use `:NoWordy` to turn off, or since Wordy uses the same spellcheck mechanism, I simply use my `F5` mapping to turn off.
+Use `:NoWordy` to turn off, or since Wordy uses the same spellcheck mechanism, I use my `F5` mapping to turn off.
 
 See the [Wordy Github repository](https://github.com/reedes/vim-wordy) for full documentation.
 
@@ -55,7 +55,7 @@ I use the [Airline plugin](https://github.com/vim-airline/vim-airline) for a fan
 
 To type a digraph, in INSERT mode, type `ctrl-k {char} {char}`
 
-The first character is the letter, the second the additional mark. For example, to add an tilde over an n, I would type `ctrl-k n ~` which gives me the spanish `ñ` character.
+The first character is the letter, the second the additional mark. For example, to add an tilde over an n, I would type `ctrl-k n ~` which gives me the Spanish `ñ` character.
 
 Here are a set of the most common examples, see `:help digraphs-default` for a more complete list.
 
