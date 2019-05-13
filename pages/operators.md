@@ -23,7 +23,7 @@ Here are a some basic operators, combine these with [motions](/working-with-vim/
 
 <span class="tip">💡</span> Use `p` paste with something highlighted to replace the highlighted section. This is extremely helpful, since deleting an item can change what is in your register you are trying to paste. See [Registers](/working-with-vim/registers/) for more.
 
-<figure class="wp-block-video"><video controls src="https://mkaz.blog/wp-content/uploads/2019/03/copy-vis-paste.mp4"></video><figcaption>Copy-Paste Example</figcaption></figure>
+<figure><asciinema-player src="/a/casts/vim/copy-paste.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>Copy-Paste example</figcaption></figure>
 
 ## Undo / Redo
 
