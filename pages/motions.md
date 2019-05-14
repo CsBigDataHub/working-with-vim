@@ -48,7 +48,6 @@ You can visualize the motions by starting with `v` and then the motion, it will 
 
 Here are a set of window motions, primarily used for navigating.  The motions jump to different sections of the visible window, not the document, so cursor movement occurs without the document scrolling.
 
-
 `H`
 : High, jump to top of window
 

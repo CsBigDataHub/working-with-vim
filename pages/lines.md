@@ -22,7 +22,7 @@ The above two are equivalent to using the `_` motion. For example, `dd` is equiv
 
 You can paste a deleted or yanked line elsewhere, use `p` to paste.
 
-Another useful shortcut is `D`, to deletes from cursor to end of line, equivalent to `d$`
+Another useful shortcut is `D`, to delete from cursor to end of line, equivalent to `d$`
 
 The change equivalent is `C`, to delete from cursor to end of line, and switch to insert mode. 
 

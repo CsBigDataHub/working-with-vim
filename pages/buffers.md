@@ -19,6 +19,11 @@ You can specify opening multiple files on the command-line. For example, `vim *.
 
 From within vim, use `:ed FILE` to open additional files in new buffers.
 
+<span class="tip">💡</span>If you have a command-line program  which returns a list of files that you want to open in Vim, you can use `vim $(command)`. For example, working in a git repository, open the set of changed files using: 
+```
+vim $(git diff --name-only)
+```
+
 
 ## Main Buffer Commands
 
