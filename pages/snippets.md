@@ -7,9 +7,9 @@ order: 19
 
 # Snippets
 
-I use the [Ultisnips plugin](https://github.com/SirVer/ultisnips) to provide all my snippet needs. Snippets have replaced templates for me. Previously I setup a template file to automatically load on a new empty file. For example a new HTML file would load a stubbed out html-head-body set of tags.
+I use the [Ultisnips plugin](https://github.com/SirVer/ultisnips) to provide all my snippet needs. Snippets have replaced templates for me. Previously I setup a template file to automatically load on a new empty file. For example, a new HTML file would load a stubbed out html-head-body set of tags.
 
-However, setting it up automatically got annoying when doing temporary things. Plus it was fragile when templates didn't exist for a filetype. Now I just use snippets, it is easier to manually insert the template I want.
+However, setting it up automatically got annoying when doing temporary things. Plus, it was fragile when templates didn't exist for a filetype. Now I just use snippets, it is easier to manually insert the template I want.
 
 ## Install
 

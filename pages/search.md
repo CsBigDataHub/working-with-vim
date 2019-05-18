@@ -24,7 +24,7 @@ Use `/term` to move forward to next "term", and use `?term` to move backwards to
 
 You can combine with delete and yank, and any other operator. For example: `d/apple` will delete from current spot to the string apple. Vim highlights the words to show and you press enter to confirm.
 
-I don't use the delete or copy features with regex, but do use frequently to navigate around.
+I don't use the delete or copy features with regex searches. I primarily use regexes to navigate around.
 
 ### Remove Highlight
 

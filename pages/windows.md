@@ -7,7 +7,7 @@ order: 14
 
 # Windows
 
-As mentioned above windows are viewports into buffers. So a window is a different editing pane. There is always one main window, but you can also have multiple windows at the same time. Multiple windows can be the same or different buffers, so you can have the same buffer open in two different windows.
+As mentioned above windows are viewports into buffers. So, a window is a different editing pane. There is always one main window, but you can also have multiple windows at the same time. Multiple windows can be the same or different buffers, so you can have the same buffer open in two different windows.
 
 `:split`
 : Horizontal split, current buffer
@@ -39,13 +39,13 @@ As mentioned above windows are viewports into buffers. So a window is a differen
 `ctrl-w o` or `:only`
 : Only one window, closes down to just one
 
-To navigate between open windows use `ctrl-w [hjkl]` or `ctrl-w [arrows]` mapping to the same directions used to navigate.
+To navigate between open windows, use `ctrl-w [hjkl]` or `ctrl-w [arrows]` mapping to the same directions used to navigate.
 
 I rarely use multiple windows open at the same time, I'm  comfortable bouncing around buffers that I tend not to need more things on the screen at the same time.
 
 ## Tab Page
 
-A tab page is a collection of windows. So tabs may be useful if you rely on multiple different window layouts. I rarely use windows, so tabs are just too much for me. If interested, you can learn more about tabs using `:help tab-page`
+A tab page is a collection of windows. So, tabs may be useful if you rely on multiple different window layouts. I rarely use windows, so tabs are just too much for me. If interested, you can learn more about tabs using `:help tab-page`
 
 
 <span class="tip">💡</span> Tab pages are nice to open help in. This will open help in a full window, instead of a split. Prefix with `:tab` first, for example `:tab help tab-page`<br><br>You can use `:tabclose` or `ctrl-w c` to close, the latter closes since closing the last window in a tab page, closes the tab.

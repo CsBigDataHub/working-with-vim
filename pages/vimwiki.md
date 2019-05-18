@@ -9,7 +9,7 @@ order: 22
 
 [VimWiki](https://github.com/vimwiki/vimwiki) is a powerful plugin that enables Vim to be your own personal wiki. It is a great tool to keep track of notes, lists, or just about anything.
 
-<span class="tip">😎</span>Yes, Vim is a text editor and of course you can type notes or list in any. VimWiki provides the convenience and defined space to always have a scratch area ready to write with out having to think about where and what file to create.
+<span class="tip">😎</span>Yes, Vim is a text editor and of course you can type notes or list in any. VimWiki provides the convenience and defined space to always have a scratch area ready to write without having to think about where and what file to create.
 
 ## Install and Configuration
 

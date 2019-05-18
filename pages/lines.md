@@ -7,20 +7,25 @@ order: 6
 
 # Working with Lines
 
-The line is a common object to work with when editing that Vim has numerous built-in functions and features to operate specifically on lines.
+Vim has numerous built-in functions and features to operate specifically on lines.
 
 
 ## Copy / Delete Lines
 
-Two shortcuts exist for copying and deleting the current line.
+Shortcuts exist for copying and deleting the current line.
 
-Use `dd` to delete, and `yy` to copy the current line.
+Use `dd` to delete the current line.
 
-This is the same as using the `_` motion, so `dd` is equivalent to `d_`, however they are common enough actions that the shortcuts make it easier.
+Use `yy` to copy the current line.
+
+The above two are equivalent to using the `_` motion. For example, `dd` is equivalent to `d_`. However these are common enough actions, that the shortcuts make it easier.
 
 You can paste a deleted or yanked line elsewhere, use `p` to paste.
 
-Another useful shortcut is `D`, deletes from cursor to end of line, equivalent to `d$`
+Another useful shortcut is `D`, to deletes from cursor to end of line, equivalent to `d$`
+
+The change equivalent is `C`, to delete from cursor to end of line, and switch to insert mode. 
+
 
 ## Line Motions
 
@@ -85,7 +90,7 @@ See [Configuration section](/working-with-vim/configuration/) for more on workin
 
 ## Bubble Up Lines
 
-Move a single or multiple lines up and down using control + arrow keys. The multiline one is a bit complex that I picked up somewhere.
+Move a single line, or multiple lines, up and down using control + arrow keys. The multiline mapping below is a bit complex, even for me, I picked it up somewhere on the interweb.
 
 ```vim
 " Bubble single lines

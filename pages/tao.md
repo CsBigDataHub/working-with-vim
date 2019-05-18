@@ -11,7 +11,7 @@ The underlying principle of Vim is the operator-motion pair. You can think of Vi
 
 For example, if you want to delete a line. Delete is the action, and a line is the subject. For Vim, `d` is the delete operator, and `_` is the line motion.
 
-So typing `d_` will delete a line.
+So, typing `d_` will delete a line.
 
 This is the essence of Vim. Instead of trying to memorize hundreds of commands, you learn the verbs and nouns that make up the language, and then combine together.
 

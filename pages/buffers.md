@@ -9,7 +9,7 @@ order: 13
 
 Buffers in vim are the in-memory text of files. Your window is a viewport on a buffer. You can switch between open buffers, which works similar in concept to tabs in other editors. Vim does have a concept of tabs too, but they are slightly different, read more about tabs in the [Windows section](/working-with-vim/windows/).
 
-I generally keep it pretty simple and just use buffers. They handle my multiple-files-open-at-the-same-time needs. You don't have take just my view, here is a post about [Buffers vs Tabs](https://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/), and the author agrees just using buffers is easier.
+I generally keep it pretty simple and just use buffers. They handle my multiple-files-open-at-the-same-time needs. You don't have to take just my word. Here is a post about [Buffers vs Tabs](https://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/), and the author agrees just using buffers is easier.
 
 Buffers tend to be the default mode for multiple files, so it is what I learned and use.
 

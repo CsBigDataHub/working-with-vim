@@ -23,15 +23,15 @@ You copy items directly to named registers [a-z] by prepending your yank command
 
 If you use a capital letter, [A-Z], the same corresponding named register is used, but the content is appended to the register, not replaced.
 
-<span class="tip">📄</span> Registers are stored in `~/.viminfo` and loaded each time vim starts. So registers will persist between sessions.
+<span class="tip">📄</span> Registers are stored in `~/.viminfo` and loaded each time vim starts. So, registers will persist between sessions.
 
 ## System Clipboard
 
-The `+` register is a special register for the system clipboard. You can copy from vim to your system, and paste from your system to vim.
+The `+` register is a special register for the system clipboard. This allows you bidirectional copy and paste between Vim and the host OS.
 
-Use `"+yy` to copy current line to the system clipboard, and `"+p` to paste from clipboard to vim buffer.
+For example, use `"+yy` to copy current line to the system clipboard, and `"+p` to paste from clipboard to vim buffer.
 
-For system clipboard, Vim requires the clipboard support to be compiled in. Check for clipboard support using `:echo has('clipboard')` if the result is `0` than your version does not have it compiled. For Linux, try install `vim-gtk` or similar package. Neovim has clipboard support by default, but requires `xclip` or `xsel` to be installed.
+For system clipboard, Vim requires the clipboard support to be compiled in. Check for clipboard support using `:echo has('clipboard')` if the result is `0` than your version does not have it compiled. For Linux, try installing `vim-gtk` or similar GUI related package. Neovim has clipboard support by default, but requires `xclip` or `xsel` to be installed.
 
 See `:help registers` for additional information about other special registers.
 

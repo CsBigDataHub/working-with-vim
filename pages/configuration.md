@@ -11,14 +11,14 @@ You probably already know about `.vimrc` or if you use Neovim `.config/nvim/init
 
 <span class="sidenote">Use vim, vim is great!</span> You can check out my [.vimrc in my dotfiles](https://github.com/mkaz/dotfiles/blob/master/rcfiles/.vimrc). I've used Neovim in the past and it is a great project encouraging development in Vim. I didn't really notice any real difference between using either.
 
-I don't recommend just copying and pasting mine or anyone's vim config. Most config is just one person's preferences, especially for shortcuts. The important part is to be able to read and understand what shortcuts and features they are implementing, and see if that can improve your workflow.
+I don't recommend just copying and pasting mine or anyone's vim config. Most config is just one person's preferences, especially for shortcuts. The important part is to be able to read and understand what shortcuts and features they are implementing. See if that can improve your workflow.
 
-Your muscle memory may want settings or mappings to use a different set of keys; learning how it works allows you to shape vim to fit you.
+Your muscle memory may want settings or mappings to use a different set of keys; learning how it works allows you to shape Vim to fit you.
 
 
 ## Leader
 
-First, the `<Leader>` is a special variable intended to be used for user definitions. Using a leader to prefix a command will help avoid conflicts with other default vim commands, though this depends on what you set your leader variable to. By default the leader key is `\` but it is common to map it to `,` which I do. You set the `<Leader>` variable using:
+First, the `<Leader>` is a special variable intended to be used for user definitions. Using a leader to prefix a command will help avoid conflicts with other default Vim commands, though this depends on what you set your leader variable to. By default the leader key is `\` but it is common to map it to `,` which I do. You set the `<Leader>` variable using:
 
 ```vim
 let mapleader=","
@@ -37,7 +37,7 @@ Use `!` when creating a command to overwrite previous command. This solves the i
 
 ## Mapping
 
-You can map a set of key commands to another set. This allows you to create a simpler shortcut for a more complex set of keys. Mapping is modal, you need to tell vim what MODE you want the mapping to work.
+You can map a set of key commands to another set. This allows you to create a simpler shortcut for a more complex set of keys. Mapping is modal, you need to tell Vim what MODE you want the mapping to work.
 
 `nmap` or `nnoremap`
 : just normal mode
@@ -63,13 +63,13 @@ You can map a set of key commands to another set. This allows you to create a si
 
 A mapping entry consists of `[map-mode] {lhs} {rhs}` which simply stands for left and right hand sides.
 
-The mapping translates what you typed on the left-hand side to the mapped keys on the right-hand side. The right-hand side is just a set of keys you might of typed.
+The mapping translates what you typed on the left-hand side to the mapped keys on the right-hand side. The right-hand side is just a set of keys you might have typed.
 
 The `noremap` command prevents recurisve remapping which can lead to errors if the `{rhs}` includes part of the `{lhs}`. It is a good best practice to use the `noremap` versions by default, to prevent errors.
 
 If your `{rhs}` relies on a mapping defined elsewhere, for example a plugin, you will need to use the `map` version without the `noremap`, see the quote example below.
 
-It is also a good idea to use `xmap` instead of `vmap` for VISUAL mode. The `xmap` applies only to VISUAL mode, where as `vmap` also includes SELECT mode. It is best to limit the scope of a mapping to avoid potential conflicts.
+It is also a good idea to use `xmap` instead of `vmap` for VISUAL mode. The `xmap` applies only to VISUAL mode, while `vmap` also includes SELECT mode. It is best to limit the scope of a mapping to avoid potential conflicts.
 
 ### Example Mapping
 

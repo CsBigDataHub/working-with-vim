@@ -7,7 +7,7 @@ order: 4
 
 # Motions
 
-Here are a few of the most common motions, there are many more and plugins can define their own but this is a good start to learn the basics and expand.
+Here are a few of the most common motions. There are many more motions and plugins can define their own, but this is a good start to learn the basics and expand.
 
 `w`
 : Forward to next word
@@ -36,9 +36,9 @@ Here are a few of the most common motions, there are many more and plugins can d
 `_`
 : Current line (underscore)
 
-Practice the basic motions by just pressing the motion character(s), while in NORMAL mode the cursor will move. So pressing `w` moves the cursor forward to the next word. You can precede any motion with a number, for example `5w` will move forward to the fifth next word.
+Practice the basic motions by just pressing the motion character(s), while in NORMAL mode the cursor will move. So, pressing `w` moves the cursor forward to the next word. You can precede any motion with a number, for example `5w` will move forward to the fifth next word.
 
-When you put an operator first, it will perform that action on the motion. For example `dw` will delete to the next word, this includes the space, not just the word.
+When you put an operator first, it will perform that action on the motion. For example, `dw` will delete to the next word, this includes the space, not just the word.
 
 <span class="tip">💡</span> There are minor differences between `w` and `e`; as well as between `f` and `t`. The differences are where the cursor ends up. This can be important depending on the operator. For example, `dfx` will delete forward up to and including the `x` character, whereas `dtx` will delete up to but not including the `x`.
 
@@ -46,7 +46,8 @@ You can visualize the motions by starting with `v` and then the motion, it will 
 
 ## Window Motions
 
-Here are a set window motions, primarily used for navigating.  It can be quite useful to quickly jump to different sections of the visible window.
+Here are a set of window motions, primarily used for navigating.  The motions jump to different sections of the visible window, not the document, so cursor movement occurs without the document scrolling.
+
 
 `H`
 : High, jump to top of window
@@ -58,4 +59,4 @@ Here are a set window motions, primarily used for navigating.  It can be quite u
 : Low, jump to bottom of window
 
 `zz`
-: Window is centered on line, cursor does not jump
+: Window is positioned so current line is centered vertically, cursor does not jump

@@ -17,7 +17,7 @@ You now perform the actions you want, and then when done press `q` to stop recor
 
 Replay back the commands using `@a`, this replays everything you did while recording.
 
-Use `@@` to repeat the previous replay, you can combine with a count so `3@@` will repeat previous replay 3 times, or you can use `3@a` to repeat..
+Use `@@` to repeat the previous replay, you can combine with a count so `3@@` will repeat previous replay 3 times, or you can use `3@a` to repeat.
 
 <figure><asciinema-player src="/a/casts/vim/recording.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>Recording example</figcaption></figure>
 

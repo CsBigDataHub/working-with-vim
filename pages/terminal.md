@@ -9,7 +9,7 @@ order: 20
 
 You can run a terminal inside of Vim since Vim 8.1 and in Neovim. Use the `:terminal` command which will start a terminal session in a new buffer.
 
-I use this feature but normally only for quick one-off processes, like a build. If I'm going to do much more I'll drop to the shell using `ctrl-z` and return using `fg` in bash.
+I use this feature but normally only for quick one-off processes, like a build. If I'm going to do much more, I'll drop to the shell using `ctrl-z` and return using `fg` in bash.
 
 ## Script the Terminal
 

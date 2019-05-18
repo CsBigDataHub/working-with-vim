@@ -41,7 +41,7 @@ Use `gu{motion}` for lowercase, use `gU{motion}` for uppercase, or use `g~{motio
 
 For example, use `shift-v` to select a line, use arrows or other motions to expand the range, and then type `<` or `>` to shift the lines.
 
-Use `<<` and `>>` to shift using a count. For example `5>>` will shift 5 lines once to the right. If you want to shift more use `.` to repeat the command.
+Use `<<` and `>>` to shift using a count. For example, `5>>` will shift 5 lines once to the right. If you want to shift more use `.` to repeat the command.
 
 
 ### Formatting
@@ -53,7 +53,7 @@ Use `<<` and `>>` to shift using a count. For example `5>>` will shift 5 lines o
 
 Press `.` to repeat the last command.
 
-If you start with a number and then command it executes the command that many times. For example, if you want to delete three lines, `3dd`
+If you start with a number, and then type a command, Vim executes the command that many times. For example, if you want to delete three lines, `3dd`
 
 ## Single Character Operators
 

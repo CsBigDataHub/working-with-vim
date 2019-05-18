@@ -51,7 +51,7 @@ I use the [Airline plugin](https://github.com/vim-airline/vim-airline) for a fan
 
 ## How to type digraphs
 
-<span class="sidenote">See `:help digraph`</span> A digraph is a character that cannot by entered by an ordinary keyboard. For example with standard US keyboards digraphs are the numerous accent characters not part of the English language.
+<span class="sidenote">See `:help digraph`</span> A digraph is a character that cannot by entered by an ordinary keyboard. For example, with standard US keyboards digraphs are the numerous accent characters not part of the English language.
 
 To type a digraph, in INSERT mode, type `ctrl-k {char} {char}`
 
@@ -76,7 +76,7 @@ Here are a set of the most common examples, see `:help digraphs-default` for a m
 
 ## Extended ASCII
 
-Digraphs are also used beyond accents, they include extended ASCII characters. Here are a few fun ones.
+Digraphs are also used beyond accents; they include extended ASCII characters. Here are a few fun ones.
 
 `0u` and `0U`
 : ☺ and ☻

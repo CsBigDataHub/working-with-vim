@@ -15,7 +15,7 @@ To realize the strength of Vim, you need to <strong>make NORMAL mode your defaul
 
 You use `Esc` to return to NORMAL mode after inserting text, so I will  mash the Esc key often. Every time I finish an edit, or make a change, I'm constantly returning to NORMAL mode.
 
-There is a reason it is called NORMAL mode, it is the mode where you can do all the extra vimmy stuff. INSERT mode is just typing text, any editor can do that.
+There is a reason it is called NORMAL mode; it is the mode where you can do all the extra vimmy stuff. INSERT mode is just typing text, any editor can do that.
 
 Be NORMAL.
 
@@ -52,11 +52,11 @@ VISUAL mode is pretty powerful, I use it frequently since it provides feedback s
 
 Another mode to mention is Command-line mode. You enter by typing `:` while in NORMAL or VISUAL mode. This places your cursor at the bottom command-line, ready for you to type a command.
 
-Typically you exit command-line mode by issuing a command, however you can exit without a command by typing `Esc Esc`
+Typically, you exit command-line mode by issuing a command, however you can exit without a command by typing `Esc Esc`
 
 A history of previous commands is kept, use the up arrow key after typing `:` to see previous commands, similar to bash. This is stored in `.viminfo` so persists between sessions.
 
 ## Additional Modes
 
-There are seven basic modes in total for Vim, for completeness the other three modes are SELECT, EX, and TERMINAL. See `:help vim-modes` for full definition.
+In total, there are seven basic modes in Vim. For completeness, the other three modes are SELECT, EX, and TERMINAL. See `:help vim-modes` for full definitions.
 
