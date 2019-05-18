@@ -9,9 +9,9 @@ order: 0
 
 First, let's define a few terms around the structure of Vim.
 
-A **buffer** is the text loaded into memory for editing. In other editors or programs, this might just be called a file, or open file. In Vim it is called a buffer because the same object is used for actions unrelated to files.
+A **buffer** is the text loaded into memory for editing. In other editors or programs, this might just be called a file. In Vim, it is similar but the same object is also used in ways unrelated to files.
 
-A **window** is a viewport onto a buffer. There is always at least one window and one buffer in Vim, typically they are 1:1, one buffer opens in one window. When you start Vim without specifying a file, it is an empty buffer.
+A **window** is a viewport onto a buffer. There is always at least one window and one buffer in Vim, typically they are 1:1. One buffer open in one window. When you start Vim without specifying a file, it is an empty buffer.
 
 You may also have multiple buffers and/or multiple windows open at the same time. These are covered in the [Buffers](/working-with-vim/buffers/) and [Windows](/working-with-vim/windows/) sections for more on each.
 

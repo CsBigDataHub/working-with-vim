@@ -11,7 +11,7 @@ Another useful command is `:read` which can read from external sources into the 
 
 
 
-You can also combine read with `:read ! [shell command]` which will execute the shell command and insert the output into the current buffer.
+You can also combine read with `:read ! [shell command]` to execute the shell command and insert the output into the current buffer.
 
 
 

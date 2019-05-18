@@ -11,9 +11,9 @@ I recommend using [vim-plug](https://github.com/junegunn/vim-plug) to manage plu
 
 ## Install
 
-Installation is straight-forward, [download plug.vim](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim) and place in the `autoload` directory in your vim configuration, this might be `~/.vim/autoload/` or for Neovim `~/.config/nvim/autoload/`
+Install by [downloading plug.vim](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim) and placing it in your `autoload` directory. This directory is dependent on your install, it might be `~/.vim/autoload/` or for Neovim `~/.config/nvim/autoload/`
 
-Add a section to your `.vimrc` that you specify the plugins to load. The `plug#begin` function also specifies what directory to download the plugins to. Here is an example specifying two plugins to use.
+Add a section to your `.vimrc` to specify the plugins to load. The `plug#begin` function may also specify what directory to download the plugins to. Here is an example specifying two plugins to use.
 
 ```vim
 call plug#begin('~/.config/plugged')
@@ -22,15 +22,15 @@ call plug#begin('~/.config/plugged')
 call plug#end()
 ```
 
-The plugins are specified by their Github directory, so the above `fatih/vim-go` plugin refers to the https://github.com/fatih/vim-go repository.
+The plugins are specified using their Github directory. So, the above `fatih/vim-go` plugin refers to the https://github.com/fatih/vim-go repository.
 
 After updating `.vimrc` with a new or deleted plugin, you need to reload; it is easiest to just quit and restart vim. <span class="sidenote">You can also run `:source %` to source your config when you are editing it, personally I prefer quit/restart, it's less typing.</span>
 
-You can then install the plugins using the command: `:PlugInstall`
+After reloading, install the plugins using the command: `:PlugInstall`
 
 ## Remove a Plugin
 
-If you want to delete a plugin, remove the line from your config, quit and restart, and then run `:PlugClean`
+If you want to delete a plugin, remove the line from your config. Quit and restart Vim, and then run `:PlugClean`. You will be prompted to delete the directory, type `Y`.
 
 ## Update Plugins
 

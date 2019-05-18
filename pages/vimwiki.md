@@ -94,7 +94,7 @@ This [Calendar plugin](https://github.com/mattn/calendar-vim) works with the dia
 
 Create a diary index page by navigating to the page using `:VimwikiDiaryIndex` and then automatically create entries list using `:VimwikiDiaryGenerateLinks` 
 
-I find both commands a little tedious, so I create a `:Diary` command which will navigate to the index page, and an autocommand to generate links each time the diary index is open.
+I find both commands a little tedious, so I create a `:Diary` command to navigate to the index page, and an autocommand to generate links each time the diary index is open.
 
 ```vim
 command! Diary VimwikiDiaryIndex
