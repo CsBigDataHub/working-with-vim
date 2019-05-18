@@ -18,9 +18,8 @@ Use `%` to search and replace across the whole document. `:% s/find/replace/g`
 
 Specify a line number range using `:137,140 s/find/replace/g` will replace all "find" with "replace" between lines 137 and 140.
 
-You can also define the range using VISUAL mode. First highlight the area you want and then type `:` to go into command-line mode. Vim will automatically insert `'<,'>` which is its magical incantation to work over the selection, leave it there, and type your substitute command `s/find/replace`
+You can define a range using VISUAL mode. First, highlight the area you want and then type `:` to go into command-line mode. Vim will automatically insert `'<,'>` this is it's magical incantation to operate over the selection, leave it there. Next, type your substitute command `s/find/replace`
 
 Besides search and replace, you can use `g/find/d` to delete all lines that match find, or `v/find/d` to delete all lines that do not match find.
 
-<figure class="wp-block-video"><video controls src="https://mkaz.blog/wp-content/uploads/2019/03/vim-search.mp4"></video><figcaption>Search examples</figcaption></figure>
-
+<figure><asciinema-player src="/a/casts/vim/substitute.cast" font-size="large" cols="65" rows="20"></asciinema-player><figcaption>Substitute Examples</figcaption></figure>
