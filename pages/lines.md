@@ -18,7 +18,9 @@ Use `dd` to delete the current line.
 
 Use `yy` to copy the current line.
 
-The above two are equivalent to using the `_` motion. For example, `dd` is equivalent to `d_`. However these are common enough actions, that the shortcuts make it easier.
+Use `cc` to delete line and enter INSERT mode.
+
+The above are equivalent to using the `_` motion. For example, `dd` is equivalent to `d_`. Since these are common actions, the double letter shortcuts are easier to remember and type.
 
 You can paste a deleted or yanked line elsewhere, use `p` to paste.
 
@@ -53,17 +55,18 @@ The change equivalent is `C`, to delete from cursor to end of line, and switch t
 
 ## Line INSERT mode
 
+`o`
+: Add new line below, enter INSERT mode
+
+`O`
+: Add new line above, enter INSERT mode
+
 `I`
 : Enter INSERT mode at start of line
 
 `A`
 : Enter INSERT mode at end of line
 
-`o`
-: Add new line below, enter INSERT mode
-
-`O`
-: Add new line above, enter INSERT mode
 
 ## Merge lines
 
@@ -74,9 +77,11 @@ Use `J` to merge lines together. If you press `J` with nothing highlighted, it w
 Use `gq` to wrap lines to a specified length defined by `textwidth`. If the `textwidth` option is not set the default is 79. I use this daily in commit messages to fit within 80 characters. To use, just highlight the lines you want and then type `gq`
 
 
-## Improve Wrapped Line Navigation
+## Wrapped Line Navigation
 
-Navigating up and down on a wrapped line can sometimes be weird in vim, since it skips over what looks like a second line, but really is the same. This is particularly helpful when using vim to write documentation or other text, like blog posts.
+Wrapped line navigation can be weird in Vim. Since, one actual line wraps to multiple displayed lines. The `j` and `k` keys tells Vim to move to the next line, thus skipping over the wrapped lines. 
+
+Use `gj` and `gk` to navigate via displayed lines. I configure this as my default using the following configuration.
 
 Add the following to your `.vimrc`
 
@@ -86,7 +91,7 @@ noremap j gj
 noremap k gk
 ```
 
-See [Configuration section](/working-with-vim/configuration/) for more on working with your vim config.
+See [Configuration section](/working-with-vim/configuration/) for more on working with your Vim config.
 
 ## Bubble Up Lines
 

@@ -24,26 +24,26 @@ Use `/term` to move forward to next "term", and use `?term` to move backwards to
 
 You can combine with delete and yank, and any other operator. For example: `d/apple` will delete from current spot to the string apple. Vim highlights the words to show and you press enter to confirm.
 
-I don't use the delete or copy features with regex searches. I primarily use regexes to navigate around.
+I don't use the delete or copy actions with regex searches. I primarily use regexes to navigate around.
 
 ### Remove Highlight
 
-Search results remain highlighted after a search, the following maps `<Leader><Space>` to unhighlight.
+Search results remain highlighted after a search, this is useful when searching, but they often stick around too long. Use `:nohlsearch` to unhighlight the searches. I create the `<Leader><Space>` map for convenience. 
 
 ```vim
 " Unhighlight Search using ,SPC
-nmap <silent> <Leader><Space> :nohlsearch<CR>
+nnoremap <silent> <Leader><Space> :nohlsearch<CR>
 ```
 
 Try out the [vim-slash plugin](https://github.com/junegunn/vim-slash) to clear highlighting automatically when the cursor is moved. This works pretty nicely, though additional changes the `*` search.
 
-I setup the shortcut above to clear, but since installing vim-slash plugin, I use it less frequently, the plugin ends up clearing it most of the time, so the plugin may be all you need.
+I setup the shortcut above to clear highlights; but since installing the vim-slash plugin, I use it less frequently. The plugin ends up clearing it most of the time, so it may be all you need.
 
 ## Multiple Files
 
-<span class="sidenote">See `:help vimgrep`</span> Use `:vimgrep /pattern/ {file}` to search across multiple files.
+<span class="sidenote">See `:help grep`</span> Use `:grep pattern {file}` to search across multiple files.
 
-For example: `:vimgrep /TODO/ *.go` would search all files with go extension for the text TODO.
+For example: `:grep TODO *.go` would search all files with go extension for the text TODO.
 
 Use `:cn` to jump to next match.
 
@@ -51,21 +51,21 @@ Use `:cp` to jump to previous match.
 
 Use `:copen` to open list of matches in quickfix window
 
-You can use `**/*.go` or `**/*` to recursively search through directories.
+To recursively search through directories, use `**/*.go` or `**/*` as the `{file}` criteria.
 
 ### Ripgrep and FZF
 
-The `:vimgrep` works ok, but a bit verbose and not as smart for searching code, I prefer to use [ripgrep](https://github.com/BurntSushi/ripgrep) for search and [fzf](https://github.com/junegunn/fzf) for fuzzy matching. Ripgrep by default ignores items in .gitignore, binary, and other bits, and easy to configure how you want.
+The `:grep` search works ok, but a bit verbose and not as smart for searching code. I prefer to use [ripgrep](https://github.com/BurntSushi/ripgrep) for search and [fzf](https://github.com/junegunn/fzf) for fuzzy matching. Ripgrep by default ignores items in .gitignore, binaries, hidden files, and other bits.
 
-See my [Unix is my IDE](https://mkaz.blog/code/unix-is-my-ide/) for the full setup. Installing and using both are a bit easier now that binaries are included in recent package repostiories.
+See my [Unix is my IDE](https://mkaz.blog/code/unix-is-my-ide/) for the full setup. Installing and using both are easier now that binaries are included in recent OS package repostiories.
 
-I use these two plugins for `fzf`. The first provides basic support, and the second provides some useful and common mappings using the basic support.
+I use the following two plugins for `fzf`. The first provides fzf commands in Vim, and the second creates some useful mappings leveraging those commands.
 
 ```vim
 Plug 'junegunn/fzf',  { 'dir': '~/.fzf' }
 Plug 'junegunn/fzf.vim'               " fuzzy search
 ```
 
-I then configure a custom shortcut `<Leader>f` to use the fzf provided `:Rg` command to perform a search. Results are opened in a quickfix window and can be narrowed by typing additional in the window. Use arrow keys to navigate to result, enter to open. You can use `<tab>` to select multiple items.
+I use a custom shortcut `<Leader>f` to use the fzf provided `:Rg` command to perform a search. Results are opened in a quickfix window and can be narrowed by typing additional in the window. Use arrow keys to navigate to result, enter to open. Use `<tab>` to select multiple items.
 
-See `:help fzf-vim-commands` for more.
+If you have the plugin installed, see `:help fzf-vim-commands` for details.
