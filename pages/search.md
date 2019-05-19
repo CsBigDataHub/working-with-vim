@@ -14,7 +14,7 @@ order: 8
 
 I'll use this to check the spelling of variables, by using `*` on a variable it highlights all the words spelled the same. A nice quick way to check for misspellings.
 
-<figure class="wp-block-video"><video controls src="https://mkaz.blog/wp-content/uploads/2019/03/vim-star-nav.mp4"></video><figcaption>Quick Search Examples</figcaption></figure>
+<figure><asciinema-player src="/a/casts/vim/quick-search.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>Quick Search Example</figcaption></figure>
 
 ## Search Motions
 
