@@ -9,11 +9,11 @@ order: 15
 
 <span class="sidenote">See `:help recording`</span>
 
-Recording in vim is similar to what other editors calls macros, it is a way to record and playback a set of commands. You record to a named register, in fact a recording is simply just that, saving the commands you type to the register.
+What other editors call macros, Vim calls recording. It is a way to record and playback a set of commands. A recording is simply saving the commands you type to a register.
 
-Using `qa` will start recording to named register `a`. You will see in the bottom left corner `recording @a`.
+Use `qa` to start recording to named register `a`. You will see in the bottom left corner `recording @a`.
 
-You now perform the actions you want, and then when done press `q` to stop recording.
+You now perform the actions you want, and when done press `q` to stop recording.
 
 Replay back the commands using `@a`, this replays everything you did while recording.
 
@@ -26,10 +26,13 @@ Use `@@` to repeat the previous replay, you can combine with a count so `3@@` wi
 
 ## Recording in Register
 
-As mentioned above, your recordings are stored as commands in the registers. This allows you to see what is recorded by using the `:registers` command to view all registers. Additionally, you can copy a set of commands to a register and then replay them.
+<span class="sidenote">Since recording are saved to a register, and registers persist between Vim sessions. Your recordings persist between Vim sessions.</span>
 
-You can prove this by copying the text `oText from Register` to a register and replay. Note: the `o` is for append after, it is the command to enter into INSERT mode.
+As mentioned above, your recordings are stored as commands in the registers. This allows you to see what is recorded by using the `:registers` command to view all registers. Additionally, if you copy the characters that make up a command to a register, you can replay them.
 
-Here's the example yanking text to register using `"byy`, confirming the text is there, and then replaying using `@b`.
+For example, copy the text `oText from Register` to a register and replay. Note: the `o` is for append after, it is the command to enter into INSERT mode.
+
+Here's the example yanking the above text to register using `"byy`, confirming the text is there, and then replaying using `@b`.
 
 <figure><asciinema-player src="/a/casts/vim/recording2.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>Recording example</figcaption></figure>
+
