@@ -34,9 +34,8 @@ The plugin also provides features beyond just visual cues. Here are the top ones
 
 The [git-messenger plugin](https://github.com/rhysd/git-messenger.vim) provides blame information on a per-line basis. It will display the info in a Scratch window, or if your Vim supports it a fancy new pop-up window. Activate the plugin using the `:GitMessenger` function to display the last commit message that modified the line.
 
-=> ADD CAST
 
 ## View Git History
 
-The [Agit plugin](https://github.com/cohama/agit.vim) displays the full repository history in a tabpage with multiple windows. 
+The [Agit plugin](https://github.com/cohama/agit.vim) displays repository information using a tabpage with multiple windows. The plugin can browse through the full repository history using `:Agit` or a single file history using `:AgitFile`
 
