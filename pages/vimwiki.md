@@ -9,7 +9,7 @@ order: 22
 
 [VimWiki](https://github.com/vimwiki/vimwiki) is a powerful plugin that enables Vim to be your own personal wiki. It is a great tool to keep track of notes, lists, or just about anything.
 
-<span class="tip">😎</span>Yes, Vim is a text editor and of course you can type notes or list in any. VimWiki provides the convenience and defined space to always have a scratch area ready to write without having to think about where and what file to create.
+<span class="tip">😎</span>Yes, Vim is a text editor and obviously you can type notes or lists in any text editor. What VimWiki provides is the convenience and a defined space to always have a scratch area ready to write without having to think about it.
 
 ## Install and Configuration
 
@@ -19,7 +19,7 @@ Install the plugin using `vim-plug`
 Plug 'vimwiki/vimwiki'
 ```
 
-I configure VimWiki to a specific directory which I sync across devices. VimWiki stores everything in plain text files. I use the markdown syntax, the default markup is similar but just different enough that I need to configure it to markdown.
+I configure VimWiki to a specific directory which I sync across devices using [syncthing](https://syncthing.net/), similar to Dropbox. VimWiki stores everything in plain text files. I use the markdown syntax, the default wiki markup is similar but just different enough that I need to switch it to markdown.
 
 ```vim
 " Vim Wiki
@@ -31,7 +31,7 @@ au FileType vimwiki setlocal shiftwidth=6 tabstop=6 noexpandtab
 
 The basic usage is typing `<Leader>ww` to open your index file, one will be created if it does not already exist.
 
-This can be an instant scratch pad to take whatever notes that you want. You can create additional files by insert a links and navigating to it. 
+This can be an instant scratch pad to take whatever notes that you want. Create additional files by insert links and navigating to them. 
 
 Insert a link by surrounding text with double-brackes, for example `[[LinkText]]`.  Once a link is created, navigate to the new page by placing your cursor over the word and pressing enter. This will open, creating the file if needed, the linked page.
 
