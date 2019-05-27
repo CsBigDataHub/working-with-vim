@@ -46,9 +46,14 @@ endsnippet
 
 You can define as many snippets as you like in a single snippets file.
 
+<span class="tip">💡</span> Place `$1` in the snippet definition where you want the cursor to be after the snippet is entered. 
+
 ## Use a Snippet
 
 While in INSERT mode, type the name of your snippet and hit [TAB] and it will be replaced.
 
 Ultisnips has a rich set of features including dynamic snippets and numerous other features, read their document using `:help UltiSnips` or [online in the repo](https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt)
+
+
+<figure><asciinema-player src="/a/casts/vim/snippets.cast" font-size="large" cols="65" rows="20"></asciinema-player><figcaption>Snippets example</figcaption></figure>
 
