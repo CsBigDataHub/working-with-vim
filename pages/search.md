@@ -55,7 +55,7 @@ To recursively search through directories, use `**/*.go` or `**/*` as the `{file
 
 ### Ripgrep and FZF
 
-The `:grep` search works ok, but a bit verbose and not as smart for searching code. I prefer to use [ripgrep](https://github.com/BurntSushi/ripgrep) for search and [fzf](https://github.com/junegunn/fzf) for fuzzy matching. Ripgrep by default ignores items in .gitignore, binaries, hidden files, and other bits.
+The `:grep` search works, but is verbose and blunt tool for searching code. I prefer to use [ripgrep](https://github.com/BurntSushi/ripgrep) for search and [fzf](https://github.com/junegunn/fzf) for fuzzy matching. Ripgrep by default ignores items in .gitignore, binaries, hidden files, and other coding parts.
 
 See my [Unix is my IDE](https://mkaz.blog/code/unix-is-my-ide/) for the full setup. Installing and using both are easier now that binaries are included in recent OS package repostiories.
 

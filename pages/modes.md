@@ -22,7 +22,7 @@ Be NORMAL.
 
 ## VISUAL Mode
 
-VISUAL mode is when you select text and you can visually see it highlighted. This is a bit pedantic to label a mode when text is selected, but Vim commands are slightly differently when text is selected.
+VISUAL mode is when you select text and can visually see it highlighted. It may seem formal to label a mode just when text is selected, but Vim commands work different when text is selected.
 
 `v`
 : Enter VISUAL mode (character)

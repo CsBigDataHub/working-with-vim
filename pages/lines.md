@@ -95,7 +95,7 @@ See [Configuration section](/working-with-vim/configuration/) for more on workin
 
 ## Bubble Up Lines
 
-Move a single line, or multiple lines, up and down using control + arrow keys. The multiline mapping below is a bit complex, even for me, I picked it up somewhere on the interweb.
+Move a single line, or multiple lines, up and down using control + arrow keys. The multiline mapping below is complex, even for me, I picked it up somewhere on the interweb.
 
 ```vim
 " Bubble single lines

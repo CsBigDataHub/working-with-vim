@@ -9,7 +9,7 @@ order: 23
 
 By default, Vim provides no integration with git, all functionality is provided by plugins. There are a wide range of plugins and features to choose from, so your setup will depend on what you want to do. 
 
-I prefer to do my gitting on the command-line, so I know exactly what is happening. However, there are still a few plugins that I use to make things a bit easier.
+I prefer to do my gitting on the command-line, so I know exactly what is happening. However, there are still a few plugins that I use to make things easier.
 
 ## View Git Changes
 
