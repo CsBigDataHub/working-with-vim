@@ -7,7 +7,7 @@ order: 13
 
 # Buffers
 
-Buffers in vim are the in-memory text of files. Your window is a viewport on a buffer. You can switch between open buffers, which works similar in concept to tabs in other editors. Vim does have a concept of tabs too, but they are slightly different, read more about tabs in the [Windows section](/working-with-vim/windows/).
+Buffers in vim are the in-memory text of files. Your window is a viewport on a buffer. You can switch between open buffers, this is similar to tabs in other editors. Vim does have a concept of tabs too, but they are slightly different, read more about tabs in the [Windows section](/working-with-vim/windows/).
 
 I generally keep it pretty simple and just use buffers. They handle my multiple-files-open-at-the-same-time needs. You don't have to take just my word. Here is a post about [Buffers vs Tabs](https://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/), and the author agrees just using buffers is easier.
 
@@ -19,7 +19,7 @@ You can specify opening multiple files on the command-line. For example, `vim *.
 
 From within vim, use `:ed FILE` to open additional files in new buffers.
 
-<span class="tip">💡</span>If you have a command-line program  which returns a list of files that you want to open in Vim, you can use `vim $(command)`. For example, working in a git repository, open the set of changed files using: 
+<span class="tip">💡</span>If you have a command-line program that returns a list of files you want to open, use `vim $(command)`. For example, working in a git repository, open the set of changed files using:
 ```
 vim $(git diff --name-only)
 ```

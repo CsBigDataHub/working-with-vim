@@ -19,7 +19,7 @@ Install the plugin using `vim-plug`
 Plug 'vimwiki/vimwiki'
 ```
 
-I configure VimWiki to a specific directory which I sync across devices using [syncthing](https://syncthing.net/), similar to Dropbox. VimWiki stores everything in plain text files. I use the markdown syntax, the default wiki markup is similar but just different enough that I need to switch it to markdown.
+I configure VimWiki to a specific directory that I sync across devices using [syncthing](https://syncthing.net/), similar to Dropbox. VimWiki stores everything in plain text files. I use the markdown syntax, the default wiki markup is similar but just different enough that I need to switch it to markdown.
 
 ```vim
 " Vim Wiki
@@ -39,7 +39,7 @@ Create pages for any list, tasks, info, notes, or for whatever you want.
 
 ## Todo Lists
 
-VimWiki has a few built-in types and features. One of which is a todo list features. You can create a list of items that can be checked off using the syntax:
+VimWiki has a few built-in types and features. One is a todo list feature that you can create a list of items that can be checked off using the syntax:
 
 ```md
 - [ ] Write Vim Lessons

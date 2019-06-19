@@ -41,13 +41,13 @@ Use `:NoWordy` to turn off, or since Wordy uses the same spellcheck mechanism, I
 
 See the [Wordy Github repository](https://github.com/reedes/vim-wordy) for full documentation.
 
+This is a new word
 
 ## Word Counts
 
 Type `g ctrl-g` to get a list of document information including character and wordcount.
 
-I use the [Airline plugin](https://github.com/vim-airline/vim-airline) for a fancy status line which by default displays word count for known text formats such as markdown.
-
+I use the [Lightline plugin](https://github.com/itchyny/lightline.vim) for a fancy status line. See [my dotfiles](https://github.com/mkaz/dotfiles/blob/master/rcfiles/.vimrc) for my configuration to display the word count.
 
 ## How to type digraphs
 
