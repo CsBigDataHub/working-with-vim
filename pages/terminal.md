@@ -1,7 +1,6 @@
 ---
 title: Terminal
-parent: 1497
-template: page-tut.php
+date: 2019-05-20
 order: 20
 ---
 

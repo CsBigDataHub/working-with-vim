@@ -1,7 +1,6 @@
 ---
 title: VimWiki
-parent: 1497
-template: page-tut.php
+date: 2019-05-22
 order: 22
 ---
 
@@ -105,7 +104,7 @@ augroup vimwikigroup
 augroup end
 ```
 
-<figure><asciinema-player src="/a/casts/vim/vimwiki-diary.cast" font-size="large" cols="65" rows="20"></asciinema-player><figcaption>VimWiki Diary</figcaption></figure>
+<figure><asciinema-player src="/working-with-vim/casts/vimwiki-diary.cast" font-size="large" cols="65" rows="20"></asciinema-player><figcaption>VimWiki Diary</figcaption></figure>
 
 
 ## Search

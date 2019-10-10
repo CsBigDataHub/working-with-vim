@@ -1,7 +1,6 @@
 ---
 title: Help Yourself
-parent: 1497
-template: page-tut.php
+date: 2019-05-02
 order: 2
 ---
 
@@ -27,4 +26,4 @@ The help pages include tags to other help sections, depending on your colorschem
 
 Jumping to tag definitions actually works for any words in help regardless if they are tags. If a definition exists for the word, you will jump to it. Tags tell you that a definition does actually exist.
 
-<figure><asciinema-player src="/a/casts/vim/help.cast" font-size="large" cols="80" rows="25"></asciinema-player><figcaption>Example using Help</figcaption></figure>
+<figure><asciinema-player src="/working-with-vim/casts/help.cast" font-size="large" cols="80" rows="25"></asciinema-player><figcaption>Example using Help</figcaption></figure>

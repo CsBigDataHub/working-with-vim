@@ -1,7 +1,6 @@
 ---
 title: Substitute
-parent: 1497
-template: page-tut.php
+date: 2019-05-10
 order: 10
 ---
 
@@ -22,4 +21,4 @@ You can define a range using VISUAL mode. First, highlight the area you want and
 
 Besides search and replace, you can use `g/find/d` to delete all lines that match find, or `v/find/d` to delete all lines that do not match find.
 
-<figure><asciinema-player src="/a/casts/vim/substitute.cast" font-size="large" cols="65" rows="20"></asciinema-player><figcaption>Substitute Examples</figcaption></figure>
+<figure><asciinema-player src="/working-with-vim/casts/substitute.cast" font-size="large" cols="65" rows="20"></asciinema-player><figcaption>Substitute Examples</figcaption></figure>

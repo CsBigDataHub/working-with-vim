@@ -1,7 +1,6 @@
 ---
 title: Lines
-parent: 1497
-template: page-tut.php
+date: 2019-05-06
 order: 6
 ---
 

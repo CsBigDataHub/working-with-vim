@@ -1,7 +1,6 @@
 ---
 title: Modes
-parent: 1497
-template: page-tut.php
+date: 2019-05-01
 order: 1
 ---
 
@@ -44,7 +43,7 @@ Psst, don't tell the purists, but if you `set mouse=a` you can use your mouse to
 
 VISUAL mode is pretty powerful, I use it frequently since it provides feedback seeing what is selected, and then unselected after the action.
 
-<figure><asciinema-player src="/a/casts/vim/modes.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>VISUAL mode example</figcaption></figure>
+<figure><asciinema-player src="/working-with-vim/casts/modes.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>VISUAL mode example</figcaption></figure>
 
 <span class="tip">💡</span>After performing an operation in VISUAL MODE the selection is no longer highlighted. Use `gv` to automatically reselect the area previously highlighted.
 

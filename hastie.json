@@ -1,0 +1,6 @@
+{
+    "SourceDir"  : "pages",
+    "LayoutDir"  : "layouts",
+    "PublishDir" : "docs",
+    "BaseUrl"    : "/working-with-go"
+}

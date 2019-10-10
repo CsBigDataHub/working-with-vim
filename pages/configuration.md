@@ -1,7 +1,6 @@
 ---
 title: Configuration
-parent: 1497
-template: page-tut.php
+date: 2019-05-16
 order: 16
 ---
 

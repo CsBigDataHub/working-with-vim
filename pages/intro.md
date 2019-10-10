@@ -1,7 +1,6 @@
 ---
 title: Intro
-parent: 1497
-template: page-tut.php
+date: 2019-04-30
 order: 0
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Operators
-parent: 1497
-template: page-tut.php
+date: 2019-05-05
 order: 5
 ---
 
@@ -23,7 +22,7 @@ Here are some basic operators, these are combined with [motions](/working-with-v
 
 <span class="tip">💡</span> Use `p` paste with something highlighted to replace the highlighted section. This is extremely helpful, since deleting an item can change what is in your register you are trying to paste. See [Registers](/working-with-vim/registers/) for more.
 
-<figure><asciinema-player src="/a/casts/vim/copy-paste.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>Copy-Paste example</figcaption></figure>
+<figure><asciinema-player src="/working-with-vim/casts/copy-paste.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>Copy-Paste example</figcaption></figure>
 
 ## Undo / Redo
 

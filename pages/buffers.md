@@ -1,7 +1,6 @@
 ---
 title: Buffers
-parent: 1497
-template: page-tut.php
+date: 2019-05-13
 order: 13
 ---
 
@@ -74,7 +73,7 @@ nnoremap <Leader>, :Buffers<CR> " browse buffers
 
 The `:Buffers` command above is slightly different and comes from the [fzf.vim plugin](https://github.com/junegunn/fzf.vim). This allows for a more forgiving fuzzy matching of buffer names. See my article [Unix is my IDE](https://mkaz.blog/code/unix-is-my-ide/) for more explanation on how I setup vim using fzf and ripgrep for advanced searching, which includes this quick way to switch buffers using fzf.
 
-<figure><asciinema-player src="/a/casts/vim/buffers.cast" font-size="large" cols="65" rows="20"></asciinema-player><figcaption>Buffer navigations</figcaption></figure>
+<figure><asciinema-player src="/working-with-vim/casts/buffers.cast" font-size="large" cols="65" rows="20"></asciinema-player><figcaption>Buffer navigations</figcaption></figure>
 
 
 ## Split Buffers
