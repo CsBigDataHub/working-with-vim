@@ -3,12 +3,12 @@
 
 Working with Vim is a set of lessons for using the Vim editor.
 
-Published online at: https://mkaz.blog/working-with-vim
+Published online at: https://mkaz.github.io/working-with-vim
 
 ## Publish
 
-Uses [wpsync] to sync markdown pages directly to WordPress site, it's pretty sweet.
+Uses [hastie] site generator to convert markdown in `pages/` directory to `docs/` directory.
 
 
-[wpsync]: https://github.com/mkaz/wpsync
+[hastie]: https://github.com/mkaz/hastie
 
