@@ -1,7 +1,6 @@
 ---
 title: Snippets
-parent: 1497
-template: page-tut.php
+date: 2019-05-19
 order: 19
 ---
 
@@ -55,5 +54,5 @@ While in INSERT mode, type the name of your snippet and hit [TAB] and it will be
 Ultisnips has a rich set of features including dynamic snippets and numerous other features, read their document using `:help UltiSnips` or [online in the repo](https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt)
 
 
-<figure><asciinema-player src="/a/casts/vim/snippets.cast" font-size="large" cols="65" rows="20"></asciinema-player><figcaption>Snippets example</figcaption></figure>
+<figure><asciinema-player src="/working-with-vim/casts/snippets.cast" font-size="large" cols="65" rows="20"></asciinema-player><figcaption>Snippets example</figcaption></figure>
 

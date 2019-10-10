@@ -1,4 +1,0 @@
----
-title: Working with Vim
-author: Marcus Kazmierczak
----

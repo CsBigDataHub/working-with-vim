@@ -1,7 +1,6 @@
 ---
 title: Recording
-parent: 1497
-template: page-tut.php
+date: 2019-05-15
 order: 15
 ---
 
@@ -19,7 +18,7 @@ Replay back the commands using `@a`, this replays everything you did while recor
 
 Use `@@` to repeat the previous replay, you can combine with a count so `3@@` will repeat previous replay 3 times, or you can use `3@a` to repeat.
 
-<figure><asciinema-player src="/a/casts/vim/recording.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>Recording example</figcaption></figure>
+<figure><asciinema-player src="/working-with-vim/casts/recording.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>Recording example</figcaption></figure>
 
 <span class="tip">💡</span>Your macro just duplicates your commands, so make sure you end/start at the right spot. Basically, you want to start all macros at the start of a line, and end at the start of the next line. This helps when repeating.
 
@@ -34,5 +33,5 @@ For example, copy the text `oText from Register` to a register and replay. Note:
 
 Here's the example yanking the above text to register using `"byy`, confirming the text is there, and then replaying using `@b`.
 
-<figure><asciinema-player src="/a/casts/vim/recording2.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>Recording example</figcaption></figure>
+<figure><asciinema-player src="/working-with-vim/casts/recording2.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>Recording example</figcaption></figure>
 

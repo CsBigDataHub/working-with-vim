@@ -1,7 +1,6 @@
 ---
 title: Registers
-parent: 1497
-template: page-tut.php
+date: 2019-05-12
 order: 12
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: The Tao of Vim
-parent: 1497
-template: page-tut.php
+date: 2019-05-03
 order: 3
 ---
 
@@ -37,5 +36,5 @@ I find the feedback useful, particularly when copying.
 
 For example, copying a whole buffer using VISUAL mode: Type `gg` to move to the top of the file, `shift-v` to enter VISUAL LINE Mode, and then `G` will move to end of file selecting all the lines. With the subject highlighted, use `y` to copy.
 
-<figure><asciinema-player src="/a/casts/vim/tao.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>VISUAL mode feedback comparison</figcaption></figure>
+<figure><asciinema-player src="/working-with-vim/casts/tao.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>VISUAL mode feedback comparison</figcaption></figure>
 

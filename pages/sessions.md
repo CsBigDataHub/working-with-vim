@@ -1,7 +1,6 @@
 ---
 title: Sessions
-parent: 1497
-template: page-tut.php
+date: 2019-05-18
 order: 18
 ---
 

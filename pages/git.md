@@ -1,7 +1,6 @@
 ---
 title: Git
-parent: 1497
-template: page-tut.php
+date: 2019-05-23
 order: 23
 ---
 
@@ -28,7 +27,7 @@ The plugin also provides features beyond just visual cues. Here are the top ones
 2. Use `:GitGutterUndoHunk` to revert hunk
 3. Use `:GitGutterStageHunk` for selective staging of hunks
 
-<figure><asciinema-player src="/a/casts/vim/git1.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>gitgutter examples</figcaption></figure>
+<figure><asciinema-player src="/working-with-vim/casts/git1.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>gitgutter examples</figcaption></figure>
 
 ## Git Blame History
 
@@ -36,10 +35,10 @@ The [git-messenger plugin](https://github.com/rhysd/git-messenger.vim) provides 
 
 Running `:GitMessenger` with a message displayed enters that message buffer allowing you to navigate back to older commits by typing `o` key.  See `:help :GitMessenger` for more.
 
-<figure><asciinema-player src="/a/casts/vim/git2.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>git-messenger example (neovim)</figcaption></figure>
+<figure><asciinema-player src="/working-with-vim/casts/git2.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>git-messenger example (neovim)</figcaption></figure>
 
 ## View Git History
 
 The [Agit plugin](https://github.com/cohama/agit.vim) displays repository information using a tabpage with multiple windows. The plugin can browse through the full repository history using `:Agit` or a single file history using `:AgitFile`
 
-<figure><asciinema-player src="/a/casts/vim/git3.cast" font-size="large" cols="65" rows="20"></asciinema-player><figcaption>Agit example</figcaption></figure>
+<figure><asciinema-player src="/working-with-vim/casts/git3.cast" font-size="large" cols="65" rows="20"></asciinema-player><figcaption>Agit example</figcaption></figure>

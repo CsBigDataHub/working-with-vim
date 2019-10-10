@@ -1,7 +1,6 @@
 ---
 title: Plugins
-template: page-tut.php
-parent: 1497
+date: 2019-05-17
 order: 17
 ---
 

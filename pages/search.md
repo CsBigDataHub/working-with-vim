@@ -1,7 +1,6 @@
 ---
 title: Search
-parent: 1497
-template: page-tut.php
+date: 2019-05-08
 order: 8
 ---
 
@@ -14,7 +13,7 @@ order: 8
 
 I'll use this to check the spelling of variables, by using `*` on a variable it highlights all the words spelled the same. A nice quick way to check for misspellings.
 
-<figure><asciinema-player src="/a/casts/vim/quick-search.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>Quick Search Example</figcaption></figure>
+<figure><asciinema-player src="/working-with-vim/casts/quick-search.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>Quick Search Example</figcaption></figure>
 
 ## Search Motions
 
