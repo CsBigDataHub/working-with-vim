@@ -1,6 +1,6 @@
 ---
 title: Sessions
-date: 2019-05-18
+layout: page
 order: 18
 ---
 

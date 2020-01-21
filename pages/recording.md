@@ -1,6 +1,6 @@
 ---
 title: Recording
-date: 2019-05-15
+layout: page
 order: 15
 ---
 

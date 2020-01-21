@@ -1,6 +1,6 @@
 ---
 title: Nav Marks
-date: 2019-05-09
+layout: page
 order: 9
 ---
 

@@ -1,6 +1,9 @@
 {
     "SourceDir"  : "pages",
-    "LayoutDir"  : "layouts",
+    "LayoutDir"  : "/home/mkaz/src/mkaz/hastie/themes/docs",
     "PublishDir" : "docs",
-    "BaseUrl"    : "/working-with-go"
+    "BaseUrl"    : "/working-with-vim",
+	"Params": {
+		"SiteName": "Working with Vim"
+	}
 }

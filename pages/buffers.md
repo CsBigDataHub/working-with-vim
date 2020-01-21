@@ -1,6 +1,6 @@
 ---
 title: Buffers
-date: 2019-05-13
+layout: page
 order: 13
 ---
 
@@ -14,7 +14,7 @@ Buffers tend to be the default mode for multiple files, so it is what I learned 
 
 ## Opening Multiple Files
 
-You can specify opening multiple files on the command-line. For example, `vim *.md` or `vim file file fle` each file opens in its own buffer. 
+You can specify opening multiple files on the command-line. For example, `vim *.md` or `vim file file fle` each file opens in its own buffer.
 
 From within vim, use `:ed FILE` to open additional files in new buffers.
 

@@ -1,12 +1,12 @@
 ---
 title: The Tao of Vim
-date: 2019-05-03
+layout: page
 order: 3
 ---
 
 # The Tao of Vim
 
-The underlying principle of Vim is the operator-motion pair. You can think of Vim as a language. The operator and motion are the verbs and nouns that define the action on a subject. 
+The underlying principle of Vim is the operator-motion pair. You can think of Vim as a language. The operator and motion are the verbs and nouns that define the action on a subject.
 
 For example, if you want to delete a line. Delete is the action, and a line is the subject. For Vim, `d` is the delete operator, and `_` is the line motion.
 

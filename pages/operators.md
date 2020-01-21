@@ -1,6 +1,6 @@
 ---
 title: Operators
-date: 2019-05-05
+layout: page
 order: 5
 ---
 

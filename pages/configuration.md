@@ -1,6 +1,6 @@
 ---
 title: Configuration
-date: 2019-05-16
+layout: page
 order: 16
 ---
 

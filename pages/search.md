@@ -1,6 +1,6 @@
 ---
 title: Search
-date: 2019-05-08
+layout: page
 order: 8
 ---
 
@@ -27,7 +27,7 @@ I don't use the delete or copy actions with regex searches. I primarily use rege
 
 ### Remove Highlight
 
-Search results remain highlighted after a search, this is useful when searching, but they often stick around too long. Use `:nohlsearch` to unhighlight the searches. I create the `<Leader><Space>` map for convenience. 
+Search results remain highlighted after a search, this is useful when searching, but they often stick around too long. Use `:nohlsearch` to unhighlight the searches. I create the `<Leader><Space>` map for convenience.
 
 ```vim
 " Unhighlight Search using ,SPC

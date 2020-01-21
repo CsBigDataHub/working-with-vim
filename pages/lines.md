@@ -1,6 +1,6 @@
 ---
 title: Lines
-date: 2019-05-06
+layout: page
 order: 6
 ---
 
@@ -25,7 +25,7 @@ You can paste a deleted or yanked line elsewhere, use `p` to paste.
 
 Another useful shortcut is `D`, to delete from cursor to end of line, equivalent to `d$`
 
-The change equivalent is `C`, to delete from cursor to end of line, and switch to insert mode. 
+The change equivalent is `C`, to delete from cursor to end of line, and switch to insert mode.
 
 
 ## Line Motions
@@ -78,7 +78,7 @@ Use `gq` to wrap lines to a specified length defined by `textwidth`. If the `tex
 
 ## Wrapped Line Navigation
 
-Wrapped line navigation can be weird in Vim. Since, one actual line wraps to multiple displayed lines. The `j` and `k` keys tells Vim to move to the next line, thus skipping over the wrapped lines. 
+Wrapped line navigation can be weird in Vim. Since, one actual line wraps to multiple displayed lines. The `j` and `k` keys tells Vim to move to the next line, thus skipping over the wrapped lines.
 
 Use `gj` and `gk` to navigate via displayed lines. I configure this as my default using the following configuration.
 

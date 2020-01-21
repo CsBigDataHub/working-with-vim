@@ -1,6 +1,6 @@
 ---
 title: Windows
-date: 2019-05-14
+layout: page
 order: 14
 ---
 

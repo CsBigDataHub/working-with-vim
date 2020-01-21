@@ -1,6 +1,6 @@
 ---
 title: Help Yourself
-date: 2019-05-02
+layout: page
 order: 2
 ---
 
@@ -22,7 +22,7 @@ Help is simply a read-only buffer. You can navigate, highlight, copy, paste, sea
 
 ## Navigate Help Tags
 
-The help pages include tags to other help sections, depending on your colorscheme it might be blue. With your cursor on an item type `ctrl-]` to jump to that definition. 
+The help pages include tags to other help sections, depending on your colorscheme it might be blue. With your cursor on an item type `ctrl-]` to jump to that definition.
 
 Jumping to tag definitions actually works for any words in help regardless if they are tags. If a definition exists for the word, you will jump to it. Tags tell you that a definition does actually exist.
 

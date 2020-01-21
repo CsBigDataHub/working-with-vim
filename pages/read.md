@@ -1,12 +1,12 @@
 ---
 title: Read
-date: 2019-05-11
+layout: page
 order: 11
 ---
 
 # Read
 
-Use `:read` command to read from an external sources into the current buffer. 
+Use `:read` command to read from an external sources into the current buffer.
 
 ## Read from File
 

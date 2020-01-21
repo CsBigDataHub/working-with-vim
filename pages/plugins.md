@@ -1,6 +1,6 @@
 ---
 title: Plugins
-date: 2019-05-17
+layout: page
 order: 17
 ---
 

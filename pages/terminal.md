@@ -1,12 +1,12 @@
 ---
 title: Terminal
-date: 2019-05-20
+layout: page
 order: 20
 ---
 
 # Terminal
 
-Use the `:terminal` command to start a terminal session in a new buffer.  This is a full terminal shell, just inside of Vim. The feature is relatively new, so, it requires Vim 8.1 or Neovim. 
+Use the `:terminal` command to start a terminal session in a new buffer.  This is a full terminal shell, just inside of Vim. The feature is relatively new, so, it requires Vim 8.1 or Neovim.
 
 I normally use the terminal for quick one-off processes, like a build. If I'm going to do much more, I'll drop to the shell using `ctrl-z` and return using `fg` in bash.
 

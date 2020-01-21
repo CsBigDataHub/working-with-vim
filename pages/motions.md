@@ -1,6 +1,6 @@
 ---
 title: Motions
-date: 2019-05-04
+layout: page
 order: 4
 ---
 

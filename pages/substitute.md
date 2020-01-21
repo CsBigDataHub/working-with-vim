@@ -1,6 +1,6 @@
 ---
 title: Substitute
-date: 2019-05-10
+layout: page
 order: 10
 ---
 

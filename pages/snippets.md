@@ -1,6 +1,6 @@
 ---
 title: Snippets
-date: 2019-05-19
+layout: page
 order: 19
 ---
 
@@ -45,7 +45,7 @@ endsnippet
 
 You can define as many snippets as you like in a single snippets file.
 
-<span class="tip">💡</span> Place `$1` in the snippet definition where you want the cursor to be after the snippet is entered. 
+<span class="tip">💡</span> Place `$1` in the snippet definition where you want the cursor to be after the snippet is entered.
 
 ## Use a Snippet
 

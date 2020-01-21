@@ -1,6 +1,6 @@
 ---
 title: Modes
-date: 2019-05-01
+layout: page
 order: 1
 ---
 

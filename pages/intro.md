@@ -1,6 +1,6 @@
 ---
-title: Intro
-date: 2019-04-30
+title: Introduction
+layout: page
 order: 0
 ---
 

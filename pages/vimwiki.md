@@ -1,6 +1,6 @@
 ---
 title: VimWiki
-date: 2019-05-22
+layout: page
 order: 22
 ---
 
@@ -30,7 +30,7 @@ au FileType vimwiki setlocal shiftwidth=6 tabstop=6 noexpandtab
 
 The basic usage is typing `<Leader>ww` to open your index file, one will be created if it does not already exist.
 
-This can be an instant scratch pad to take whatever notes that you want. Create additional files by insert links and navigating to them. 
+This can be an instant scratch pad to take whatever notes that you want. Create additional files by insert links and navigating to them.
 
 Insert a link by surrounding text with double-brackes, for example `[[LinkText]]`.  Once a link is created, navigate to the new page by placing your cursor over the word and pressing enter. This will open, creating the file if needed, the linked page.
 
@@ -87,11 +87,11 @@ See `:help vimwiki-table`
 
 ## Diary
 
-VimWiki diary makes it easy to create a daily entry. Type `<Leader>w<Leader>w` to create a new entry based on today's date. A `diary` subdirectory is created containing the wiki files. 
+VimWiki diary makes it easy to create a daily entry. Type `<Leader>w<Leader>w` to create a new entry based on today's date. A `diary` subdirectory is created containing the wiki files.
 
 This [Calendar plugin](https://github.com/mattn/calendar-vim) works with the diary feature, allowing you to browse and create entries using a calendar interface.
 
-Create a diary index page by navigating to the page using `:VimwikiDiaryIndex` and then automatically create entries list using `:VimwikiDiaryGenerateLinks` 
+Create a diary index page by navigating to the page using `:VimwikiDiaryIndex` and then automatically create entries list using `:VimwikiDiaryGenerateLinks`
 
 I find both commands a little tedious, so I create a `:Diary` command to navigate to the index page, and an autocommand to generate links each time the diary index is open.
 

@@ -1,6 +1,6 @@
 ---
 title: Registers
-date: 2019-05-12
+layout: page
 order: 12
 ---
 
