@@ -2,123 +2,15 @@
 <html lang="en-us">
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="refresh" content="0; url=https://mkaz.blog/working-with-vim/text-object.html">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-		<title> Text Objects - Working with Vim</title>
+		<title>  Working with Vim</title>
 
 		<link rel="stylesheet" href="static/style.css"/>
 		<link rel="stylesheet" href="static/prism.css"/>
 	</head>
 	<body>
-
-		<div class="container">
-			<header>
-				<h3><a href="/working-with-vim">Working with Vim</a></h3>
-			</header>
-
-			<aside>
-				<nav>
-					<h3> Contents </h3>
-					<ul>
-						
-						<li><a href="/working-with-vim/intro.html">Introduction</a></li>
-						
-						<li><a href="/working-with-vim/modes.html">Modes</a></li>
-						
-						<li><a href="/working-with-vim/help.html">Help Yourself</a></li>
-						
-						<li><a href="/working-with-vim/tao.html">The Tao of Vim</a></li>
-						
-						<li><a href="/working-with-vim/motions.html">Motions</a></li>
-						
-						<li><a href="/working-with-vim/operators.html">Operators</a></li>
-						
-						<li><a href="/working-with-vim/lines.html">Lines</a></li>
-						
-						<li><a href="/working-with-vim/text-object.html">Text Objects</a></li>
-						
-						<li><a href="/working-with-vim/search.html">Search</a></li>
-						
-						<li><a href="/working-with-vim/nav-marks.html">Nav Marks</a></li>
-						
-						<li><a href="/working-with-vim/substitute.html">Substitute</a></li>
-						
-						<li><a href="/working-with-vim/read.html">Read</a></li>
-						
-						<li><a href="/working-with-vim/registers.html">Registers</a></li>
-						
-						<li><a href="/working-with-vim/buffers.html">Buffers</a></li>
-						
-						<li><a href="/working-with-vim/windows.html">Windows</a></li>
-						
-						<li><a href="/working-with-vim/recording.html">Recording</a></li>
-						
-						<li><a href="/working-with-vim/configuration.html">Configuration</a></li>
-						
-						<li><a href="/working-with-vim/plugins.html">Plugins</a></li>
-						
-						<li><a href="/working-with-vim/sessions.html">Sessions</a></li>
-						
-						<li><a href="/working-with-vim/snippets.html">Snippets</a></li>
-						
-						<li><a href="/working-with-vim/terminal.html">Terminal</a></li>
-						
-						<li><a href="/working-with-vim/writing.html">Writing</a></li>
-						
-						<li><a href="/working-with-vim/vimwiki.html">VimWiki</a></li>
-						
-						<li><a href="/working-with-vim/git.html">Git</a></li>
-						
-					</ul>
-				</nav>
-			</aside>
-
-			<main>
-				<article>
-					<h1>Text Object Selection</h1>
-
-<p><span class="sidenote">See <code>:help text-object</code></span> Vim can operate on text based on its objects and structure. The inner object <code>i</code> is quite useful to select chunks of text inside parentheses, brackets, quotes, tags and other pairs, use <code>a</code> to also select the delimiters.</p>
-
-<p>An example might help illustrate. To select text inside an html tag you can use the tag text object <code>t</code>. With your cursor between the tags, use <code>v</code> to enter visual mode, <code>i</code> for inner, <code>t</code> for tag. So <code>vit</code> will select interior content between two tags. Use <code>vat</code> to select content with tags.</p>
-
-<figure class="wp-block-video"><video controls src="https://mkaz.blog/wp-content/uploads/2019/05/vim-tag-select.mp4"></video> <figcaption> Using tag selection </figcaption> </figure>
-
-<h2>Selection Commands</h2>
-
-<dl>
-<dt><code>(</code></dt>
-<dd>Parentheses</dd>
-<dt><code>{</code>  <code>[</code>  <code>&gt;</code></dt>
-<dd>Brackets</dd>
-<dt><code>'</code>  <code>&quot;</code>  <code>`</code></dt>
-<dd>Quotes and Ticks</dd>
-<dt><code>t</code></dt>
-<dd>Tag block</dd>
-<dt><code>w</code></dt>
-<dd>Words</dd>
-<dt><code>s</code></dt>
-<dd>Sentences</dd>
-<dt><code>p</code></dt>
-<dd>Paragraphs</dd>
-</dl>
-
-<p>Combine the text objects with operators. For example, to copy the arguments in a function use <code>yi(</code></p>
-
-<p>If you want delete a block of code in a <code>{ ... }</code> with your cursor inside the block, type <code>di{</code></p>
-
-<p>For text in quotes, type <code>yi&quot;</code> to copy the word without the quotes. If you want copy to include the quotes use <code>a</code> instead of <code>i</code>.</p>
-
-<figure class="wp-block-video"><video controls src="https://mkaz.blog/wp-content/uploads/2019/03/vim-selection.mp4"></video><figcaption>Selection example</figcaption></figure>
-
-<p><span class="tip">💡</span> Use the inner selection motion with the cursor in the middle of a word, sentence, or paragraph to select the full object, without having to first navigate to the start.</p>
-
-				</article>
-			</main>
-			<footer>
-				<span>An <a href="https://mkaz.blog/">mkaz</a> joint </span> ·
-				<span>Built using <a href="https://github.com/mkaz/hastie" rel="generator">Hastie</a></span>
-			</footer>
-		</div>
-
-		<script src="static/prism.js"></script>
+		Page moved to <a href="https://mkaz.blog/working-with-vim/text-object.html">https://mkaz.blog/working-with-vim/text-object.html</a>
 	</body>
 </html>

@@ -2,116 +2,15 @@
 <html lang="en-us">
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="refresh" content="0; url=https://mkaz.blog/working-with-vim/registers.html">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-		<title> Registers - Working with Vim</title>
+		<title>  Working with Vim</title>
 
 		<link rel="stylesheet" href="static/style.css"/>
 		<link rel="stylesheet" href="static/prism.css"/>
 	</head>
 	<body>
-
-		<div class="container">
-			<header>
-				<h3><a href="/working-with-vim">Working with Vim</a></h3>
-			</header>
-
-			<aside>
-				<nav>
-					<h3> Contents </h3>
-					<ul>
-						
-						<li><a href="/working-with-vim/intro.html">Introduction</a></li>
-						
-						<li><a href="/working-with-vim/modes.html">Modes</a></li>
-						
-						<li><a href="/working-with-vim/help.html">Help Yourself</a></li>
-						
-						<li><a href="/working-with-vim/tao.html">The Tao of Vim</a></li>
-						
-						<li><a href="/working-with-vim/motions.html">Motions</a></li>
-						
-						<li><a href="/working-with-vim/operators.html">Operators</a></li>
-						
-						<li><a href="/working-with-vim/lines.html">Lines</a></li>
-						
-						<li><a href="/working-with-vim/text-object.html">Text Objects</a></li>
-						
-						<li><a href="/working-with-vim/search.html">Search</a></li>
-						
-						<li><a href="/working-with-vim/nav-marks.html">Nav Marks</a></li>
-						
-						<li><a href="/working-with-vim/substitute.html">Substitute</a></li>
-						
-						<li><a href="/working-with-vim/read.html">Read</a></li>
-						
-						<li><a href="/working-with-vim/registers.html">Registers</a></li>
-						
-						<li><a href="/working-with-vim/buffers.html">Buffers</a></li>
-						
-						<li><a href="/working-with-vim/windows.html">Windows</a></li>
-						
-						<li><a href="/working-with-vim/recording.html">Recording</a></li>
-						
-						<li><a href="/working-with-vim/configuration.html">Configuration</a></li>
-						
-						<li><a href="/working-with-vim/plugins.html">Plugins</a></li>
-						
-						<li><a href="/working-with-vim/sessions.html">Sessions</a></li>
-						
-						<li><a href="/working-with-vim/snippets.html">Snippets</a></li>
-						
-						<li><a href="/working-with-vim/terminal.html">Terminal</a></li>
-						
-						<li><a href="/working-with-vim/writing.html">Writing</a></li>
-						
-						<li><a href="/working-with-vim/vimwiki.html">VimWiki</a></li>
-						
-						<li><a href="/working-with-vim/git.html">Git</a></li>
-						
-					</ul>
-				</nav>
-			</aside>
-
-			<main>
-				<article>
-					<h1>Registers</h1>
-
-<p>Vim stores the list of yanked or deleted text in a set of registers. To see what is stored across all registers use the <code>:reg</code> command.</p>
-
-<p>The <code>&quot;&quot;</code> register has no name, it is similar to the clipboard. Whatever is copied or deleted is placed in the <code>&quot;&quot;</code> register automatically.</p>
-
-<p>The numbered registers <code>0-9</code> keep a stack of recently copied or deleted text.</p>
-
-<p>To paste an item from a register you use <code>&quot;{reg}p</code>. For example, to paste an item from register <code>0</code>, you use: <code>&quot;0p</code></p>
-
-<p><span class="tip">💡</span> Use <code>&quot;0p</code> for paste copied content that accidentally got replaced because of a delete after a copy. Deleted text automatically goes to <code>&quot;&quot;</code> register. This replaces any copied text there. The original copied text is register <code>0</code> so use <code>&quot;0p</code> to paste.</p>
-
-<h2>Named Registers</h2>
-
-<p>You copy items directly to named registers [a-z] by prepending your yank command with the register name. For example, yanking a word to register <code>a</code> use <code>&quot;ayw</code> and then <code>&quot;ap</code> to paste.</p>
-
-<p>If you use a capital letter, [A-Z], the same corresponding named register is used, but the content is appended to the register, not replaced.</p>
-
-<p><span class="tip">📄</span> Registers are stored in <code>~/.viminfo</code> and loaded each time vim starts. So, registers will persist between sessions.</p>
-
-<h2>System Clipboard</h2>
-
-<p>The <code>+</code> register is a special register for the system clipboard. This allows you bidirectional copy and paste between Vim and the host OS.</p>
-
-<p>For example, use <code>&quot;+yy</code> to copy current line to the system clipboard, and <code>&quot;+p</code> to paste from clipboard to vim buffer.</p>
-
-<p>For system clipboard, Vim requires the clipboard support to be compiled in. Check for clipboard support using <code>:echo has('clipboard')</code> if the result is <code>0</code> than your version does not have it compiled. For Linux, try installing <code>vim-gtk</code> or similar GUI related package. Neovim has clipboard support by default, but requires <code>xclip</code> or <code>xsel</code> to be installed.</p>
-
-<p>See <code>:help registers</code> for additional information about other special registers.</p>
-
-				</article>
-			</main>
-			<footer>
-				<span>An <a href="https://mkaz.blog/">mkaz</a> joint </span> ·
-				<span>Built using <a href="https://github.com/mkaz/hastie" rel="generator">Hastie</a></span>
-			</footer>
-		</div>
-
-		<script src="static/prism.js"></script>
+		Page moved to <a href="https://mkaz.blog/working-with-vim/registers.html">https://mkaz.blog/working-with-vim/registers.html</a>
 	</body>
 </html>

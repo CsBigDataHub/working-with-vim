@@ -2,139 +2,15 @@
 <html lang="en-us">
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="refresh" content="0; url=https://mkaz.blog/working-with-vim/modes.html">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-		<title> Modes - Working with Vim</title>
+		<title>  Working with Vim</title>
 
 		<link rel="stylesheet" href="static/style.css"/>
 		<link rel="stylesheet" href="static/prism.css"/>
 	</head>
 	<body>
-
-		<div class="container">
-			<header>
-				<h3><a href="/working-with-vim">Working with Vim</a></h3>
-			</header>
-
-			<aside>
-				<nav>
-					<h3> Contents </h3>
-					<ul>
-						
-						<li><a href="/working-with-vim/intro.html">Introduction</a></li>
-						
-						<li><a href="/working-with-vim/modes.html">Modes</a></li>
-						
-						<li><a href="/working-with-vim/help.html">Help Yourself</a></li>
-						
-						<li><a href="/working-with-vim/tao.html">The Tao of Vim</a></li>
-						
-						<li><a href="/working-with-vim/motions.html">Motions</a></li>
-						
-						<li><a href="/working-with-vim/operators.html">Operators</a></li>
-						
-						<li><a href="/working-with-vim/lines.html">Lines</a></li>
-						
-						<li><a href="/working-with-vim/text-object.html">Text Objects</a></li>
-						
-						<li><a href="/working-with-vim/search.html">Search</a></li>
-						
-						<li><a href="/working-with-vim/nav-marks.html">Nav Marks</a></li>
-						
-						<li><a href="/working-with-vim/substitute.html">Substitute</a></li>
-						
-						<li><a href="/working-with-vim/read.html">Read</a></li>
-						
-						<li><a href="/working-with-vim/registers.html">Registers</a></li>
-						
-						<li><a href="/working-with-vim/buffers.html">Buffers</a></li>
-						
-						<li><a href="/working-with-vim/windows.html">Windows</a></li>
-						
-						<li><a href="/working-with-vim/recording.html">Recording</a></li>
-						
-						<li><a href="/working-with-vim/configuration.html">Configuration</a></li>
-						
-						<li><a href="/working-with-vim/plugins.html">Plugins</a></li>
-						
-						<li><a href="/working-with-vim/sessions.html">Sessions</a></li>
-						
-						<li><a href="/working-with-vim/snippets.html">Snippets</a></li>
-						
-						<li><a href="/working-with-vim/terminal.html">Terminal</a></li>
-						
-						<li><a href="/working-with-vim/writing.html">Writing</a></li>
-						
-						<li><a href="/working-with-vim/vimwiki.html">VimWiki</a></li>
-						
-						<li><a href="/working-with-vim/git.html">Git</a></li>
-						
-					</ul>
-				</nav>
-			</aside>
-
-			<main>
-				<article>
-					<h1>Modes</h1>
-
-<p>Vim has different modes of operations. The main modes are NORMAL, INSERT, and VISUAL mode. <span class="sidenote">I capitalize the modes because vim does, I&rsquo;m not shouting them.</span> The commands you use are based on what mode you are in. Vim&rsquo;s INSERT mode is like other editors, what you type will be inserted into the document.</p>
-
-<h2>NORMAL Mode</h2>
-
-<p>To realize the strength of Vim, you need to <strong>make NORMAL mode your default mode</strong>. I don&rsquo;t like telling people what to do, no vim shaming here, but the majority of power and commands are used in NORMAL mode.</p>
-
-<p>You use <code>Esc</code> to return to NORMAL mode after inserting text, so I will  mash the Esc key often. Every time I finish an edit, or make a change, I&rsquo;m constantly returning to NORMAL mode.</p>
-
-<p>There is a reason it is called NORMAL mode; it is the mode where you can do all the extra vimmy stuff. INSERT mode is just typing text, any editor can do that.</p>
-
-<p>Be NORMAL.</p>
-
-<h2>VISUAL Mode</h2>
-
-<p>VISUAL mode is when you select text and can visually see it highlighted. It may seem formal to label a mode just when text is selected, but Vim commands work different when text is selected.</p>
-
-<dl>
-<dt><code>v</code></dt>
-<dd>Enter VISUAL mode (character)</dd>
-<dt><code>V</code></dt>
-<dd>Enter VISUAL LINE mode (line)</dd>
-<dt><code>ctrl-v v</code></dt>
-<dd>Enter VISUAL BLOCK mode (column)</dd>
-</dl>
-
-<p>Press <code>v</code> in NORMAL mode to enter VISUAL mode. In VISUAL mode any cursor movement, or defined motion will select text as it moves. You can operate on just this highlighted area.</p>
-
-<p>Press <code>V</code> in NORMAL mode, and the whole line is selected, this is VISUAL LINE mode. Any movement up or down will select by line.</p>
-
-<p>Press <code>ctrl-v</code> for VISUAL BLOCK mode. Moving will select by a block region, not the entire line. This allows for operating on columns of text, see video example below.</p>
-
-<p>Psst, don&rsquo;t tell the purists, but if you <code>set mouse=a</code> you can use your mouse to highlight things too.</p>
-
-<p>VISUAL mode is pretty powerful, I use it frequently since it provides feedback seeing what is selected, and then unselected after the action.</p>
-
-<figure><asciinema-player src="/working-with-vim/casts/modes.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>VISUAL mode example</figcaption></figure>
-
-<p><span class="tip">💡</span>After performing an operation in VISUAL MODE the selection is no longer highlighted. Use <code>gv</code> to automatically reselect the area previously highlighted.</p>
-
-<h2>Command-line Mode</h2>
-
-<p>Another mode to mention is Command-line mode. You enter by typing <code>:</code> while in NORMAL or VISUAL mode. This places your cursor at the bottom command-line, ready for you to type a command.</p>
-
-<p>Typically, you exit command-line mode by issuing a command, however you can exit without a command by typing <code>Esc Esc</code></p>
-
-<p>A history of previous commands is kept, use the up arrow key after typing <code>:</code> to see previous commands, similar to bash. This is stored in <code>.viminfo</code> so persists between sessions.</p>
-
-<h2>Additional Modes</h2>
-
-<p>In total, there are seven basic modes in Vim. For completeness, the other three modes are SELECT, EX, and TERMINAL. See <code>:help vim-modes</code> for full definitions.</p>
-
-				</article>
-			</main>
-			<footer>
-				<span>An <a href="https://mkaz.blog/">mkaz</a> joint </span> ·
-				<span>Built using <a href="https://github.com/mkaz/hastie" rel="generator">Hastie</a></span>
-			</footer>
-		</div>
-
-		<script src="static/prism.js"></script>
+		Page moved to <a href="https://mkaz.blog/working-with-vim/modes.html">https://mkaz.blog/working-with-vim/modes.html</a>
 	</body>
 </html>

@@ -2,116 +2,15 @@
 <html lang="en-us">
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="refresh" content="0; url=https://mkaz.blog/working-with-vim/recording.html">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-		<title> Recording - Working with Vim</title>
+		<title>  Working with Vim</title>
 
 		<link rel="stylesheet" href="static/style.css"/>
 		<link rel="stylesheet" href="static/prism.css"/>
 	</head>
 	<body>
-
-		<div class="container">
-			<header>
-				<h3><a href="/working-with-vim">Working with Vim</a></h3>
-			</header>
-
-			<aside>
-				<nav>
-					<h3> Contents </h3>
-					<ul>
-						
-						<li><a href="/working-with-vim/intro.html">Introduction</a></li>
-						
-						<li><a href="/working-with-vim/modes.html">Modes</a></li>
-						
-						<li><a href="/working-with-vim/help.html">Help Yourself</a></li>
-						
-						<li><a href="/working-with-vim/tao.html">The Tao of Vim</a></li>
-						
-						<li><a href="/working-with-vim/motions.html">Motions</a></li>
-						
-						<li><a href="/working-with-vim/operators.html">Operators</a></li>
-						
-						<li><a href="/working-with-vim/lines.html">Lines</a></li>
-						
-						<li><a href="/working-with-vim/text-object.html">Text Objects</a></li>
-						
-						<li><a href="/working-with-vim/search.html">Search</a></li>
-						
-						<li><a href="/working-with-vim/nav-marks.html">Nav Marks</a></li>
-						
-						<li><a href="/working-with-vim/substitute.html">Substitute</a></li>
-						
-						<li><a href="/working-with-vim/read.html">Read</a></li>
-						
-						<li><a href="/working-with-vim/registers.html">Registers</a></li>
-						
-						<li><a href="/working-with-vim/buffers.html">Buffers</a></li>
-						
-						<li><a href="/working-with-vim/windows.html">Windows</a></li>
-						
-						<li><a href="/working-with-vim/recording.html">Recording</a></li>
-						
-						<li><a href="/working-with-vim/configuration.html">Configuration</a></li>
-						
-						<li><a href="/working-with-vim/plugins.html">Plugins</a></li>
-						
-						<li><a href="/working-with-vim/sessions.html">Sessions</a></li>
-						
-						<li><a href="/working-with-vim/snippets.html">Snippets</a></li>
-						
-						<li><a href="/working-with-vim/terminal.html">Terminal</a></li>
-						
-						<li><a href="/working-with-vim/writing.html">Writing</a></li>
-						
-						<li><a href="/working-with-vim/vimwiki.html">VimWiki</a></li>
-						
-						<li><a href="/working-with-vim/git.html">Git</a></li>
-						
-					</ul>
-				</nav>
-			</aside>
-
-			<main>
-				<article>
-					<h1>Recording and Playback</h1>
-
-<p><span class="sidenote">See <code>:help recording</code></span></p>
-
-<p>What other editors call macros, Vim calls recording. It is a way to record and playback a set of commands. A recording is simply saving the commands you type to a register.</p>
-
-<p>Use <code>qa</code> to start recording to named register <code>a</code>. You will see in the bottom left corner <code>recording @a</code>.</p>
-
-<p>You now perform the actions you want, and when done press <code>q</code> to stop recording.</p>
-
-<p>Replay back the commands using <code>@a</code>, this replays everything you did while recording.</p>
-
-<p>Use <code>@@</code> to repeat the previous replay, you can combine with a count so <code>3@@</code> will repeat previous replay 3 times, or you can use <code>3@a</code> to repeat.</p>
-
-<figure><asciinema-player src="/working-with-vim/casts/recording.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>Recording example</figcaption></figure>
-
-<p><span class="tip">💡</span>Your macro just duplicates your commands, so make sure you end/start at the right spot. Basically, you want to start all macros at the start of a line, and end at the start of the next line. This helps when repeating.</p>
-
-<h2>Recording in Register</h2>
-
-<p><span class="sidenote">Since recording are saved to a register, and registers persist between Vim sessions. Your recordings persist between Vim sessions.</span></p>
-
-<p>As mentioned above, your recordings are stored as commands in the registers. This allows you to see what is recorded by using the <code>:registers</code> command to view all registers. Additionally, if you copy the characters that make up a command to a register, you can replay them.</p>
-
-<p>For example, copy the text <code>oText from Register</code> to a register and replay. Note: the <code>o</code> is for append after, it is the command to enter into INSERT mode.</p>
-
-<p>Here&rsquo;s the example yanking the above text to register using <code>&quot;byy</code>, confirming the text is there, and then replaying using <code>@b</code>.</p>
-
-<figure><asciinema-player src="/working-with-vim/casts/recording2.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>Recording example</figcaption></figure>
-
-				</article>
-			</main>
-			<footer>
-				<span>An <a href="https://mkaz.blog/">mkaz</a> joint </span> ·
-				<span>Built using <a href="https://github.com/mkaz/hastie" rel="generator">Hastie</a></span>
-			</footer>
-		</div>
-
-		<script src="static/prism.js"></script>
+		Page moved to <a href="https://mkaz.blog/working-with-vim/recording.html">https://mkaz.blog/working-with-vim/recording.html</a>
 	</body>
 </html>

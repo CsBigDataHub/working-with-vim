@@ -2,6 +2,7 @@
 title: The Tao of Vim
 layout: page
 order: 3
+asciinema: yes
 ---
 
 # The Tao of Vim

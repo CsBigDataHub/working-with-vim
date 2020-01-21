@@ -2,120 +2,15 @@
 <html lang="en-us">
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="refresh" content="0; url=https://mkaz.blog/working-with-vim/tao.html">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-		<title> The Tao of Vim - Working with Vim</title>
+		<title>  Working with Vim</title>
 
 		<link rel="stylesheet" href="static/style.css"/>
 		<link rel="stylesheet" href="static/prism.css"/>
 	</head>
 	<body>
-
-		<div class="container">
-			<header>
-				<h3><a href="/working-with-vim">Working with Vim</a></h3>
-			</header>
-
-			<aside>
-				<nav>
-					<h3> Contents </h3>
-					<ul>
-						
-						<li><a href="/working-with-vim/intro.html">Introduction</a></li>
-						
-						<li><a href="/working-with-vim/modes.html">Modes</a></li>
-						
-						<li><a href="/working-with-vim/help.html">Help Yourself</a></li>
-						
-						<li><a href="/working-with-vim/tao.html">The Tao of Vim</a></li>
-						
-						<li><a href="/working-with-vim/motions.html">Motions</a></li>
-						
-						<li><a href="/working-with-vim/operators.html">Operators</a></li>
-						
-						<li><a href="/working-with-vim/lines.html">Lines</a></li>
-						
-						<li><a href="/working-with-vim/text-object.html">Text Objects</a></li>
-						
-						<li><a href="/working-with-vim/search.html">Search</a></li>
-						
-						<li><a href="/working-with-vim/nav-marks.html">Nav Marks</a></li>
-						
-						<li><a href="/working-with-vim/substitute.html">Substitute</a></li>
-						
-						<li><a href="/working-with-vim/read.html">Read</a></li>
-						
-						<li><a href="/working-with-vim/registers.html">Registers</a></li>
-						
-						<li><a href="/working-with-vim/buffers.html">Buffers</a></li>
-						
-						<li><a href="/working-with-vim/windows.html">Windows</a></li>
-						
-						<li><a href="/working-with-vim/recording.html">Recording</a></li>
-						
-						<li><a href="/working-with-vim/configuration.html">Configuration</a></li>
-						
-						<li><a href="/working-with-vim/plugins.html">Plugins</a></li>
-						
-						<li><a href="/working-with-vim/sessions.html">Sessions</a></li>
-						
-						<li><a href="/working-with-vim/snippets.html">Snippets</a></li>
-						
-						<li><a href="/working-with-vim/terminal.html">Terminal</a></li>
-						
-						<li><a href="/working-with-vim/writing.html">Writing</a></li>
-						
-						<li><a href="/working-with-vim/vimwiki.html">VimWiki</a></li>
-						
-						<li><a href="/working-with-vim/git.html">Git</a></li>
-						
-					</ul>
-				</nav>
-			</aside>
-
-			<main>
-				<article>
-					<h1>The Tao of Vim</h1>
-
-<p>The underlying principle of Vim is the operator-motion pair. You can think of Vim as a language. The operator and motion are the verbs and nouns that define the action on a subject.</p>
-
-<p>For example, if you want to delete a line. Delete is the action, and a line is the subject. For Vim, <code>d</code> is the delete operator, and <code>_</code> is the line motion.</p>
-
-<p>So, typing <code>d_</code> will delete a line.</p>
-
-<p>This is the essence of Vim. Instead of trying to memorize hundreds of commands, you learn the verbs and nouns that make up the language, and then combine together.</p>
-
-<p>The grammar of Vim defines the rules how to create the operation-motion pairs; there are basically two ways dependent on the mode.</p>
-
-<h2>NORMAL Mode</h2>
-
-<p>In NORMAL mode, you specify the operator first and then the motion. For example, delete to beginning of the line. You type <code>d</code> for delete operator and then <code>^</code> as the motion to the beginning of the line.</p>
-
-<p>If you type <code>^</code> with no operator, the cursor moves to the beginning of the line. Move is the default, so if a motion is specified with no operator the cursor will move and no action performed.</p>
-
-<h2>VISUAL Mode</h2>
-
-<p>The second way of defining a pair is in VISUAL mode, you do the opposite. You specify the motion part first by selecting, and then specify the operator for what is highlighted.</p>
-
-<p>Using same example, delete to beginning of line. Type <code>v</code> to enter VISUAL mode, then type <code>^</code> as the motion to the beginning of the line, then type <code>d</code> to delete.</p>
-
-<p>This is obviously an extra step to select the text, but VISUAL mode shows you what is highlighted and being acted upon. Additionally, there is feedback when the operator is complete since the selection will no longer be highlighted.</p>
-
-<p><span class="sidenote">Copy buffer in NORMAL mode using <code>ggyG</code>, but I prefer selecting. I see what is highlighted and get feedback when the yank operation is performed.</span></p>
-
-<p>I find the feedback useful, particularly when copying.</p>
-
-<p>For example, copying a whole buffer using VISUAL mode: Type <code>gg</code> to move to the top of the file, <code>shift-v</code> to enter VISUAL LINE Mode, and then <code>G</code> will move to end of file selecting all the lines. With the subject highlighted, use <code>y</code> to copy.</p>
-
-<figure><asciinema-player src="/working-with-vim/casts/tao.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>VISUAL mode feedback comparison</figcaption></figure>
-
-				</article>
-			</main>
-			<footer>
-				<span>An <a href="https://mkaz.blog/">mkaz</a> joint </span> ·
-				<span>Built using <a href="https://github.com/mkaz/hastie" rel="generator">Hastie</a></span>
-			</footer>
-		</div>
-
-		<script src="static/prism.js"></script>
+		Page moved to <a href="https://mkaz.blog/working-with-vim/tao.html">https://mkaz.blog/working-with-vim/tao.html</a>
 	</body>
 </html>

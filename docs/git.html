@@ -2,126 +2,15 @@
 <html lang="en-us">
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="refresh" content="0; url=https://mkaz.blog/working-with-vim/git.html">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-		<title> Git - Working with Vim</title>
+		<title>  Working with Vim</title>
 
 		<link rel="stylesheet" href="static/style.css"/>
 		<link rel="stylesheet" href="static/prism.css"/>
 	</head>
 	<body>
-
-		<div class="container">
-			<header>
-				<h3><a href="/working-with-vim">Working with Vim</a></h3>
-			</header>
-
-			<aside>
-				<nav>
-					<h3> Contents </h3>
-					<ul>
-						
-						<li><a href="/working-with-vim/intro.html">Introduction</a></li>
-						
-						<li><a href="/working-with-vim/modes.html">Modes</a></li>
-						
-						<li><a href="/working-with-vim/help.html">Help Yourself</a></li>
-						
-						<li><a href="/working-with-vim/tao.html">The Tao of Vim</a></li>
-						
-						<li><a href="/working-with-vim/motions.html">Motions</a></li>
-						
-						<li><a href="/working-with-vim/operators.html">Operators</a></li>
-						
-						<li><a href="/working-with-vim/lines.html">Lines</a></li>
-						
-						<li><a href="/working-with-vim/text-object.html">Text Objects</a></li>
-						
-						<li><a href="/working-with-vim/search.html">Search</a></li>
-						
-						<li><a href="/working-with-vim/nav-marks.html">Nav Marks</a></li>
-						
-						<li><a href="/working-with-vim/substitute.html">Substitute</a></li>
-						
-						<li><a href="/working-with-vim/read.html">Read</a></li>
-						
-						<li><a href="/working-with-vim/registers.html">Registers</a></li>
-						
-						<li><a href="/working-with-vim/buffers.html">Buffers</a></li>
-						
-						<li><a href="/working-with-vim/windows.html">Windows</a></li>
-						
-						<li><a href="/working-with-vim/recording.html">Recording</a></li>
-						
-						<li><a href="/working-with-vim/configuration.html">Configuration</a></li>
-						
-						<li><a href="/working-with-vim/plugins.html">Plugins</a></li>
-						
-						<li><a href="/working-with-vim/sessions.html">Sessions</a></li>
-						
-						<li><a href="/working-with-vim/snippets.html">Snippets</a></li>
-						
-						<li><a href="/working-with-vim/terminal.html">Terminal</a></li>
-						
-						<li><a href="/working-with-vim/writing.html">Writing</a></li>
-						
-						<li><a href="/working-with-vim/vimwiki.html">VimWiki</a></li>
-						
-						<li><a href="/working-with-vim/git.html">Git</a></li>
-						
-					</ul>
-				</nav>
-			</aside>
-
-			<main>
-				<article>
-					<h1>Git Integration</h1>
-
-<p>By default, Vim provides no integration with git, all functionality is provided by plugins. There are a wide range of plugins and features to choose from, so your setup will depend on what you want to do.</p>
-
-<p>I prefer to do my gitting on the command-line, so I know exactly what is happening. However, there are still a few plugins that I use to make things easier.</p>
-
-<h2>View Git Changes</h2>
-
-<p>For viewing changes in a single-file, the <a href="https://github.com/airblade/vim-gitgutter">gitgutter plugin</a> adds visual cues for additions, subtractions, and modifications in the gutter left of the line numbers.</p>
-
-<p>The vim-gitgutter plugin also provides functions to navigate to changed hunks of code. I setup the following two maps to navigate to next and previous hunks:</p>
-
-<pre><code class="language-vim">nmap &lt;Leader&gt;gn &lt;Plug&gt;GitGutterNextHunk  &quot; git next
-nmap &lt;Leader&gt;gp &lt;Plug&gt;GitGutterPrevHunk  &quot; git previous
-</code></pre>
-
-<p>The plugin also provides features beyond just visual cues. Here are the top ones that I use frequently:</p>
-
-<ol>
-<li>Use <code>:GitGutterPreviewHunk</code> to see hunk changes</li>
-<li>Use <code>:GitGutterUndoHunk</code> to revert hunk</li>
-<li>Use <code>:GitGutterStageHunk</code> for selective staging of hunks</li>
-</ol>
-
-<figure><asciinema-player src="/working-with-vim/casts/git1.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>gitgutter examples</figcaption></figure>
-
-<h2>Git Blame History</h2>
-
-<p>The <a href="https://github.com/rhysd/git-messenger.vim">git-messenger plugin</a> provides blame information on a per-line basis. It will display the info in a Scratch window, or pop-up window if supporteed. Activate the plugin using the <code>:GitMessenger</code> function to display the last commit message that modified the line.</p>
-
-<p>Running <code>:GitMessenger</code> with a message displayed enters that message buffer allowing you to navigate back to older commits by typing <code>o</code> key.  See <code>:help :GitMessenger</code> for more.</p>
-
-<figure><asciinema-player src="/working-with-vim/casts/git2.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>git-messenger example (neovim)</figcaption></figure>
-
-<h2>View Git History</h2>
-
-<p>The <a href="https://github.com/cohama/agit.vim">Agit plugin</a> displays repository information using a tabpage with multiple windows. The plugin can browse through the full repository history using <code>:Agit</code> or a single file history using <code>:AgitFile</code></p>
-
-<figure><asciinema-player src="/working-with-vim/casts/git3.cast" font-size="large" cols="65" rows="20"></asciinema-player><figcaption>Agit example</figcaption></figure>
-
-				</article>
-			</main>
-			<footer>
-				<span>An <a href="https://mkaz.blog/">mkaz</a> joint </span> ·
-				<span>Built using <a href="https://github.com/mkaz/hastie" rel="generator">Hastie</a></span>
-			</footer>
-		</div>
-
-		<script src="static/prism.js"></script>
+		Page moved to <a href="https://mkaz.blog/working-with-vim/git.html">https://mkaz.blog/working-with-vim/git.html</a>
 	</body>
 </html>

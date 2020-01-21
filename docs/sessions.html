@@ -2,112 +2,15 @@
 <html lang="en-us">
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="refresh" content="0; url=https://mkaz.blog/working-with-vim/sessions.html">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-		<title> Sessions - Working with Vim</title>
+		<title>  Working with Vim</title>
 
 		<link rel="stylesheet" href="static/style.css"/>
 		<link rel="stylesheet" href="static/prism.css"/>
 	</head>
 	<body>
-
-		<div class="container">
-			<header>
-				<h3><a href="/working-with-vim">Working with Vim</a></h3>
-			</header>
-
-			<aside>
-				<nav>
-					<h3> Contents </h3>
-					<ul>
-						
-						<li><a href="/working-with-vim/intro.html">Introduction</a></li>
-						
-						<li><a href="/working-with-vim/modes.html">Modes</a></li>
-						
-						<li><a href="/working-with-vim/help.html">Help Yourself</a></li>
-						
-						<li><a href="/working-with-vim/tao.html">The Tao of Vim</a></li>
-						
-						<li><a href="/working-with-vim/motions.html">Motions</a></li>
-						
-						<li><a href="/working-with-vim/operators.html">Operators</a></li>
-						
-						<li><a href="/working-with-vim/lines.html">Lines</a></li>
-						
-						<li><a href="/working-with-vim/text-object.html">Text Objects</a></li>
-						
-						<li><a href="/working-with-vim/search.html">Search</a></li>
-						
-						<li><a href="/working-with-vim/nav-marks.html">Nav Marks</a></li>
-						
-						<li><a href="/working-with-vim/substitute.html">Substitute</a></li>
-						
-						<li><a href="/working-with-vim/read.html">Read</a></li>
-						
-						<li><a href="/working-with-vim/registers.html">Registers</a></li>
-						
-						<li><a href="/working-with-vim/buffers.html">Buffers</a></li>
-						
-						<li><a href="/working-with-vim/windows.html">Windows</a></li>
-						
-						<li><a href="/working-with-vim/recording.html">Recording</a></li>
-						
-						<li><a href="/working-with-vim/configuration.html">Configuration</a></li>
-						
-						<li><a href="/working-with-vim/plugins.html">Plugins</a></li>
-						
-						<li><a href="/working-with-vim/sessions.html">Sessions</a></li>
-						
-						<li><a href="/working-with-vim/snippets.html">Snippets</a></li>
-						
-						<li><a href="/working-with-vim/terminal.html">Terminal</a></li>
-						
-						<li><a href="/working-with-vim/writing.html">Writing</a></li>
-						
-						<li><a href="/working-with-vim/vimwiki.html">VimWiki</a></li>
-						
-						<li><a href="/working-with-vim/git.html">Git</a></li>
-						
-					</ul>
-				</nav>
-			</aside>
-
-			<main>
-				<article>
-					<h1>Sessions</h1>
-
-<p>Vim stores the current state of views, window positions, and settings in a session. You can save the session to a file and load it at a later time to return vim to the same saved state.</p>
-
-<h2>Create and Use Sessions</h2>
-
-<p>Use the command <code>:mksession [file]</code> to save the current state to a file, by default vim will use <code>Session.vim</code> filename if none specified.</p>
-
-<p>To load a saved session use <code>vim -S [file]</code></p>
-
-<h2>Plugin obsession.vim</h2>
-
-<p>Working with sessions can be a little tedious. You need to remember to update saving your state anytime you open a new file or change the window layouts. I use the <a href="https://github.com/tpope/vim-obsession">obsession.vim</a> plugin to help manage sessions.</p>
-
-<p>The plugin manages keeping the state updated and will automatically save on quit. You simply run <code>:Obsess [file]</code> to start, if you don&rsquo;t specify a filename it will use <code>Session.vim</code> by default.</p>
-
-<p>The state will be managed for you until you exit vim. You load the session the same as above, using <code>vim -S Session.vim</code></p>
-
-<h2>Startify</h2>
-
-<p>I use the <a href="https://github.com/mhinz/vim-startify">Startify plugin</a> to replace the empty start screen with a fancy one that includes a listing of recent files.  <span class="sidenote">With startify, you also get a quoting cow.</span> Startify detects if a <code>Session.vim</code> file exists, and allows a shortcut key to open it. This is nice when you forget to load a session on the command-line.</p>
-
-<p>Startify does have session features itself, however, I don&rsquo;t use them.  See the <a href="https://github.com/mhinz/vim-startify/wiki/Plugin-features-in-detail#easy-session-handling">Startify documentation</a> for how the plugin works with sessions and which way you prefer.</p>
-
-<p><span class="tip">💡</span> I add <code>Session.vim</code> to my global <code>.gitignore</code> file so it doesn&rsquo;t show in git commands and I don&rsquo;t have to add it to each project.</p>
-
-				</article>
-			</main>
-			<footer>
-				<span>An <a href="https://mkaz.blog/">mkaz</a> joint </span> ·
-				<span>Built using <a href="https://github.com/mkaz/hastie" rel="generator">Hastie</a></span>
-			</footer>
-		</div>
-
-		<script src="static/prism.js"></script>
+		Page moved to <a href="https://mkaz.blog/working-with-vim/sessions.html">https://mkaz.blog/working-with-vim/sessions.html</a>
 	</body>
 </html>

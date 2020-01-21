@@ -2,148 +2,15 @@
 <html lang="en-us">
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="refresh" content="0; url=https://mkaz.blog/working-with-vim/search.html">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-		<title> Search - Working with Vim</title>
+		<title>  Working with Vim</title>
 
 		<link rel="stylesheet" href="static/style.css"/>
 		<link rel="stylesheet" href="static/prism.css"/>
 	</head>
 	<body>
-
-		<div class="container">
-			<header>
-				<h3><a href="/working-with-vim">Working with Vim</a></h3>
-			</header>
-
-			<aside>
-				<nav>
-					<h3> Contents </h3>
-					<ul>
-						
-						<li><a href="/working-with-vim/intro.html">Introduction</a></li>
-						
-						<li><a href="/working-with-vim/modes.html">Modes</a></li>
-						
-						<li><a href="/working-with-vim/help.html">Help Yourself</a></li>
-						
-						<li><a href="/working-with-vim/tao.html">The Tao of Vim</a></li>
-						
-						<li><a href="/working-with-vim/motions.html">Motions</a></li>
-						
-						<li><a href="/working-with-vim/operators.html">Operators</a></li>
-						
-						<li><a href="/working-with-vim/lines.html">Lines</a></li>
-						
-						<li><a href="/working-with-vim/text-object.html">Text Objects</a></li>
-						
-						<li><a href="/working-with-vim/search.html">Search</a></li>
-						
-						<li><a href="/working-with-vim/nav-marks.html">Nav Marks</a></li>
-						
-						<li><a href="/working-with-vim/substitute.html">Substitute</a></li>
-						
-						<li><a href="/working-with-vim/read.html">Read</a></li>
-						
-						<li><a href="/working-with-vim/registers.html">Registers</a></li>
-						
-						<li><a href="/working-with-vim/buffers.html">Buffers</a></li>
-						
-						<li><a href="/working-with-vim/windows.html">Windows</a></li>
-						
-						<li><a href="/working-with-vim/recording.html">Recording</a></li>
-						
-						<li><a href="/working-with-vim/configuration.html">Configuration</a></li>
-						
-						<li><a href="/working-with-vim/plugins.html">Plugins</a></li>
-						
-						<li><a href="/working-with-vim/sessions.html">Sessions</a></li>
-						
-						<li><a href="/working-with-vim/snippets.html">Snippets</a></li>
-						
-						<li><a href="/working-with-vim/terminal.html">Terminal</a></li>
-						
-						<li><a href="/working-with-vim/writing.html">Writing</a></li>
-						
-						<li><a href="/working-with-vim/vimwiki.html">VimWiki</a></li>
-						
-						<li><a href="/working-with-vim/git.html">Git</a></li>
-						
-					</ul>
-				</nav>
-			</aside>
-
-			<main>
-				<article>
-					<h1>Search</h1>
-
-<h2>Quick Search</h2>
-
-<p><span class="sidenote">See <code>:help *</code></span> Use <code>*</code> and <code>#</code> to navigate to the word under the cursor, <code>*</code> forward and <code>#</code> backwards. This searches within the current buffer.</p>
-
-<p>I&rsquo;ll use this to check the spelling of variables, by using <code>*</code> on a variable it highlights all the words spelled the same. A nice quick way to check for misspellings.</p>
-
-<figure><asciinema-player src="/working-with-vim/casts/quick-search.cast" font-size="large" cols="58" rows="15"></asciinema-player><figcaption>Quick Search Example</figcaption></figure>
-
-<h2>Search Motions</h2>
-
-<p>Use <code>/term</code> to move forward to next &ldquo;term&rdquo;, and use <code>?term</code> to move backwards to previous &ldquo;term&rdquo;.</p>
-
-<p><span class="sidenote">See <code>:help pattern-searches</code></span></p>
-
-<p>You can combine with delete and yank, and any other operator. For example: <code>d/apple</code> will delete from current spot to the string apple. Vim highlights the words to show and you press enter to confirm.</p>
-
-<p>I don&rsquo;t use the delete or copy actions with regex searches. I primarily use regexes to navigate around.</p>
-
-<h3>Remove Highlight</h3>
-
-<p>Search results remain highlighted after a search, this is useful when searching, but they often stick around too long. Use <code>:nohlsearch</code> to unhighlight the searches. I create the <code>&lt;Leader&gt;&lt;Space&gt;</code> map for convenience.</p>
-
-<pre><code class="language-vim">&quot; Unhighlight Search using ,SPC
-nnoremap &lt;silent&gt; &lt;Leader&gt;&lt;Space&gt; :nohlsearch&lt;CR&gt;
-</code></pre>
-
-<p>Try out the <a href="https://github.com/junegunn/vim-slash">vim-slash plugin</a> to clear highlighting automatically when the cursor is moved. This works pretty nicely, though additional changes the <code>*</code> search.</p>
-
-<p>I setup the shortcut above to clear highlights; but since installing the vim-slash plugin, I use it less frequently. The plugin ends up clearing it most of the time, so it may be all you need.</p>
-
-<h2>Multiple Files</h2>
-
-<p><span class="sidenote">See <code>:help grep</code></span> Use <code>:grep pattern {file}</code> to search across multiple files.</p>
-
-<p>For example: <code>:grep TODO *.go</code> would search all files with go extension for the text TODO.</p>
-
-<p>Use <code>:cn</code> to jump to next match.</p>
-
-<p>Use <code>:cp</code> to jump to previous match.</p>
-
-<p>Use <code>:copen</code> to open list of matches in quickfix window</p>
-
-<p>To recursively search through directories, use <code>**/*.go</code> or <code>**/*</code> as the <code>{file}</code> criteria.</p>
-
-<h3>Ripgrep and FZF</h3>
-
-<p>The <code>:grep</code> search works, but is verbose and blunt tool for searching code. I prefer to use <a href="https://github.com/BurntSushi/ripgrep">ripgrep</a> for search and <a href="https://github.com/junegunn/fzf">fzf</a> for fuzzy matching. Ripgrep by default ignores items in .gitignore, binaries, hidden files, and other coding parts.</p>
-
-<p>See my <a href="https://mkaz.blog/code/unix-is-my-ide/">Unix is my IDE</a> for the full setup. Installing and using both are easier now that binaries are included in recent OS package repostiories.</p>
-
-<p>I use the following two plugins for <code>fzf</code>. The first provides fzf commands in Vim, and the second creates some useful mappings leveraging those commands.</p>
-
-<pre><code class="language-vim">Plug 'junegunn/fzf',  { 'dir': '~/.fzf' }
-Plug 'junegunn/fzf.vim'               &quot; fuzzy search
-</code></pre>
-
-<p>I use a custom shortcut <code>&lt;Leader&gt;f</code> to use the fzf provided <code>:Rg</code> command to perform a search. Results are opened in a quickfix window and can be narrowed by typing additional in the window. Use arrow keys to navigate to result, enter to open. Use <code>&lt;tab&gt;</code> to select multiple items.</p>
-
-<p>If you have the plugin installed, see <code>:help fzf-vim-commands</code> for details.</p>
-
-				</article>
-			</main>
-			<footer>
-				<span>An <a href="https://mkaz.blog/">mkaz</a> joint </span> ·
-				<span>Built using <a href="https://github.com/mkaz/hastie" rel="generator">Hastie</a></span>
-			</footer>
-		</div>
-
-		<script src="static/prism.js"></script>
+		Page moved to <a href="https://mkaz.blog/working-with-vim/search.html">https://mkaz.blog/working-with-vim/search.html</a>
 	</body>
 </html>

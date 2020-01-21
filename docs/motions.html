@@ -2,134 +2,15 @@
 <html lang="en-us">
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="refresh" content="0; url=https://mkaz.blog/working-with-vim/motions.html">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-		<title> Motions - Working with Vim</title>
+		<title>  Working with Vim</title>
 
 		<link rel="stylesheet" href="static/style.css"/>
 		<link rel="stylesheet" href="static/prism.css"/>
 	</head>
 	<body>
-
-		<div class="container">
-			<header>
-				<h3><a href="/working-with-vim">Working with Vim</a></h3>
-			</header>
-
-			<aside>
-				<nav>
-					<h3> Contents </h3>
-					<ul>
-						
-						<li><a href="/working-with-vim/intro.html">Introduction</a></li>
-						
-						<li><a href="/working-with-vim/modes.html">Modes</a></li>
-						
-						<li><a href="/working-with-vim/help.html">Help Yourself</a></li>
-						
-						<li><a href="/working-with-vim/tao.html">The Tao of Vim</a></li>
-						
-						<li><a href="/working-with-vim/motions.html">Motions</a></li>
-						
-						<li><a href="/working-with-vim/operators.html">Operators</a></li>
-						
-						<li><a href="/working-with-vim/lines.html">Lines</a></li>
-						
-						<li><a href="/working-with-vim/text-object.html">Text Objects</a></li>
-						
-						<li><a href="/working-with-vim/search.html">Search</a></li>
-						
-						<li><a href="/working-with-vim/nav-marks.html">Nav Marks</a></li>
-						
-						<li><a href="/working-with-vim/substitute.html">Substitute</a></li>
-						
-						<li><a href="/working-with-vim/read.html">Read</a></li>
-						
-						<li><a href="/working-with-vim/registers.html">Registers</a></li>
-						
-						<li><a href="/working-with-vim/buffers.html">Buffers</a></li>
-						
-						<li><a href="/working-with-vim/windows.html">Windows</a></li>
-						
-						<li><a href="/working-with-vim/recording.html">Recording</a></li>
-						
-						<li><a href="/working-with-vim/configuration.html">Configuration</a></li>
-						
-						<li><a href="/working-with-vim/plugins.html">Plugins</a></li>
-						
-						<li><a href="/working-with-vim/sessions.html">Sessions</a></li>
-						
-						<li><a href="/working-with-vim/snippets.html">Snippets</a></li>
-						
-						<li><a href="/working-with-vim/terminal.html">Terminal</a></li>
-						
-						<li><a href="/working-with-vim/writing.html">Writing</a></li>
-						
-						<li><a href="/working-with-vim/vimwiki.html">VimWiki</a></li>
-						
-						<li><a href="/working-with-vim/git.html">Git</a></li>
-						
-					</ul>
-				</nav>
-			</aside>
-
-			<main>
-				<article>
-					<h1>Motions</h1>
-
-<p>Here are a few of the most common motions. There are many more motions and plugins can define their own, but this is a good start to learn the basics and expand.</p>
-
-<dl>
-<dt><code>w</code></dt>
-<dd>Forward to next word</dd>
-<dt><code>b</code></dt>
-<dd>Backward to start of word</dd>
-<dt><code>e</code></dt>
-<dd>Forward to end of word</dd>
-<dt><code>fx</code></dt>
-<dd>Forward to &lsquo;x&rsquo; (cursor on char)</dd>
-<dt><code>Fx</code></dt>
-<dd>Backward to &lsquo;x&rsquo; (cursor on char)</dd>
-<dt><code>tx</code></dt>
-<dd>Forward to &lsquo;x&rsquo; (cursor before char)</dd>
-<dt><code>Tx</code></dt>
-<dd>Backward to &lsquo;x&rsquo; (cursor before char)</dd>
-<dt><code>;</code></dt>
-<dd>Repeat previous motion works with <code>f F t T</code></dd>
-<dt><code>_</code></dt>
-<dd>Current line (underscore)</dd>
-</dl>
-
-<p>Practice the basic motions by just pressing the motion character(s), while in NORMAL mode the cursor will move. So, pressing <code>w</code> moves the cursor forward to the next word. You can precede any motion with a number, for example <code>5w</code> will move forward to the fifth next word.</p>
-
-<p>When you put an operator first, it will perform that action on the motion. For example, <code>dw</code> will delete to the next word, this includes the space, not just the word.</p>
-
-<p><span class="tip">💡</span> There are minor differences between <code>w</code> and <code>e</code>; as well as between <code>f</code> and <code>t</code>. The differences are where the cursor ends up. This can be important depending on the operator. For example, <code>dfx</code> will delete forward up to and including the <code>x</code> character, whereas <code>dtx</code> will delete up to but not including the <code>x</code>.</p>
-
-<p>You can visualize the motions by starting with <code>v</code> and then the motion, it will highlight the selected area. See the difference between <code>ve</code> highlighting to the end of the word, to <code>vw</code> highlighting to the next word.</p>
-
-<h2>Window Motions</h2>
-
-<p>Here are a set of window motions, primarily used for navigating.  The motions jump to different sections of the visible window, not the document, so cursor movement occurs without the document scrolling.</p>
-
-<dl>
-<dt><code>H</code></dt>
-<dd>High, jump to top of window</dd>
-<dt><code>M</code></dt>
-<dd>Middle, jump to middle of window</dd>
-<dt><code>L</code></dt>
-<dd>Low, jump to bottom of window</dd>
-<dt><code>zz</code></dt>
-<dd>Window is positioned so current line is centered vertically, cursor does not jump</dd>
-</dl>
-
-				</article>
-			</main>
-			<footer>
-				<span>An <a href="https://mkaz.blog/">mkaz</a> joint </span> ·
-				<span>Built using <a href="https://github.com/mkaz/hastie" rel="generator">Hastie</a></span>
-			</footer>
-		</div>
-
-		<script src="static/prism.js"></script>
+		Page moved to <a href="https://mkaz.blog/working-with-vim/motions.html">https://mkaz.blog/working-with-vim/motions.html</a>
 	</body>
 </html>
