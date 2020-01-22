@@ -3,7 +3,8 @@
     "LayoutDir"  : "/home/mkaz/src/mkaz/hastie/themes/docs",
     "PublishDir" : "/home/mkaz/sites/mkblog/working-with-vim",
     "BaseUrl"    : "/working-with-vim",
-	"Params": {
-		"SiteName": "Working with Vim"
-	}
+    "UseAsciinema": true,
+    "Params": {
+        "SiteName": "Working with Vim"
+    }
 }
