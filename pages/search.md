@@ -68,3 +68,8 @@ Plug 'junegunn/fzf.vim'               " fuzzy search
 I use a custom shortcut `<Leader>f` to use the fzf provided `:Rg` command to perform a search. Results are opened in a quickfix window and can be narrowed by typing additional in the window. Use arrow keys to navigate to result, enter to open. Use `<tab>` to select multiple items.
 
 If you have the plugin installed, see `:help fzf-vim-commands` for details.
+
+## Search and Replace
+
+See [Substitute page](substitute.html) for search and replace.
+
