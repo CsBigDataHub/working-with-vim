@@ -13,12 +13,32 @@ Prefix the command with the range to work on, if no range is specified it will o
 
 <span class="sidenote">The space between range and `s` is not necessary, but I find it more legible.</span>
 
-Use `%` to search and replace across the whole document. `:% s/find/replace/g`
+Use `%` to search and replace across the whole document:
 
-Specify a line number range using `:137,140 s/find/replace/g` will replace all "find" with "replace" between lines 137 and 140.
+`:% s/find/replace/g`
+
+Use a line number range to replace all "find" with "replace" between lines 137 and 140:
+
+`:137,140 s/find/replace/g`
 
 You can define a range using VISUAL mode. First, highlight the area you want and then type `:` to go into command-line mode. Vim will automatically insert `'<,'>` this is it's magical incantation to operate over the selection, leave it there. Next, type your substitute command `s/find/replace`
 
 Besides search and replace, you can use `g/find/d` to delete all lines that match find, or `v/find/d` to delete all lines that do not match find.
 
 <figure><asciinema-player src="/working-with-vim/casts/substitute.cast" font-size="large" cols="65" rows="20"></asciinema-player><figcaption>Substitute Examples</figcaption></figure>
+
+## Multiple Files
+
+I found the easiest way to search and replace across multiple files is using the `:argdo` or `:bufdo` commands. To use, you first setup the files you want to operate against. For `:argdo` it uses the files on the argument list, for `:bufdo` it uses the current buffers list.
+
+To setup the `:args` list, you can glob the files you want. For example, all markdown files `:args **/*.md` or all files `:args **/*`. You can see the files are the list, run `:args` with no parameters.
+
+To run the substitute command across all the files, use:
+
+```
+:argdo %s/find/replace/g | update
+```
+
+This will run the given command, our substitute, across each file in the args list. The `| update` will save the file if any changes were made.
+
+The same can be done with `:bufdo` for files in open buffers.
