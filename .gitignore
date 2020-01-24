@@ -1,1 +1,3 @@
 docs/.htaccess
+node_modules
+package-lock.json
