@@ -57,7 +57,7 @@ To type a digraph, in INSERT mode, type `ctrl-k {char} {char}`
 The first character is the letter, the second the additional mark. For example, to add an tilde over an n, I would type `ctrl-k n ~` which gives me the Spanish `ñ` character.
 
 Here are a set of the most common examples, see `:help digraphs-default` for a more complete list.
-
+<!-- markdownlint-disable MD033 -->
 `!` or <code>`</code>
 : Grave accent `à è ì ò ù`
 
@@ -72,7 +72,7 @@ Here are a set of the most common examples, see `:help digraphs-default` for a m
 
 `:`
 : Diaeresis `ä ë ö ü`
-
+<!-- markdownlint-enable MD033 -->
 ## Extended ASCII
 
 Digraphs are also used beyond accents; they include extended ASCII characters. Here are a few fun ones.

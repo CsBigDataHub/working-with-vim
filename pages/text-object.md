@@ -13,7 +13,7 @@ An example might help illustrate. To select text inside an html tag you can use 
 <figure class="wp-block-video"><video controls src="https://mkaz.blog/wp-content/uploads/2019/05/vim-tag-select.mp4"></video> <figcaption> Using tag selection </figcaption> </figure>
 
 ## Selection Commands
-
+<!-- markdownlint-disable MD033 -->
 `(`
 : Parentheses
 
@@ -35,6 +35,7 @@ An example might help illustrate. To select text inside an html tag you can use 
 `p`
 : Paragraphs
 
+<!-- markdownlint-enable MD033 -->
 
 Combine the text objects with operators. For example, to copy the arguments in a function use `yi(`
 

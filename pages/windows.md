@@ -47,4 +47,6 @@ I rarely use multiple windows open at the same time, I'm  comfortable bouncing a
 A tab page is a collection of windows. So, tabs may be useful if you rely on multiple different window layouts. I rarely use windows, so tabs are just too much for me. If interested, you can learn more about tabs using `:help tab-page`
 
 
-<span class="tip">💡</span> Tab pages are nice to open help in. This will open help in a full window, instead of a split. Prefix with `:tab` first, for example `:tab help tab-page`<br><br>You can use `:tabclose` or `ctrl-w c` to close, the latter closes since closing the last window in a tab page, closes the tab.
+<span class="tip">💡</span> Tab pages are nice to open help in. This will open help in a full window, instead of a split. Prefix with `:tab` first, for example `:tab help tab-page`
+
+You can use `:tabclose` or `ctrl-w c` to close, the latter closes since closing the last window in a tab page, closes the tab.

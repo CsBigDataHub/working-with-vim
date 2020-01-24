@@ -11,7 +11,7 @@ order: 9
 ## Automatic Marks
 
 Vim automatically creates these marks:
-
+<!-- markdownlint-disable MD033 -->
 <code>\`\`</code> or `''`
 : jump back to previous position
 
@@ -31,6 +31,7 @@ Create your own named marks using a single letter `[a-z]`
 
 `:marks`
 : See all available marks
+<!-- markdownlint-enable MD033 -->
 
 The lowercase navigation marks `[a-z]` are remembered as long as the file remains in the buffer list. If you remove the file, or delete the line that contains a mark, that mark is erased.
 

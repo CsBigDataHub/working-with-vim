@@ -21,7 +21,7 @@ call plug#begin('~/.config/plugged')
 call plug#end()
 ```
 
-The plugins are specified using their Github directory. So, the above `fatih/vim-go` plugin refers to the https://github.com/fatih/vim-go repository.
+The plugins are specified using their Github directory. So, the above `fatih/vim-go` plugin refers to the [https://github.com/fatih/vim-go](https://github.com/fatih/vim-go) repository.
 
 After updating `.vimrc` with a new or deleted plugin, you need to reload; it is easiest to just quit and restart vim. <span class="sidenote">You can also run `:source %` to source your config when you are editing it, personally I prefer quit/restart, it's less typing.</span>
 

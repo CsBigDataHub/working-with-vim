@@ -12,11 +12,11 @@ The lessons are organized in a linear fashion, so simpler sections first, and mo
 
 A basic understanding of vim is a prerequisite, I try to explain everything but assume some base knowledge.
 
-### Learn Basics
+## Learn Basics
 
-The program <code>vimtutor</code> is a great way to learn the basics of vim. It is an interactive tutorial in vim walking through vim. Depending on your OS and how vim is installed, you may need to install the full vim package.
+The program `vimtutor` is a great way to learn the basics of vim. It is an interactive tutorial in vim walking through vim. Depending on your OS and how vim is installed, you may need to install the full vim package.
 
-Ubuntu for example, only ships with a minimal vim package that does not include the tutorial. You need to install a full version, such as <code>apt install vim-gtk</code> first.
+Ubuntu for example, only ships with a minimal vim package that does not include the tutorial. You need to install a full version, such as `apt install vim-gtk` first.
 
-If you use Neovim, run <code>:Tutor</code> inside the editor.
+If you use Neovim, run `:Tutor` inside the editor.
 

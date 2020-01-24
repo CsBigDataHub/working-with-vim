@@ -10,7 +10,7 @@ Vim has different modes of operations. The main modes are NORMAL, INSERT, and VI
 
 ## NORMAL Mode
 
-To realize the strength of Vim, you need to <strong>make NORMAL mode your default mode</strong>. I don't like telling people what to do, no vim shaming here, but the majority of power and commands are used in NORMAL mode.
+To realize the strength of Vim, you need to **make NORMAL mode your default mode**. I don't like telling people what to do, no vim shaming here, but the majority of power and commands are used in NORMAL mode.
 
 You use `Esc` to return to NORMAL mode after inserting text, so I will  mash the Esc key often. Every time I finish an edit, or make a change, I'm constantly returning to NORMAL mode.
 

@@ -35,7 +35,7 @@ To setup the `:args` list, you can glob the files you want. For example, all mar
 
 To run the substitute command across all the files, use:
 
-```
+```vim
 :argdo %s/find/replace/g | update
 ```
 
